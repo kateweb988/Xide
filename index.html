@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
 
-<!-- Коментарий для проверки  -->
-
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport"
@@ -162,7 +160,7 @@
 						Market Insight
 					</a>
 				</li>
-				<li">
+				<li>
 					<div class="accordion-container">
 						<div class="set">
 							<a href="#">
@@ -245,6 +243,13 @@
 					</div>
 					<div class="model__graph">
 						<img src="img/gr1.svg" alt="" class="model__pic">
+
+						<!-- ==================================== -->
+							<p class="m-table-chart">
+								<canvas data-chart="100 1400 400 90 86 1200 1000 1300 1850 1900" class="m-chart"></canvas>
+							</p>
+						<!-- ==================================== -->
+
 						<div class="model__wrap">
 							<div class="model__pad">
 								<div class="model__row d-flex">
@@ -930,6 +935,7 @@
 	<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
 	<script src="js/slick.min.js"></script>
 	<script src="js/main.js"></script>
+	<script src="js/chart.min.js"></script>
 	<script>
 		$(document).ready(function () {
 			$('.js-example-basic-single').select2({
@@ -937,6 +943,49 @@
 			});
 		});
 	</script>
+
+
+	<script>
+		var ctx = $('.m-chart');
+		var charts = [];
+		ctx.each(function(i,el){
+			var chartData = $('.m-chart').eq(i).attr('data-chart').split(' ');
+			var chartColor = $('.m-chart').eq(i).css('color');
+			var labels = [];
+			var len = 0;
+			while (len < chartData.length) {
+				labels.push('');
+				len++;
+			}
+			charts.push(new Chart(el, {
+				type: 'line',
+				data: {
+					labels: labels,
+					datasets: [{
+							data: chartData,
+						borderColor: chartColor,
+						backgroundColor: 'rgba(255, 255, 255, 0)',
+							borderWidth: 1
+						}]
+				},
+				options: {
+					legend: { display: false },
+					title: { display: false },
+					tooltips: { enabled : false },
+					elements: {
+						point: { radius: 0 },
+						line: { tension: 0.2 }
+					},
+					scales: {
+							yAxes: [{ display: false }],
+							xAxes: [{ display: false }]
+					},
+					responsive: true
+				}
+			}));
+		});
+	</script>
+
 </body>
 
 </html>
