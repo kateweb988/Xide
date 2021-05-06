@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>XEM</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<!-- Favicon -->
+	<link rel="icon" href="img/shortcut.png" type="image/x-icon">
+	<link rel="shortcut icon" href="img/shortcut.png" type="image/x-icon">
+	<!-- OG -->
+	<meta property="og:title" content="XEM">
+	<meta property="og:description" content="XEM">
+	<meta property="og:type" content="website">
+	<meta property="og:image" content="img/shortcut.png">
+	<meta property="og:site_name" content="XEM">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="css/jquery.arcticmodal-0.3.css">
+	<link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+	<link rel="stylesheet" type="text/css" href="css/slick.css">
+	<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+	<div class="body-wrap">
+		<section class="top" id="top">
+			<div class="container">
+				<div class="top__box d-flex">
+					<div class="top__left d-flex">
+						<a href="index.html" class="top__logo">
+							<img src="img/logo.svg" alt="">
+						</a>
+						<ul class="d-flex menu__list">
+							<li class="active">
+								<a href="#">
+									Home
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Simulation
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Real Time
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Market Insight
+								</a>
+							</li>
+							<li class="nav__link">
+								<a href="#" class="sub-menu__link">
+									About
+								</a>
+								<ul class="sub-menu__list">
+									<li>
+										<a href="" class="sub-menu__link">About</a>
+									</li>
+									<li>
+										<a href="" class="sub-menu__link">About</a>
+									</li>
+									<li>
+										<a href="" class="sub-menu__link">About</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">
+									Contact
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="top__right d-flex">
+						<div class="top__info">
+							<!-- <select class="vodiapicker">
+								<option value="en" class="test">
+									US & Canada Markets</option>
+								<option value="ru">
+									Russia</option>
+							</select>
+							<div class="lang-select">
+								<button class="btn-select" value=""></button>
+								<div class="b">
+									<ul id="a"></ul>
+								</div>
+							</div> -->
+							<select class="js-example-basic-single news-select" id="sum1" name="period">
+								<option value="first">US & Canada Markets</option>
+								<option value="second" class="fr">Russia Markets</option>
+							</select>
+							<p>
+								est 05:09 am
+							</p>
+						</div>
+						<div class="top__wrap d-flex">
+							<select class="js-example-basic-single news-select" id="sum2" name="period">
+								<option value="first">Eng</option>
+								<option value="second" class="fr">Ru</option>
+							</select>
+							<a href="#" class="top__btn bttn">
+								LOG IN
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="menuu">
+			<a href="#" class="button "><span></span></a>
+		</div>
+		<div class="burgerr">
+			<div class="top__info d-flex">
+				<div>
+					<select class="js-example-basic-single news-select" id="sum11" name="period">
+						<option value="first">US & Canada Markets</option>
+						<option value="second" class="fr">Russia Markets</option>
+					</select>
+					<p>
+						est 05:09 am
+					</p>
+				</div>
+				<a href="#" class="top__btn bttn">
+					LOG IN
+				</a>
+			</div>
+			<ul>
+				<li class="active">
+					<a href="#">
+						Home
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						Simulation
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						Real Time
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						Market Insight
+					</a>
+				</li>
+				<li">
+					<div class="accordion-container">
+						<div class="set">
+							<a href="#">
+								About
+							</a>
+							<div class="content">
+								<ul>
+									<li>
+										<a href="">About</a>
+									</li>
+									<li>
+										<a href="">About</a>
+									</li>
+									<li>
+										<a href="">About</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					</li>
+					<li>
+						<a href="#">
+							Contact
+						</a>
+					</li>
+			</ul>
+		</div>
+		<header class="header header-mod" id="header">
+			<div class="container">
+				<div class="header__box d-flex">
+					<div class="header__content">
+						<h1>
+							XIDE Empirical Model ("XEM") <span class="green"> for Your Succes</span>
+						</h1>
+						<p class="header__text">
+							We are pleased to present XEM, a proven successful model and excellent tool, for tactical trading
+							in stocks for stock market investors, traders, researchers, analysts, or anyone who is interested
+							in stock markets like you.
+						</p>
+						<p class="header__info">
+							Sing-up a FREE account now, and you can upgrade to a <span> premium account FREE for 1st three
+								months</span>
+						</p>
+						<a href="#" class="header__btn bttn">
+							SIGN UP FREE
+						</a>
+					</div>
+					<img src="img/header3.svg" alt="" class="header__pic">
+				</div>
+			</div>
+		</header>
+		<section class="mod" id="mod">
+			<div class="container">
+				<div class="mod__wrap">
+					<div class="we__box d-flex">
+						<div class="we__content">
+							<h2>
+								About XEM Modeling
+							</h2>
+							<p>
+								Invented by our start-up team consisting of an experienced financial engineer from NYU (New York
+								University) & certified financial risk manager (FRM), experience stock traders, software & big
+								data
+								engineer, Xide Empirical Model (“XEM”) is an empirical modeling based on extensive experiments &
+								observations, and model performance measures & verifications. It is primarily designed to
+								provide
+								buy/sell advices at real-time setting during trading sessions (updated per minute), for tactical
+								trading, instead of strategic investments.
+							</p>
+						</div>
+						<img src="img/mod.svg" alt="" class="we__img">
+					</div>
+					<p class="mod__info">
+						Technically, XEM is built on our observations with the main two findings
+					</p>
+					<div class="mod__flex d-flex">
+						<div class="mod__item">
+							<div class="mod__block">
+								<img src="img/mod1.svg" alt="">
+							</div>
+							<p>
+								A stock price is not a real random variable, as it is typically considered as a random variable
+								in the financial world. A stock price is a set of discrete numbers, but with a nature of
+								continuity in price movements in a given time period
+							</p>
+						</div>
+						<div class="mod__item">
+							<div class="mod__block">
+								<img src="img/mod2.svg" alt="">
+							</div>
+							<p>
+								A stock price has a certain memory in term of time period. Surprisingly, a stock price has quite
+								short memory in matters of days, instead of months or year. A stock with higher price volatility
+								has a shorter memory period, while a stock with lower volatility has a relatively longer memory
+								period. XEM model is dynamically analyzing an individual stock price volatility to determine its
+								memory time period, based on which the model further applies data analysis tool to determine its
+								buy or sell points.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="model model2" id="model2">
+			<img src="img/a23.svg" alt="" class="model__fig">
+			<div class="container">
+				<div class="title">
+					<h2>
+						Overall Model Performance
+					</h2>
+					<p>
+						It has been proven that the model is very successful with its success rates at about 95% for all
+						sectors, and the success rates will be continually monitored and updated daily here.
+					</p>
+				</div>
+				<div class="model__box">
+					<div class="model__block d-flex">
+						<select class="js-example-basic-single news-select" id="sum5" name="period">
+							<option value="first">All Sectors</option>
+							<option value="second" class="fr">one</option>
+							<option value="third" class="fr">two</option>
+						</select>
+						<div class="model__info d-flex">
+							<p>
+								Success Rate:
+							</p>
+							<span>
+								95.56%
+							</span>
+						</div>
+					</div>
+					<div class="model__graph">
+						<img src="img/gr1.svg" alt="" class="model__pic">
+						<div class="model__wrap">
+							<div class="model__pad">
+								<div class="model__row d-flex">
+									<p>
+										Success:
+									</p>
+									<div class="model__load">
+										<div class="modal__color modal__color_1"></div>
+									</div>
+									<span>
+										95.56%
+									</span>
+								</div>
+								<div class="model__row d-flex">
+									<p>
+										Aver. Gain:
+									</p>
+									<div class="model__load">
+										<div class="modal__color modal__color_2"></div>
+									</div>
+									<span>
+										3.45%
+									</span>
+								</div>
+								<div class="model__row d-flex">
+									<p>
+										Aver. Hold:
+									</p>
+									<div class="model__grey">
+										5.5 days
+									</div>
+								</div>
+								<div class="model__row d-flex">
+									<p>
+										Total # of stocks:
+									</p>
+									<div class="model__grey">
+										5051
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="model__flex d-flex">
+						<div class="d-flex z1 z">
+							<input type="checkbox" id="agree1" name="check" value="agree1" required="">
+							<label for="agree1">
+								<img src="img/green-line.svg" alt="">
+								<p>Model Success Rate (%) - 1 month;</p>
+							</label>
+						</div>
+						<div class="d-flex z2 z">
+							<input type="checkbox" id="agree2" name="check" value="agree2" required="">
+							<label for="agree2">
+								<img src="img/yellow-line.svg" alt="">
+								<p>Model Success Rate (%) - 2 months;</p>
+							</label>
+						</div>
+						<div class="d-flex z3 z">
+							<input type="checkbox" id="agree3" name="check" value="agree3" required="">
+							<label for="agree3">
+								<img src="img/blue-line.svg" alt="">
+								<p>Model Success Rate (%) - 3 months;</p>
+							</label>
+						</div>
+						<div class="d-flex z4 z">
+							<input type="checkbox" id="agree4" name="check" value="agree4" checked="" required="">
+							<label for="agree4">
+								<p>All of them</p>
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="model__line d-flex">
+					<div class="model__content">
+						<h2>
+							Verify Model Performance for individual stock
+						</h2>
+						<p>
+							You can run a simulation for an individual stock at your account under my stock list. <a href="#">
+								Sign-in</a> now
+							to perform a real-data simulation to verify XEM model’s performance with detailed information. This
+							detailed information consists of buy/sell time stamps, buy/sell price, performance report summary
+							(including average gain, average hold days, success rates, etc.).
+						</p>
+						<p>
+							Short-term return & short-term risk assessments, 1-month target price, and detailed records (with
+							real 1-minute intraday data).
+						</p>
+					</div>
+					<img src="img/mod3.svg" alt="" class="model__img">
+				</div>
+			</div>
+		</section>
+		<section class="our" id="our">
+			<div class="container">
+				<div class="title">
+					<h2>
+						Our Services
+					</h2>
+					<p>
+						A user can sign-up an account to enjoy our services including the following (but not limited to)
+					</p>
+				</div>
+				<div class="our__box d-flex">
+					<div class="our__item d-flex">
+						<div class="our__block">
+							<img src="img/o1.svg" alt="">
+						</div>
+						<p>
+							Add a stock you prefer to your account under my stock list for real-time monitoring buy/sell points
+							generated by XEM model (updated per minute during trading sessions). You can receive
+							auto-notifications for buy/sell status changes for all your stocks if you use our mobile app.
+						</p>
+					</div>
+					<div class="our__item">
+						<div class="our__block">
+							<img src="img/o2.svg" alt="">
+						</div>
+						<p>
+							Run a simulation for any stock in your account to see how well XEM model have performed for past 2
+							weeks, 1 month, 2 months and 3 months;
+						</p>
+					</div>
+					<div class="our__item">
+						<div class="our__block">
+							<img src="img/o3.svg" alt="">
+						</div>
+						<p>
+							View detailed model performance report for any stock at your account
+						</p>
+					</div>
+					<div class="our__item">
+						<div class="our__block">
+							<img src="img/o4.svg" alt="">
+						</div>
+						<p>
+							More service(s) may be added in the future.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="screen screen2" id="screen2">
+			<img src="img/blue3.png" alt="" class="screen__fig2 screen__fig">
+			<img src="img/blue2.png" alt="" class="screen__fig1 screen__fig">
+			<div class="container">
+				<div class="screen__box d-flex">
+					<div class="screen__content">
+						<div class="screen__text">
+							You can sign-up a free-use account <br>
+							to enjoy above services, <span> with only limitation</span> that you can add
+							<div class="gr"> up to 10 stocks</div> <br>
+							at your account under my stock list.
+						</div>
+						<a href="#" class="screen__btn bttn">
+							SIGN UP
+						</a>
+						<p class="screen__terms">
+							To sign-up an account, you must agree our <a href="#"> user term & condition</a>
+						</p>
+					</div>
+					<div class="screen__wrap">
+						<p class="screen__up">
+							Premium upgrade
+						</p>
+						<ul>
+							<li class="d-flex">
+								<img src="img/oval.svg" alt="">
+								<p>
+									Up to 50 stocks at your account under my stock list
+								</p>
+							</li>
+							<li class="d-flex">
+								<img src="img/oval.svg" alt="">
+								<p>
+									Monthly subscription fee
+								</p>
+								<div class="screen__block">
+									30$
+								</div>
+							</li>
+							<li class="d-flex">
+								<img src="img/oval.svg" alt="">
+								<p>
+									Yearly subscription fee
+								</p>
+								<div class="screen__block">
+									300$
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="ser" id="ser">
+			<div class="container">
+				<h2>
+					About services
+				</h2>
+				<ul class="ser__tab nav-tabs d-flex">
+					<li class="active"><a data-toggle="tab" href="#first-tab">Real-time Watch</a></li>
+					<li><a data-toggle="tab" href="#second-tab">Simulation</a></li>
+					<li><a data-toggle="tab" href="#third-tab">Market Insight</a></li>
+					<li><a data-toggle="tab" href="#fourth-tab">Analytics</a></li>
+					<li><a data-toggle="tab" href="#fivth-tab">Portfolio</a></li>
+				</ul>
+				<div class="tab-content">
+					<div id="first-tab" class="tab-pane active">
+						<p>
+							In this section, we provide a number of stocks (daily updated) as candidates for demonstrating
+							XEM's model in a real-time scenario setting. When an individual stock meets its criteria for
+							timing, as the model recognizes if it is a good time to take a position either "IN" or "Buy" or
+							"Out" or "Sell", XEM's model will record this time with its target price (normally 1 month target).
+							XEM's model uses these time stamps as inputs for its modeling demonstration. This indication either
+							"IN" or "OUT" shall not constitute a recommendation for a visitor or user to buy or sell the
+							equity. If you make a decision to buy or sell coincidentally within this timing, or you make a
+							decision for whatsoever reason, it is your sole responsibility at your sole risk. We disclaim any
+							responsibility for your decision-making or potential investment gain or loss. Please visit our
+							real-time watch section for more information.
+						</p>
+					</div>
+					<div id="second-tab" class="tab-pane">
+						<p>
+							In this section, we provide a number of stocks (daily updated) as candidates for demonstrating
+							XEM's model in a real-time scenario setting. When an individual stock meets its criteria for
+							timing, as the model recognizes if it is a good time to take a position either "IN" or "Buy" or
+						</p>
+					</div>
+					<div id="third-tab" class="tab-pane">
+						<p>
+							In this section, we provide a number of stocks (daily updated) as candidates for demonstrating
+						</p>
+					</div>
+					<div id="fourth-tab" class="tab-pane">
+						<p>
+							In this section, we provide a number of stocks (daily updated) as candidates for demonstrating
+							XEM's model in a real-time scenario setting. When an individual stock meets its criteria for
+							timing, as the model recognizes if it is a good time to take a position either "IN" or "Buy" or
+							"Out" or "Sell", XEM's model will record this time with its target price (normally 1 month target).
+							XEM's model uses these time stamps as inputs for its modeling demonstration. This indication either
+							"IN" or "OUT" shall not constitute a recommendation for a visitor or user to buy or sell the
+							equity. If you make a decision to buy or sell coincidentally within this timing, or you make a
+							decision for whatsoever reason, it is your sole responsibility at your sole risk. We disclaim any
+							responsibility for your decision-making or potential investment gain or loss. Please visit our
+							real-time watch section for more information.
+						</p>
+					</div>
+					<div id="fivth-tab" class="tab-pane">
+						<p>
+							In this section, we provide a number of stocks (daily updated) as candidates for demonstrating
+							XEM's model in a real-time scenario setting. When an individual stock meets its criteria for
+							timing, as the model recognizes if it is a good time to take a position either "IN" or "Buy" or
+							"Out" or "Sell", XEM's model will record this time with its target price (normally 1 month target).
+							XEM's model uses these time stamps as inputs for its modeling demonstration. This indication either
+							"IN" or "OUT" shall not constitute a recommendation for a visitor or user to buy or sell the
+							equity. If you make a decision to buy or sell coincidentally within this timing, or you make a
+							decision for whatsoever reason, it is your sole responsibility at your sole risk. We disclaim any
+							responsibility for your decision-making or potential investment gain or loss. Please visit our
+							real-time watch section for more information.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="screen screen3" id="screen3">
+			<div class="container">
+				<div class="screen__box d-flex">
+					<div class="screen__content">
+						<h2>
+							Screencast
+						</h2>
+						<p>
+							Working on our model is simple. We have recorded several videos on how to work in the personal
+							account of the investor site. Watch it and get started
+						</p>
+						<a href="#" class="screen__btn bttn">
+							WATCH <img src="img/play.svg" alt="" class="svg">
+						</a>
+					</div>
+					<img src="img/b.png" alt="" class="screen__pic">
+				</div>
+			</div>
+		</section>
+		<section class="ask ask2" id="ask2">
+			<div class="container">
+				<div class="title">
+					<h2>
+						Frequently Asked Questions
+					</h2>
+					<p>
+						Fusce at dolor est non. Potenti tortor, turpis parturient cras congue. Eu, gravida enim semper augue
+						amet, sit pellentesque dictum. Et malesuada fermentum, fames id eu.
+					</p>
+				</div>
+				<div class="accordion-container">
+					<div class="set">
+						<a href="#">
+							What is the principle of your model?
+						</a>
+						<div class="content">
+							<p>
+								We are very thrilled that our XEM modeling is proven so successful, accurate and satisfactory as
+								demonstrated in historical real data simulations, real-time data demonstrations, return & risk
+								assessments, market momentum calibrations, and stock price forecasts including T+1 day and + 1
+								month. Particularly for T+1 day forecasts, Xide adopts an algorithm developed by a financial
+								engineer who holds a master's degree in financial engineering from New York University (NY,
+								USA), and is also a certified Financial Risk Manager ("FRM") by Global Association of Risk
+								Professionals ("GARP") in the USA. This financial engineer has also provided much valuable
+								research for the successful modelling of XEM.
+							</p>
+						</div>
+					</div>
+					<div class="set">
+						<a href="#">
+							How do I create an account?
+						</a>
+						<div class="content">
+							<p>
+								We are very thrilled that our XEM modeling is proven so successful, accurate and satisfactory as
+								demonstrated in historical real data simulations, real-time data demonstrations, return & risk
+								assessments, market momentum calibrations, and stock price forecasts including T+1 day and + 1
+								month. Particularly for T+1 day forecasts, Xide adopts an algorithm developed by a financial
+								engineer who holds a master's degree in financial engineering from New York University (NY,
+								USA), and is also a certified Financial Risk Manager ("FRM") by Global Association of Risk
+								Professionals ("GARP") in the USA. This financial engineer has also provided much valuable
+								research for the successful modelling of XEM.
+							</p>
+						</div>
+					</div>
+					<div class="set">
+						<a href="#">
+							What is the principle of your model?
+						</a>
+						<div class="content">
+							<p>
+								We are very thrilled that our XEM modeling is proven so successful, accurate and satisfactory as
+								demonstrated in historical real data simulations, real-time data demonstrations, return & risk
+								assessments, market momentum calibrations, and stock price forecasts including T+1 day and + 1
+								month. Particularly for T+1 day forecasts, Xide adopts an algorithm developed by a financial
+								engineer who holds a master's degree in financial engineering from New York University (NY,
+								USA), and is also a certified Financial Risk Manager ("FRM") by Global Association of Risk
+								Professionals ("GARP") in the USA. This financial engineer has also provided much valuable
+								research for the successful modelling of XEM.
+							</p>
+						</div>
+					</div>
+					<div class="set">
+						<a href="#">
+							How do I create an account?
+						</a>
+						<div class="content">
+							<p>
+								We are very thrilled that our XEM modeling is proven so successful, accurate and satisfactory as
+								demonstrated in historical real data simulations, real-time data demonstrations, return & risk
+								assessments, market momentum calibrations, and stock price forecasts including T+1 day and + 1
+								month. Particularly for T+1 day forecasts, Xide adopts an algorithm developed by a financial
+								engineer who holds a master's degree in financial engineering from New York University (NY,
+								USA), and is also a certified Financial Risk Manager ("FRM") by Global Association of Risk
+								Professionals ("GARP") in the USA. This financial engineer has also provided much valuable
+								research for the successful modelling of XEM.
+							</p>
+						</div>
+					</div>
+					<div class="set">
+						<a href="#">
+							What is the principle of your model?
+						</a>
+						<div class="content">
+							<p>
+								We are very thrilled that our XEM modeling is proven so successful, accurate and satisfactory as
+								demonstrated in historical real data simulations, real-time data demonstrations, return & risk
+								assessments, market momentum calibrations, and stock price forecasts including T+1 day and + 1
+								month. Particularly for T+1 day forecasts, Xide adopts an algorithm developed by a financial
+								engineer who holds a master's degree in financial engineering from New York University (NY,
+								USA), and is also a certified Financial Risk Manager ("FRM") by Global Association of Risk
+								Professionals ("GARP") in the USA. This financial engineer has also provided much valuable
+								research for the successful modelling of XEM.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer class="footer footer2" id="footer">
+			<div class="container">
+				<div class="footer__box d-flex">
+					<a href="index.html" class="footer__logo">
+						<img src="img/footer-logo.svg" alt="">
+					</a>
+					<div class="footer__lists d-flex">
+						<ul>
+							<li>
+								<a href="#">
+									Home
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Simulation
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Real Time
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Market Insight
+								</a>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<a href="#">
+									About company
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									About modeling
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Contact us
+								</a>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<a href="#">
+									Stock info
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									My portfolio
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Legal documents
+								</a>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<a href="#">
+									Sign up
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Sign in
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Profile
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer__info d-flex">
+						<a href="mailto:hello@xide.ca" class="footer__site">
+							Contact us hello@xide.ca
+						</a>
+						<a href="#" class="footer__tele">
+							<img src="img/f1.svg" alt="" class="svg">
+						</a>
+					</div>
+				</div>
+				<div class="footer__flex d-flex">
+					<p>
+						Xide &copy; 2020
+					</p>
+					<div class="footer__links d-flex">
+						<a href="#">
+							Terms of Services
+						</a>
+						<a href="#">
+							Privacy Policy
+						</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js?ver=5.1"></script>
+	<!-- Подключен файл-валидатор, для проверки формы на заполненность  -->
+	<!-- <script type="text/javascript"
+		src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.js"></script> -->
+	<!-- <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=7d8fc9fb-8540-4124-aaf0-efcfe8ad368e"
+		type="text/javascript"></script> -->
+	<script src="js/jquery.arcticmodal-0.3.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+		integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/main.js"></script>
+	<script>
+		$(document).ready(function () {
+			$('.js-example-basic-single').select2({
+				minimumResultsForSearch: -1
+			});
+		});
+	</script>
+</body>
+
+</html>

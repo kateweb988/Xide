@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>XEM</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<!-- Favicon -->
+	<link rel="icon" href="img/shortcut.png" type="image/x-icon">
+	<link rel="shortcut icon" href="img/shortcut.png" type="image/x-icon">
+	<!-- OG -->
+	<meta property="og:title" content="XEM">
+	<meta property="og:description" content="XEM">
+	<meta property="og:type" content="website">
+	<meta property="og:image" content="img/shortcut.png">
+	<meta property="og:site_name" content="XEM">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="css/jquery.arcticmodal-0.3.css">
+	<link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+	<link rel="stylesheet" type="text/css" href="css/slick.css">
+	<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+	<div class="body-wrap">
+		<section class="top" id="top">
+			<div class="container">
+				<div class="top__box d-flex">
+					<div class="top__left d-flex">
+						<a href="index.html" class="top__logo">
+							<img src="img/logo.svg" alt="">
+						</a>
+						<ul class="d-flex menu__list">
+							<li class="active">
+								<a href="#">
+									Home
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Simulation
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Real Time
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Market Insight
+								</a>
+							</li>
+							<li class="nav__link">
+								<a href="#" class="sub-menu__link">
+									About
+								</a>
+								<ul class="sub-menu__list">
+									<li>
+										<a href="" class="sub-menu__link">About</a>
+									</li>
+									<li>
+										<a href="" class="sub-menu__link">About</a>
+									</li>
+									<li>
+										<a href="" class="sub-menu__link">About</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">
+									Contact
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="top__right d-flex">
+						<div class="top__info">
+							<!-- <select class="vodiapicker">
+								<option value="en" class="test">
+									US & Canada Markets</option>
+								<option value="ru">
+									Russia</option>
+							</select>
+							<div class="lang-select">
+								<button class="btn-select" value=""></button>
+								<div class="b">
+									<ul id="a"></ul>
+								</div>
+							</div> -->
+							<select class="js-example-basic-single news-select" id="sum1" name="period">
+								<option value="first">US & Canada Markets</option>
+								<option value="second" class="fr">Russia Markets</option>
+							</select>
+							<p>
+								est 05:09 am
+							</p>
+						</div>
+						<div class="top__wrap d-flex">
+							<select class="js-example-basic-single news-select" id="sum2" name="period">
+								<option value="first">Eng</option>
+								<option value="second" class="fr">Ru</option>
+							</select>
+							<a href="#" class="top__btn bttn">
+								LOG IN
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="menuu">
+			<a href="#" class="button "><span></span></a>
+		</div>
+		<div class="burgerr">
+			<div class="top__info d-flex">
+				<div>
+					<select class="js-example-basic-single news-select" id="sum11" name="period">
+						<option value="first">US & Canada Markets</option>
+						<option value="second" class="fr">Russia Markets</option>
+					</select>
+					<p>
+						est 05:09 am
+					</p>
+				</div>
+				<a href="#" class="top__btn bttn">
+					LOG IN
+				</a>
+			</div>
+			<ul>
+				<li class="active">
+					<a href="#">
+						Home
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						Simulation
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						Real Time
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						Market Insight
+					</a>
+				</li>
+				<li">
+					<div class="accordion-container">
+						<div class="set">
+							<a href="#">
+								About
+							</a>
+							<div class="content">
+								<ul>
+									<li>
+										<a href="">About</a>
+									</li>
+									<li>
+										<a href="">About</a>
+									</li>
+									<li>
+										<a href="">About</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					</li>
+					<li>
+						<a href="#">
+							Contact
+						</a>
+					</li>
+			</ul>
+		</div>
+		<header class="header header-legal" id="header">
+			<div class="container">
+				<div class="header__box d-flex">
+					<div class="header__content">
+						<h1 class="main">
+							Account settings
+						</h1>
+					</div>
+				</div>
+			</div>
+		</header>
+		<section class="profile" id="profile">
+			<div class="container">
+				<ul class="ser__tab nav-tabs d-flex">
+					<li class="active"><a data-toggle="tab" href="#first-tab">Profile</a></li>
+					<li><a data-toggle="tab" href="#second-tab">Change password
+						</a></li>
+					<li class="profile__third"><a data-toggle="tab" href="#third-tab">Upgrade account
+						</a></li>
+					<li><a data-toggle="tab" href="#fourth-tab">Notifications
+						</a></li>
+					<li><a data-toggle="tab" href="#fivth-tab">Personal Survey
+						</a></li>
+				</ul>
+				<div class="tab-content">
+					<div id="first-tab" class="tab-pane active">
+						<div class="profile__content d-flex">
+							<div class="profile__edit">
+								<img src="img/avatar.png" alt="" class="profile__ava">
+								<a href="#">
+									<img src="img/edit.svg" alt="">
+								</a>
+							</div>
+							<div class="profile__right">
+								<p class="profile__name">
+									Change personal data
+								</p>
+								<form action="" class="js-form profile__form" id="popupResult" method="post">
+									<div class="profile__flex d-flex">
+										<div class="profile__block">
+											<label>Name</label> <br>
+											<input type="text" name="name" required="" placeholder="John" class="form__field">
+										</div>
+										<div class="profile__block">
+											<label>Last name
+											</label> <br>
+											<input type="text" name="surname" required="" placeholder="Doe" class="form__field">
+										</div>
+									</div>
+									<div class="profile__block">
+										<label>E-mail
+										</label> <br>
+										<input type="text" name="email" required="" placeholder="johndoe@gmail.com"
+											class="form__field">
+									</div>
+									<button class="profile__btn bttn" data-submit>SAVE</button>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div id="second-tab" class="tab-pane">
+						<div class="profile__content">
+							<form action="" class="js-form profile__form" id="" method="post">
+								<div class="profile__block">
+									<label>Change Password
+									</label> <br>
+									<input type="password" name="change" required="" placeholder="***********"
+										class="form__field">
+								</div>
+								<div class="profile__flex d-flex">
+									<div class="profile__block">
+										<label>New password (min. 6 chars)
+										</label> <br>
+										<input type="password" name="change2" required="" placeholder="***********"
+											class="form__field">
+									</div>
+									<div class="profile__block">
+										<label>Retype new password
+										</label> <br>
+										<input type="password" name="change2" required="" placeholder="***********"
+											class="form__field">
+									</div>
+								</div>
+								<button class="profile__btn bttn" data-submit>CONFIRM</button>
+							</form>
+						</div>
+					</div>
+					<div id="third-tab" class="tab-pane">
+						<div class="profile__content">
+							<div class="profile__upgrade d-flex">
+								<div class="profile__blue">
+									<p class="profile__now">
+										Upgrade now
+									</p>
+									<p class="profile__text">
+										It is a flat fee for a premium user at $1.00 per day (CAD $1.00 for Canadian users and USD
+										$1.00 for US users) on monthly basis, and at $300 annually. A premium user can add up to
+										50 stocks in my stock list and access more information we could offer.
+									</p>
+									<p class="profile__text">
+										All major credit cards or e-transfers are acceptable by proceeding 'Proceed to Pay" for
+										payment processing. Thank you!
+									</p>
+									<a href="#" class="profile__confirm bttn">
+										CONFIRM
+									</a>
+								</div>
+								<div class="profile__table">
+									<div class="profile__row d-flex">
+										<p>
+											#
+										</p>
+										<p>
+											Date
+										</p>
+										<p>
+											Description
+										</p>
+										<p>
+											Amount
+										</p>
+									</div>
+									<div class="profile__row d-flex">
+										<p>
+											1
+										</p>
+										<p>
+											10-12-20
+										</p>
+										<p>
+											Refill with VISA
+										</p>
+										<p>
+											$10
+										</p>
+									</div>
+									<div class="profile__row d-flex">
+										<p>
+											2
+										</p>
+										<p>
+											23-08-20
+										</p>
+										<p>
+											Paypal
+										</p>
+										<p>
+											$10
+										</p>
+									</div>
+									<div class="profile__row d-flex">
+										<p>
+											3
+										</p>
+										<p>
+											08-07-20
+										</p>
+										<p>
+											Paypal
+										</p>
+										<p>
+											$10
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="fourth-tab" class="tab-pane">
+						<div class="profile__content">
+							<div class="profile__ser d-flex">
+								<div class="profile__sum">
+									<p class="profile__name">
+										Service notifications
+									</p>
+									<div class="checkboxes-and-radios">
+										<input type="checkbox" name="checkbox-c" id="checkbox-1" value="1">
+										<label for="checkbox-1">Profitable deals</label>
+										<input type="checkbox" name="checkbox-c" id="checkbox-2" value="2">
+										<label for="checkbox-2">Undermining unemployment rate</label>
+										<input type="checkbox" name="checkbox-c" id="checkbox-3" value="3">
+										<label for="checkbox-3">Undermining unemployment rate</label>
+									</div>
+								</div>
+								<div class="profile__sum">
+									<p class="profile__name">
+										Other notifications
+									</p>
+									<div class="checkboxes-and-radios">
+										<input type="checkbox" name="checkbox-c2" id="checkbox-4" value="4">
+										<label for="checkbox-4">Message notification</label>
+										<input type="checkbox" name="checkbox-c2" id="checkbox-5" value="5">
+										<label for="checkbox-5">News notification</label>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="fivth-tab" class="tab-pane">
+						<div class="profile__content">
+							<p class="profile__name">
+								Update personal questions
+							</p>
+							<div class="checkboxes-and-radios">
+								<div class="profile__item">
+									<p class="profile__ask">
+										1. How do you consider yourself in stock markets?
+									</p>
+									<div class="profile__one d-flex">
+										<input type="radio" name="radio-c" id="radio-1" value="1">
+										<label for="radio-1">No experience or very little experience (0-0.5 year)</label>
+										<input type="radio" name="radio-c" id="radio-2" value="2">
+										<label for="radio-2">Considerable experience (1-2 years)
+										</label>
+										<input type="radio" name="radio-c" id="radio-3" value="3" checked>
+										<label for="radio-3">Some experience (0.5-1 year)
+										</label>
+										<input type="radio" name="radio-c" id="radio-4" value="4">
+										<label for="radio-4">Experienced trader (2-5 years)
+										</label>
+										<input type="radio" name="radio-c" id="radio-5" value="5">
+										<label for="radio-5">Professional trader (over 5 years)
+										</label>
+									</div>
+								</div>
+								<div class="profile__item">
+									<p class="profile__ask">
+										2. Which one can best describe you in term of risk tolerance?
+									</p>
+									<div class="profile__one d-flex">
+										<input type="radio" name="radio-d" id="radio-6" value="6">
+										<label for="radio-6">Very low degree of risk-taking
+										</label>
+										<input type="radio" name="radio-d" id="radio-7" value="7">
+										<label for="radio-7">Moderate risk tolerate
+										</label>
+										<input type="radio" name="radio-d" id="radio-8" value="8" checked>
+										<label for="radio-8">Low risk tolerance
+										</label>
+										<input type="radio" name="radio-d" id="radio-9" value="9">
+										<label for="radio-9">High risk-traking
+										</label>
+										<input type="radio" name="radio-d" id="radio-10" value="10">
+										<label for="radio-10">Very high risk-traking
+										</label>
+									</div>
+								</div>
+								<div class="profile__item">
+									<p class="profile__ask">
+										3. How much fund do you plan to invest in the stock market?
+									</p>
+									<div class="profile__one d-flex">
+										<input type="radio" name="radio-e" id="radio-11" value="11">
+										<label for="radio-11">Less than $50k
+										</label>
+										<input type="radio" name="radio-e" id="radio-12" value="12">
+										<label for="radio-12">$200k-$500k
+										</label>
+										<input type="radio" name="radio-e" id="radio-13" value="13" checked>
+										<label for="radio-13">$50k-$200k
+										</label>
+										<input type="radio" name="radio-e" id="radio-14" value="14">
+										<label for="radio-14">$500k-$1 million
+										</label>
+										<input type="radio" name="radio-e" id="radio-15" value="15">
+										<label for="radio-15">Over $1 million
+										</label>
+									</div>
+								</div>
+								<div class="profile__item">
+									<p class="profile__ask">
+										4. When do you plan to start to invest in stock markets?
+									</p>
+									<div class="profile__one d-flex">
+										<input type="radio" name="radio-p" id="radio-16" value="16">
+										<label for="radio-16">Immediately or already
+										</label>
+										<input type="radio" name="radio-p" id="radio-17" value="17">
+										<label for="radio-17">Within 3 months
+										</label>
+										<input type="radio" name="radio-p" id="radio-18" value="18" checked>
+										<label for="radio-18">Within 1 month
+										</label>
+										<input type="radio" name="radio-p" id="radio-19" value="19">
+										<label for="radio-19">Within 6 months
+										</label>
+										<input type="radio" name="radio-p" id="radio-20" value="20">
+										<label for="radio-20">After 6 months
+										</label>
+									</div>
+								</div>
+								<div class="profile__item">
+									<p class="profile__ask">
+										5. How much do you require a minimum gain per transaction?
+									</p>
+									<div class="profile__one d-flex">
+										<input type="radio" name="radio-z" id="radio-21" value="21">
+										<label for="radio-21">$300
+										</label>
+										<input type="radio" name="radio-z" id="radio-22" value="22">
+										<label for="radio-22">$400
+										</label>
+										<input type="radio" name="radio-z" id="radio-23" value="23" checked>
+										<label for="radio-23">$500
+										</label>
+										<input type="radio" name="radio-z" id="radio-24" value="24">
+										<label for="radio-24">$600
+										</label>
+										<input type="radio" name="radio-z" id="radio-25" value="25">
+										<label for="radio-25" class="far">Other amount
+											<input type="text" placeholder="1000$">
+										</label>
+									</div>
+								</div>
+								<div class="profile__item">
+									<p class="profile__ask">
+										Do a quick math: what is the answer of three quarters in percentage?
+									</p>
+									<div class="profile__one d-flex">
+										<input type="radio" name="radio-w" id="radio-26" value="26">
+										<label for="radio-26">25%
+										</label>
+										<input type="radio" name="radio-w" id="radio-27" value="27">
+										<label for="radio-27">50%
+										</label>
+										<input type="radio" name="radio-w" id="radio-28" value="28" checked>
+										<label for="radio-28">30%
+										</label>
+										<input type="radio" name="radio-w" id="radio-29" value="29">
+										<label for="radio-29">75%
+										</label>
+										<input type="radio" name="radio-w" id="radio-30" value="30">
+										<label for="radio-30" class="far">Don`t know
+										</label>
+									</div>
+								</div>
+								<a href="#" class="profile__save bttn">
+									SAVE
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer class="footer footer2" id="footer">
+			<div class="container">
+				<div class="footer__box d-flex">
+					<a href="index.html" class="footer__logo">
+						<img src="img/footer-logo.svg" alt="">
+					</a>
+					<div class="footer__lists d-flex">
+						<ul>
+							<li>
+								<a href="#">
+									Home
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Simulation
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Real Time
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Market Insight
+								</a>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<a href="#">
+									About company
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									About modeling
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Contact us
+								</a>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<a href="#">
+									Stock info
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									My portfolio
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Legal documents
+								</a>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<a href="#">
+									Sign up
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Sign in
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Profile
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer__info d-flex">
+						<a href="mailto:hello@xide.ca" class="footer__site">
+							Contact us hello@xide.ca
+						</a>
+						<a href="#" class="footer__tele">
+							<img src="img/f1.svg" alt="" class="svg">
+						</a>
+					</div>
+				</div>
+				<div class="footer__flex d-flex">
+					<p>
+						Xide &copy; 2020
+					</p>
+					<div class="footer__links d-flex">
+						<a href="#">
+							Terms of Services
+						</a>
+						<a href="#">
+							Privacy Policy
+						</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js?ver=5.1"></script>
+	<!-- Подключен файл-валидатор, для проверки формы на заполненность  -->
+	<!-- <script type="text/javascript"
+		src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.js"></script> -->
+	<!-- <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=7d8fc9fb-8540-4124-aaf0-efcfe8ad368e"
+		type="text/javascript"></script> -->
+	<script src="js/jquery.arcticmodal-0.3.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+		integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/main.js"></script>
+	<script>
+		$(document).ready(function () {
+			$('.js-example-basic-single').select2({
+				minimumResultsForSearch: -1
+			});
+		});
+	</script>
+</body>
+
+</html>
