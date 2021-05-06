@@ -95,3 +95,17 @@ $(document).ready(function () {
 $('.tel').on('input', function () {
    $(this).val($(this).val().replace(/[A-Za-zА-Яа-яЁё]/, ''))
 });
+$('.articmodal-close').click(function (e) {
+   $.arcticmodal('close');
+
+});
+$('.top__btn').click(function (e) {
+   e.preventDefault();
+   $('#popup-sign').arcticmodal({
+   });
+});
+$('.market__el .market__plus').click(function (e) {
+   e.preventDefault();
+   $('#popup-add').arcticmodal({
+   });
+});
