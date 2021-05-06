@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>XEM</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<!-- Favicon -->
+	<link rel="icon" href="img/shortcut.png" type="image/x-icon">
+	<link rel="shortcut icon" href="img/shortcut.png" type="image/x-icon">
+	<!-- OG -->
+	<meta property="og:title" content="XEM">
+	<meta property="og:description" content="XEM">
+	<meta property="og:type" content="website">
+	<meta property="og:image" content="img/shortcut.png">
+	<meta property="og:site_name" content="XEM">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="css/jquery.arcticmodal-0.3.css">
+	<link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+	<link rel="stylesheet" type="text/css" href="css/slick.css">
+	<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+	<div class="body-wrap">
+		<section class="top" id="top">
+			<div class="container">
+				<div class="top__box d-flex">
+					<div class="top__left d-flex">
+						<a href="index.html" class="top__logo">
+							<img src="img/logo.svg" alt="">
+						</a>
+						<ul class="d-flex menu__list">
+							<li class="active">
+								<a href="#">
+									Home
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Simulation
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Real Time
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Market Insight
+								</a>
+							</li>
+							<li class="nav__link">
+								<a href="#" class="sub-menu__link">
+									About
+								</a>
+								<ul class="sub-menu__list">
+									<li>
+										<a href="" class="sub-menu__link">About</a>
+									</li>
+									<li>
+										<a href="" class="sub-menu__link">About</a>
+									</li>
+									<li>
+										<a href="" class="sub-menu__link">About</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">
+									Contact
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="top__right d-flex">
+						<div class="top__info">
+							<!-- <select class="vodiapicker">
+								<option value="en" class="test">
+									US & Canada Markets</option>
+								<option value="ru">
+									Russia</option>
+							</select>
+							<div class="lang-select">
+								<button class="btn-select" value=""></button>
+								<div class="b">
+									<ul id="a"></ul>
+								</div>
+							</div> -->
+							<select class="js-example-basic-single news-select" id="sum1" name="period">
+								<option value="first">US & Canada Markets</option>
+								<option value="second" class="fr">Russia Markets</option>
+							</select>
+							<p>
+								est 05:09 am
+							</p>
+						</div>
+						<div class="top__wrap d-flex">
+							<select class="js-example-basic-single news-select" id="sum2" name="period">
+								<option value="first">Eng</option>
+								<option value="second" class="fr">Ru</option>
+							</select>
+							<a href="#" class="top__btn bttn">
+								LOG IN
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="menuu">
+			<a href="#" class="button "><span></span></a>
+		</div>
+		<div class="burgerr">
+			<div class="top__info d-flex">
+				<div>
+					<select class="js-example-basic-single news-select" id="sum11" name="period">
+						<option value="first">US & Canada Markets</option>
+						<option value="second" class="fr">Russia Markets</option>
+					</select>
+					<p>
+						est 05:09 am
+					</p>
+				</div>
+				<a href="#" class="top__btn bttn">
+					LOG IN
+				</a>
+			</div>
+			<ul>
+				<li class="active">
+					<a href="#">
+						Home
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						Simulation
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						Real Time
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						Market Insight
+					</a>
+				</li>
+				<li">
+					<div class="accordion-container">
+						<div class="set">
+							<a href="#">
+								About
+							</a>
+							<div class="content">
+								<ul>
+									<li>
+										<a href="">About</a>
+									</li>
+									<li>
+										<a href="">About</a>
+									</li>
+									<li>
+										<a href="">About</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					</li>
+					<li>
+						<a href="#">
+							Contact
+						</a>
+					</li>
+			</ul>
+		</div>
+		<header class="header header-legal" id="header">
+			<div class="container">
+				<div class="header__box d-flex">
+					<div class="header__content">
+						<h1 class="main">
+							Market Insight
+						</h1>
+						<div class="update">
+							Last updated: 2021-02-11 18:39:30
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<section class="port market" id="port">
+			<div class="container">
+				<div class="market__box">
+					<div class="market__tabs d-flex">
+						<a href="#" class="active">
+							300 mega stocks
+						</a>
+						<a href="#">
+							50 large companies
+						</a>
+						<a href="#">
+							300 price change (%)
+						</a>
+						<a href="#">
+							300 most active stocks
+						</a>
+						<a href="#">
+							300 most volatile stocks
+						</a>
+						<a href="#">
+							500 price lowest stock
+						</a>
+					</div>
+					<div class="market__info d-flex">
+						<p>
+							<span class="bb"> Today's top 300 mega stocks based on market cap</span> (total selected: 500
+							stocks
+							with total market cap:
+							<span class="green"> $51,019.27B</span>) - Real-time price
+						</p>
+						<div class="market__block d-flex">
+							<form action="" class="js-form market__form d-flex" id="popupResult" method="post">
+								<input type="search" name="company" required="" placeholder="Search
+								" class="form__field">
+								<button class="market__btn" data-submit><img src="img/lupe.svg" alt=""></button>
+							</form>
+							<div class="market__links d-flex">
+								<a href="#">
+									<img src="img/m1.svg" alt="" class="svg">
+								</a>
+								<a href="#" class="active">
+									<img src="img/m2.svg" alt="" class="svg">
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="port__info port__info2">
+						<table class="profile__table">
+							<tr class="profile__row d-flex">
+								<td>
+									Date /time <a href="#"> <img src="img/val.svg" alt=""></a>
+								</td>
+								<td>
+									Price <a href="#"> <img src="img/val.svg" alt=""></a>
+								</td>
+								<td>
+									Action <a href="#"> <img src="img/val.svg" alt=""></a>
+								</td>
+								<td>
+									Shares <a href="#"> <img src="img/val.svg" alt=""></a>
+								</td>
+								<td>
+									Cost <a href="#"> <img src="img/val.svg" alt=""></a>
+								</td>
+								<td>
+									Sold Date <br> /time <a href="#"> <img src="img/val.svg" alt=""></a>
+								</td>
+								<td>
+									Sold $ <a href="#"> <img src="img/val.svg" alt=""></a>
+								</td>
+								<td>
+									Status <a href="#"> <img src="img/val.svg" alt=""></a>
+								</td>
+								<td>
+									Gain($) <a href="#"> <img src="img/val.svg" alt=""></a>
+								</td>
+								<td>
+									Gain(%) <a href="#"> <img src="img/val.svg" alt=""></a>
+								</td>
+								<td>
+									Hold (D) <a href="#"> <img src="img/val.svg" alt=""></a>
+								</td>
+							</tr>
+							<tr class="profile__row d-flex">
+								<td>
+									2021-02-09 14:15:00
+								</td>
+								<td>
+									$10.75
+								</td>
+								<td class="details__buy">
+									BUY
+								</td>
+								<td>
+									4690
+								</td>
+								<td>
+									$50,347.10
+								</td>
+								<td>
+									2021-02-09 14:15:00
+								</td>
+								<td>
+									$10.75
+								</td>
+								<td class="details__sold">
+									SOLD
+								</td>
+								<td>
+									$3,738.40
+								</td>
+								<td>
+									7.43%
+								</td>
+								<td>
+									4
+								</td>
+							</tr>
+							<tr class="profile__row d-flex">
+								<td>
+									2021-02-09 14:15:00
+								</td>
+								<td>
+									$10.75
+								</td>
+								<td class="details__buy">
+									BUY
+								</td>
+								<td>
+									4690
+								</td>
+								<td>
+									$50,347.10
+								</td>
+								<td>
+									2021-02-09 14:15:00
+								</td>
+								<td>
+									$10.75
+								</td>
+								<td class="details__sold">
+									SOLD
+								</td>
+								<td>
+									$3,738.40
+								</td>
+								<td>
+									7.43%
+								</td>
+								<td>
+									4
+								</td>
+							</tr>
+							<tr class="profile__row d-flex">
+								<td>
+									2021-02-09 14:15:00
+								</td>
+								<td>
+									$10.75
+								</td>
+								<td class="details__buy">
+									BUY
+								</td>
+								<td>
+									4690
+								</td>
+								<td>
+									$50,347.10
+								</td>
+								<td>
+									2021-02-09 14:15:00
+								</td>
+								<td>
+									$10.75
+								</td>
+								<td class="details__sold">
+									SOLD
+								</td>
+								<td>
+									$3,738.40
+								</td>
+								<td>
+									7.43%
+								</td>
+								<td>
+									4
+								</td>
+							</tr>
+							<tr class="profile__row d-flex">
+								<td>
+									2021-02-09 14:15:00
+								</td>
+								<td>
+									$10.75
+								</td>
+								<td class="details__buy">
+									BUY
+								</td>
+								<td>
+									4690
+								</td>
+								<td>
+									$50,347.10
+								</td>
+								<td>
+									2021-02-09 14:15:00
+								</td>
+								<td>
+									$10.75
+								</td>
+								<td class="details__sold">
+									SOLD
+								</td>
+								<td>
+									$3,738.40
+								</td>
+								<td>
+									7.43%
+								</td>
+								<td>
+									4
+								</td>
+							</tr>
+							<tr class="profile__row d-flex">
+								<td>
+									2021-02-09 14:15:00
+								</td>
+								<td>
+									$10.75
+								</td>
+								<td class="details__buy">
+									BUY
+								</td>
+								<td>
+									4690
+								</td>
+								<td>
+									$50,347.10
+								</td>
+								<td>
+									2021-02-09 14:15:00
+								</td>
+								<td>
+									$10.75
+								</td>
+								<td class="details__sold">
+									SOLD
+								</td>
+								<td>
+									$3,738.40
+								</td>
+								<td>
+									7.43%
+								</td>
+								<td>
+									4
+								</td>
+							</tr>
+							<tr class="profile__row d-flex">
+								<td>
+									2021-02-09 14:15:00
+								</td>
+								<td>
+									$10.75
+								</td>
+								<td class="details__buy">
+									BUY
+								</td>
+								<td>
+									4690
+								</td>
+								<td>
+									$50,347.10
+								</td>
+								<td>
+									2021-02-09 14:15:00
+								</td>
+								<td>
+									$10.75
+								</td>
+								<td class="details__sold">
+									SOLD
+								</td>
+								<td>
+									$3,738.40
+								</td>
+								<td>
+									7.43%
+								</td>
+								<td>
+									4
+								</td>
+							</tr>
+							<tr class="profile__row d-flex">
+								<td>
+									2021-02-09 14:15:00
+								</td>
+								<td>
+									$10.75
+								</td>
+								<td class="details__buy">
+									BUY
+								</td>
+								<td>
+									4690
+								</td>
+								<td>
+									$50,347.10
+								</td>
+								<td>
+									2021-02-09 14:15:00
+								</td>
+								<td>
+									$10.75
+								</td>
+								<td class="details__sold">
+									SOLD
+								</td>
+								<td>
+									$3,738.40
+								</td>
+								<td>
+									7.43%
+								</td>
+								<td>
+									4
+								</td>
+							</tr>
+							<tr class="profile__row d-flex">
+								<td>
+									2021-02-09 14:15:00
+								</td>
+								<td>
+									$10.75
+								</td>
+								<td class="details__buy">
+									BUY
+								</td>
+								<td>
+									4690
+								</td>
+								<td>
+									$50,347.10
+								</td>
+								<td>
+									2021-02-09 14:15:00
+								</td>
+								<td>
+									$10.75
+								</td>
+								<td class="details__sold">
+									SOLD
+								</td>
+								<td>
+									$3,738.40
+								</td>
+								<td>
+									7.43%
+								</td>
+								<td>
+									4
+								</td>
+							</tr>
+							<tr class="profile__row d-flex">
+								<td>
+									2021-02-09 14:15:00
+								</td>
+								<td>
+									$10.75
+								</td>
+								<td class="details__buy">
+									BUY
+								</td>
+								<td>
+									4690
+								</td>
+								<td>
+									$50,347.10
+								</td>
+								<td>
+									2021-02-09 14:15:00
+								</td>
+								<td>
+									$10.75
+								</td>
+								<td class="details__sold">
+									SOLD
+								</td>
+								<td>
+									$3,738.40
+								</td>
+								<td>
+									7.43%
+								</td>
+								<td>
+									4
+								</td>
+							</tr>
+							<tr class="profile__row d-flex">
+								<td>
+									2021-02-09 14:15:00
+								</td>
+								<td>
+									$10.75
+								</td>
+								<td class="details__buy">
+									BUY
+								</td>
+								<td>
+									4690
+								</td>
+								<td>
+									$50,347.10
+								</td>
+								<td>
+									2021-02-09 14:15:00
+								</td>
+								<td>
+									$10.75
+								</td>
+								<td class="details__sold">
+									SOLD
+								</td>
+								<td>
+									$3,738.40
+								</td>
+								<td>
+									7.43%
+								</td>
+								<td>
+									4
+								</td>
+							</tr>
+							<tr class="profile__row d-flex">
+								<td>
+									2021-02-09 14:15:00
+								</td>
+								<td>
+									$10.75
+								</td>
+								<td class="details__buy">
+									BUY
+								</td>
+								<td>
+									4690
+								</td>
+								<td>
+									$50,347.10
+								</td>
+								<td>
+									2021-02-09 14:15:00
+								</td>
+								<td>
+									$10.75
+								</td>
+								<td class="details__sold">
+									SOLD
+								</td>
+								<td>
+									$3,738.40
+								</td>
+								<td>
+									7.43%
+								</td>
+								<td>
+									4
+								</td>
+							</tr>
+							<tr class="profile__row d-flex">
+								<td>
+									2021-02-09 14:15:00
+								</td>
+								<td>
+									$10.75
+								</td>
+								<td class="details__buy">
+									BUY
+								</td>
+								<td>
+									4690
+								</td>
+								<td>
+									$50,347.10
+								</td>
+								<td>
+									2021-02-09 14:15:00
+								</td>
+								<td>
+									$10.75
+								</td>
+								<td class="details__sold">
+									SOLD
+								</td>
+								<td>
+									$3,738.40
+								</td>
+								<td>
+									7.43%
+								</td>
+								<td>
+									4
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer class="footer footer2" id="footer">
+			<div class="container">
+				<div class="footer__box d-flex">
+					<a href="index.html" class="footer__logo">
+						<img src="img/footer-logo.svg" alt="">
+					</a>
+					<div class="footer__lists d-flex">
+						<ul>
+							<li>
+								<a href="#">
+									Home
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Simulation
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Real Time
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Market Insight
+								</a>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<a href="#">
+									About company
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									About modeling
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Contact us
+								</a>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<a href="#">
+									Stock info
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									My portfolio
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Legal documents
+								</a>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<a href="#">
+									Sign up
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Sign in
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Profile
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer__info d-flex">
+						<a href="mailto:hello@xide.ca" class="footer__site">
+							Contact us hello@xide.ca
+						</a>
+						<a href="#" class="footer__tele">
+							<img src="img/f1.svg" alt="" class="svg">
+						</a>
+					</div>
+				</div>
+				<div class="footer__flex d-flex">
+					<p>
+						Xide &copy; 2020
+					</p>
+					<div class="footer__links d-flex">
+						<a href="#">
+							Terms of Services
+						</a>
+						<a href="#">
+							Privacy Policy
+						</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js?ver=5.1"></script>
+	<!-- Подключен файл-валидатор, для проверки формы на заполненность  -->
+	<!-- <script type="text/javascript"
+		src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.js"></script> -->
+	<!-- <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=7d8fc9fb-8540-4124-aaf0-efcfe8ad368e"
+		type="text/javascript"></script> -->
+	<script src="js/jquery.arcticmodal-0.3.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+		integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/main.js"></script>
+	<script>
+		$(document).ready(function () {
+			$('.js-example-basic-single').select2({
+				minimumResultsForSearch: -1
+			});
+		});
+	</script>
+</body>
+
+</html>
