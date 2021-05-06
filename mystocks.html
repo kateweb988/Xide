@@ -160,7 +160,7 @@
 						Market Insight
 					</a>
 				</li>
-				<li">
+				<li>
 					<div class="accordion-container">
 						<div class="set">
 							<a href="#">
@@ -207,6 +207,7 @@
 					" class="form__field">
 					<button class="stock__btn bttn" data-submit>Add to my stock</button>
 				</form>
+
 				<div class="port__info port__info2">
 					<table class="profile__table">
 						<tr class="profile__row d-flex">
@@ -237,7 +238,9 @@
 								AMZN
 							</td>
 							<td>
-								<img src="img/sym.svg" alt="">
+								<div class="m-table-chart">
+									<canvas data-chart="1800 400 400 1090 86 200 1000" class="m-chart"></canvas>
+								</div>
 							</td>
 							<td class="d-flex">
 								<img src="img/sym.png" alt="">NASDAQ
@@ -309,7 +312,9 @@
 								AMZN
 							</td>
 							<td>
-								<img src="img/sym.svg" alt="">
+								<div class="m-table-chart">
+									<canvas data-chart="100 1400 1400 190 86 1200 100 200 400 1300" class="m-chart"></canvas>
+								</div>
 							</td>
 							<td class="d-flex">
 								<img src="img/sym.png" alt="">NASDAQ
@@ -381,7 +386,9 @@
 								AMZN
 							</td>
 							<td>
-								<img src="img/sym.svg" alt="">
+								<div class="m-table-chart">
+									<canvas data-chart="100 1400 400 90 86 1200 1000 1300 1850 1900" class="m-chart"></canvas>
+								</div>
 							</td>
 							<td class="d-flex">
 								<img src="img/sym.png" alt="">NASDAQ
@@ -571,6 +578,7 @@
 	<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
 	<script src="js/slick.min.js"></script>
 	<script src="js/main.js"></script>
+	<script src="js/chart.min.js"></script>
 	<script>
 		$(document).ready(function () {
 			$('.js-example-basic-single').select2({
@@ -578,6 +586,50 @@
 			});
 		});
 	</script>
+
+
+	<script>
+		var ctx = $('.m-chart');
+		var charts = [];
+		ctx.each(function(i,el){
+			var chartData = $('.m-chart').eq(i).attr('data-chart').split(' ');
+			var chartColor = $('.m-chart').eq(i).css('color');
+			var labels = [];
+			var len = 0;
+			while (len < chartData.length) {
+				labels.push('');
+				len++;
+			}
+			charts.push(new Chart(el, {
+				type: 'line',
+				data: {
+					labels: labels,
+					datasets: [{
+							data: chartData,
+						borderColor: chartColor,
+						backgroundColor: 'rgba(255, 255, 255, 0)',
+							borderWidth: 1
+						}]
+				},
+				options: {
+					legend: { display: false },
+					title: { display: false },
+					tooltips: { enabled : false },
+					elements: {
+						point: { radius: 0 },
+						line: { tension: 0.2 }
+					},
+					scales: {
+							yAxes: [{ display: false }],
+							xAxes: [{ display: false }]
+					},
+					responsive: true
+				}
+			}));
+		});
+	</script>
+
+
 </body>
 
 </html>

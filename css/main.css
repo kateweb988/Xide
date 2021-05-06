@@ -147,7 +147,7 @@ body.touch .arrow {
 }
 /* CHECK */
 .vodiapicker{
-  display: none; 
+  display: none;
 }
 
 #a{
@@ -292,7 +292,7 @@ body.touch .arrow {
   font-weight: 300;
   font-size: 12px;
   background: transparent;
-  border-radius: 6px; 
+  border-radius: 6px;
   color: #414C69;
   margin: 0;
   padding-bottom: 0px;
@@ -325,7 +325,7 @@ body.touch .arrow {
     display: none;
   }
 .select2-dropdown {
-  border: none;  
+  border: none;
 }
 .select2-container--default .select2-results__option--selected {
   background: transparent;
@@ -377,7 +377,7 @@ body.touch .arrow {
 /* HEADER */
 .header {
   padding: 28px 0 168px;
-  background: url(../img/header-bg.svg) no-repeat center bottom / cover; 
+  background: url(../img/header-bg.svg) no-repeat center bottom / cover;
   position: relative;
 }
 h1 .green {
@@ -433,7 +433,7 @@ input[type=checkbox] + label:before {
     content: "\2713";
     color: transparent;
     display: inline-block;
-    font-size: 20px;    
+    font-size: 20px;
     line-height: 19px;
     margin: 0px 5px 0 0;
     text-align: center;
@@ -751,7 +751,7 @@ ul#select2-sum5-results.select2-results__options {
 }
 .we__content p {
   margin-bottom: 20px;
-} 
+}
 .we__content h2 {
   margin-bottom: 30px;
 }
@@ -963,7 +963,7 @@ ul#select2-sum5-results.select2-results__options {
   font-size: 13px;
 }
 .footer__links a {
-  color: #C8C8C8; 
+  color: #C8C8C8;
   font-size: 13px;
   margin-left: 25px;
 }
@@ -2066,7 +2066,7 @@ textarea:-moz-placeholder { /* Firefox 18- */
 }
 .profile__row .set > a {
   height: 20px;
-} 
+}
  .profile__row .content {
   top: -17px;
   position: relative;
@@ -2194,7 +2194,7 @@ textarea {
   box-shadow: 0px 4px 12px rgb(0 0 0 / 12%);
   flex: 1 0 auto;
   max-width: 87px;
-  width: 87px;  
+  width: 87px;
 }
 .on {
   display: block !important;
@@ -2287,7 +2287,7 @@ textarea {
 .analytic .profile__table .profile__row:nth-child(1) {
   background: #FFFFFF !important;
   justify-content: space-between;
-  padding: 14px 8px 14px 32px !important; 
+  padding: 14px 8px 14px 32px !important;
 }
 .analytic .profile__table .profile__row:nth-child(1) td {
   font-weight: bold;
@@ -3487,7 +3487,7 @@ ul#select2-sum6-results.select2-results__options {
     justify-content: center;
     border-radius: 50px;
     background: #0D61AD;
-  } 
+  }
   .menuu .button span {
     width: 24px;
     position: absolute;
@@ -3902,7 +3902,7 @@ ul#select2-sum6-results.select2-results__options {
   .profile .ser__tab li {
     width: 32%;
     margin: 3px;
-  } 
+  }
   .main {
     font-size: 40px;
   }
@@ -4537,3 +4537,17 @@ ul#select2-sum6-results.select2-results__options {
   border-radius: 10px;
   margin-top: 10px;
 }
+
+
+
+
+
+/* ===================== Charts =====================  */
+
+.m-table-chart {
+  padding-right: 10px;
+  display: inline-block;
+  max-height: 30px;
+}
+
+/* ===================== /charts =====================  */
