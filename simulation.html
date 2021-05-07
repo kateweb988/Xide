@@ -194,51 +194,33 @@
 				<div class="header__box d-flex">
 					<div class="header__content">
 						<h1 class="main">
-							Market Insight
+							Real Data Simulation
 						</h1>
-						<div class="update update-main">
-							Last updated: 2021-02-11 18:39:30
+						<div class="update update-sim">
+							1-minute intraday historical real data
 						</div>
 					</div>
 				</div>
 			</div>
 		</header>
-		<section class="port market" id="port">
+		<section class="port market sim" id="port">
 			<div class="container">
 				<div class="market__box">
-					<div class="market__tabs d-flex">
-						<a href="#" class="active">
-							300 mega stocks
+					<div class="sim__flex2 d-flex">
+						<a href="#" class="sim__stocks bttn">
+							Select a stock from My Stocks to perform simulations
 						</a>
-						<a href="#">
-							50 large companies
-						</a>
-						<a href="#">
-							300 price change (%)
-						</a>
-						<a href="#">
-							300 most active stocks
-						</a>
-						<a href="#">
-							300 most volatile stocks
-						</a>
-						<a href="#">
-							500 price lowest stock
+						<a href="#" class="sim__xem bttn">
+							Select a stock from samples powered by XEM model
 						</a>
 					</div>
-					<div class="market__info d-flex">
-						<p>
-							<span class="bb"> Today's top 300 mega stocks based on market cap</span> (total selected: 500
-							stocks
-							with total market cap:
-							<span class="green"> $51,019.27B</span>) - Real-time price
-						</p>
+					<div class="market__info real__info d-flex">
+						<form action="" class="js-form stock__form d-flex" id="popupResult" method="post">
+							<input type="search" name="company" required="" placeholder="Search symbol or company name...
+							" class="form__field">
+							<button class="stock__btn bttn" data-submit>Add to my stock</button>
+						</form>
 						<div class="market__block d-flex">
-							<form action="" class="js-form market__form d-flex" id="popupResult" method="post">
-								<input type="search" name="company" required="" placeholder="Search
-								" class="form__field">
-								<button class="market__btn" data-submit><img src="img/lupe.svg" alt=""></button>
-							</form>
 							<div class="market__links d-flex">
 								<a href="#">
 									<img src="img/m1.svg" alt="" class="svg">
@@ -250,11 +232,8 @@
 						</div>
 					</div>
 					<div class="port__info port__info2">
-						<table class="profile__table">
+						<table class="profile__table profile__table_real">
 							<tr class="profile__row d-flex">
-								<td>
-									Rank <a href="#"> <img src="img/val.svg" alt=""></a>
-								</td>
 								<td>
 									Symbol <a href="#"> <img src="img/val.svg" alt=""></a>
 								</td>
@@ -268,28 +247,16 @@
 									Exchange <a href="#"> <img src="img/val.svg" alt=""></a>
 								</td>
 								<td>
-									Mkt.Cap <a href="#"> <img src="img/val.svg" alt=""></a>
-								</td>
-								<td>
-									P/E Ratio <a href="#"> <img src="img/val.svg" alt=""></a>
-								</td>
-								<td>
-									ROI (1Y) <a href="#"> <img src="img/val.svg" alt=""></a>
-								</td>
-								<td>
-									Comp.rick <a href="#"> <img src="img/val.svg" alt=""></a>
-								</td>
-								<td>
 									Real-time Price <a href="#"> <img src="img/val.svg" alt=""></a>
 								</td>
 								<td>
-									<a href="#"> <img src="img/dots.svg" alt=""></a>
+									Run Model
+								</td>
+								<td>
+									<a href="#"> <img src="img/dots2.svg" alt=""></a>
 								</td>
 							</tr>
 							<tr class="profile__row d-flex">
-								<td>
-									1
-								</td>
 								<td>
 									ATEN
 								</td>
@@ -303,20 +270,13 @@
 									<img src="img/sym.png" alt=""> NYSE
 								</td>
 								<td>
-									$0.76B
-								</td>
-								<td>
-									34.21
-								</td>
-								<td class="d-flex">
-									<img src="img/pra.svg" alt=""> +38.35%
-								</td>
-								<td>
-									79.44
-								</td>
-								<td>
 									<img src="img/sym2.svg" alt="">
 									$10.03 <span class="stock__green"> +0.10 (1.01%)</span>
+								</td>
+								<td>
+									<a href="#" class="sim__btn bttn">
+										RUN <img src="img/go.svg" alt="" class="svg">
+									</a>
 								</td>
 								<td>
 									<a href="#" class="market__plus">
@@ -325,9 +285,6 @@
 								</td>
 							</tr>
 							<tr class="profile__row d-flex">
-								<td>
-									2
-								</td>
 								<td>
 									ADT
 								</td>
@@ -341,20 +298,13 @@
 									<img src="img/sym.png" alt=""> NYSE
 								</td>
 								<td>
-									$7.45B
-								</td>
-								<td>
-									25.78
-								</td>
-								<td class="d-flex">
-									<img src="img/pra1.svg" alt=""> +31.77%
-								</td>
-								<td>
-									0.00
-								</td>
-								<td>
 									<img src="img/pra1.svg" alt="">
 									$8.84 <span class="stock__red"> -0.19 (-2.10%)</span>
+								</td>
+								<td>
+									<a href="#" class="sim__btn bttn">
+										RUN <img src="img/go.svg" alt="" class="svg">
+									</a>
 								</td>
 								<td>
 									<a href="#" class="market__plus">
@@ -363,9 +313,6 @@
 								</td>
 							</tr>
 							<tr class="profile__row d-flex">
-								<td>
-									3
-								</td>
 								<td>
 									AMD
 								</td>
@@ -379,20 +326,13 @@
 									<img src="img/nasdaq1.png" alt=""> NASDAQ
 								</td>
 								<td>
-									$0.76B
-								</td>
-								<td>
-									34.21
-								</td>
-								<td class="d-flex">
-									<img src="img/pra.svg" alt=""> +38.35%
-								</td>
-								<td>
-									79.44
-								</td>
-								<td>
 									<img src="img/sym2.svg" alt="">
 									$10.03 <span class="stock__green"> +0.10 (1.01%)</span>
+								</td>
+								<td>
+									<a href="#" class="sim__btn bttn">
+										RUN <img src="img/go.svg" alt="" class="svg">
+									</a>
 								</td>
 								<td>
 									<a href="#" class="market__plus">
@@ -401,9 +341,6 @@
 								</td>
 							</tr>
 							<tr class="profile__row d-flex">
-								<td>
-									4
-								</td>
 								<td>
 									BABA
 								</td>
@@ -417,20 +354,13 @@
 									<img src="img/sym.png" alt=""> NYSE
 								</td>
 								<td>
-									$0.76B
-								</td>
-								<td>
-									34.21
-								</td>
-								<td class="d-flex">
-									<img src="img/pra.svg" alt=""> +38.35%
-								</td>
-								<td>
-									79.44
-								</td>
-								<td>
 									<img src="img/sym2.svg" alt="">
 									$10.03 <span class="stock__green"> +0.10 (1.01%)</span>
+								</td>
+								<td>
+									<a href="#" class="sim__btn bttn">
+										RUN <img src="img/go.svg" alt="" class="svg">
+									</a>
 								</td>
 								<td>
 									<a href="#" class="market__plus">
@@ -439,9 +369,6 @@
 								</td>
 							</tr>
 							<tr class="profile__row d-flex">
-								<td>
-									5
-								</td>
 								<td>
 									GOOGL
 								</td>
@@ -455,20 +382,13 @@
 									<img src="img/nasdaq1.png" alt=""> NASDAQ
 								</td>
 								<td>
-									$0.76B
-								</td>
-								<td>
-									34.21
-								</td>
-								<td class="d-flex">
-									<img src="img/pra.svg" alt=""> +38.35%
-								</td>
-								<td>
-									79.44
-								</td>
-								<td>
 									<img src="img/sym2.svg" alt="">
 									$10.03 <span class="stock__green"> +0.10 (1.01%)</span>
+								</td>
+								<td>
+									<a href="#" class="sim__btn bttn">
+										RUN <img src="img/go.svg" alt="" class="svg">
+									</a>
 								</td>
 								<td>
 									<a href="#" class="market__plus">
@@ -477,9 +397,6 @@
 								</td>
 							</tr>
 							<tr class="profile__row d-flex">
-								<td>
-									6
-								</td>
 								<td>
 									AYX
 								</td>
@@ -493,20 +410,13 @@
 									<img src="img/sym.png" alt=""> NYSE
 								</td>
 								<td>
-									$0.76B
-								</td>
-								<td>
-									34.21
-								</td>
-								<td class="d-flex">
-									<img src="img/pra.svg" alt=""> +38.35%
-								</td>
-								<td>
-									79.44
-								</td>
-								<td>
 									<img src="img/sym2.svg" alt="">
 									$10.03 <span class="stock__green"> +0.10 (1.01%)</span>
+								</td>
+								<td>
+									<a href="#" class="sim__btn bttn">
+										RUN <img src="img/go.svg" alt="" class="svg">
+									</a>
 								</td>
 								<td>
 									<a href="#" class="market__plus">
@@ -515,9 +425,6 @@
 								</td>
 							</tr>
 							<tr class="profile__row d-flex">
-								<td>
-									7
-								</td>
 								<td>
 									AMZN
 								</td>
@@ -531,20 +438,13 @@
 									<img src="img/nasdaq1.png" alt=""> NASDAQ
 								</td>
 								<td>
-									$0.76B
-								</td>
-								<td>
-									34.21
-								</td>
-								<td class="d-flex">
-									<img src="img/pra.svg" alt=""> +38.35%
-								</td>
-								<td>
-									79.44
-								</td>
-								<td>
 									<img src="img/sym2.svg" alt="">
 									$10.03 <span class="stock__green"> +0.10 (1.01%)</span>
+								</td>
+								<td>
+									<a href="#" class="sim__btn bttn">
+										RUN <img src="img/go.svg" alt="" class="svg">
+									</a>
 								</td>
 								<td>
 									<a href="#" class="market__plus">
@@ -553,9 +453,6 @@
 								</td>
 							</tr>
 							<tr class="profile__row d-flex">
-								<td>
-									8
-								</td>
 								<td>
 									AXP
 								</td>
@@ -569,20 +466,13 @@
 									<img src="img/nasdaq1.png" alt=""> NASDAQ
 								</td>
 								<td>
-									$7.45B
-								</td>
-								<td>
-									25.78
-								</td>
-								<td class="d-flex">
-									<img src="img/pra1.svg" alt=""> +31.77%
-								</td>
-								<td>
-									0.00
-								</td>
-								<td>
 									<img src="img/pra1.svg" alt="">
 									$8.84 <span class="stock__red"> -0.19 (-2.10%)</span>
+								</td>
+								<td>
+									<a href="#" class="sim__btn bttn">
+										RUN <img src="img/go.svg" alt="" class="svg">
+									</a>
 								</td>
 								<td>
 									<a href="#" class="market__plus">
@@ -591,9 +481,6 @@
 								</td>
 							</tr>
 							<tr class="profile__row d-flex">
-								<td>
-									9
-								</td>
 								<td>
 									FB
 								</td>
@@ -607,20 +494,13 @@
 									<img src="img/sym.png" alt=""> NYSE
 								</td>
 								<td>
-									$0.76B
-								</td>
-								<td>
-									34.21
-								</td>
-								<td class="d-flex">
-									<img src="img/pra.svg" alt=""> +38.35%
-								</td>
-								<td>
-									79.44
-								</td>
-								<td>
 									<img src="img/sym2.svg" alt="">
 									$10.03 <span class="stock__green"> +0.10 (1.01%)</span>
+								</td>
+								<td>
+									<a href="#" class="sim__btn bttn">
+										RUN <img src="img/go.svg" alt="" class="svg">
+									</a>
 								</td>
 								<td>
 									<a href="#" class="market__plus">
@@ -629,9 +509,6 @@
 								</td>
 							</tr>
 							<tr class="profile__row d-flex">
-								<td>
-									10
-								</td>
 								<td>
 									ICE
 								</td>
@@ -645,20 +522,13 @@
 									<img src="img/nasdaq1.png" alt=""> NASDAQ
 								</td>
 								<td>
-									$0.76B
-								</td>
-								<td>
-									34.21
-								</td>
-								<td class="d-flex">
-									<img src="img/pra.svg" alt=""> +38.35%
-								</td>
-								<td>
-									79.44
-								</td>
-								<td>
 									<img src="img/sym2.svg" alt="">
 									$10.03 <span class="stock__green"> +0.10 (1.01%)</span>
+								</td>
+								<td>
+									<a href="#" class="sim__btn bttn">
+										RUN <img src="img/go.svg" alt="" class="svg">
+									</a>
 								</td>
 								<td>
 									<a href="#" class="market__plus">
@@ -667,9 +537,6 @@
 								</td>
 							</tr>
 							<tr class="profile__row d-flex">
-								<td>
-									11
-								</td>
 								<td>
 									MRVL
 								</td>
@@ -683,20 +550,13 @@
 									<img src="img/sym.png" alt=""> NYSE
 								</td>
 								<td>
-									$0.76B
-								</td>
-								<td>
-									34.21
-								</td>
-								<td class="d-flex">
-									<img src="img/pra.svg" alt=""> +38.35%
-								</td>
-								<td>
-									79.44
-								</td>
-								<td>
 									<img src="img/sym2.svg" alt="">
 									$10.03 <span class="stock__green"> +0.10 (1.01%)</span>
+								</td>
+								<td>
+									<a href="#" class="sim__btn bttn">
+										RUN <img src="img/go.svg" alt="" class="svg">
+									</a>
 								</td>
 								<td>
 									<a href="#" class="market__plus">
@@ -705,9 +565,6 @@
 								</td>
 							</tr>
 							<tr class="profile__row d-flex">
-								<td>
-									12
-								</td>
 								<td>
 									ABX.TO
 								</td>
@@ -721,20 +578,349 @@
 									<img src="img/nasdaq1.png" alt=""> NASDAQ
 								</td>
 								<td>
-									$0.76B
+									<img src="img/sym2.svg" alt="">
+									$10.03 <span class="stock__green"> +0.10 (1.01%)</span>
 								</td>
 								<td>
-									34.21
+									<a href="#" class="sim__btn bttn">
+										RUN <img src="img/go.svg" alt="" class="svg">
+									</a>
+								</td>
+								<td>
+									<a href="#" class="market__plus">
+										+
+									</a>
+								</td>
+							</tr>
+							<tr class="profile__row d-flex">
+								<td>
+									ATEN
+								</td>
+								<td>
+									<img src="img/sym.svg" alt="">
+								</td>
+								<td>
+									A10 Netw...
 								</td>
 								<td class="d-flex">
-									<img src="img/pra.svg" alt=""> +38.35%
-								</td>
-								<td>
-									79.44
+									<img src="img/sym.png" alt=""> NYSE
 								</td>
 								<td>
 									<img src="img/sym2.svg" alt="">
 									$10.03 <span class="stock__green"> +0.10 (1.01%)</span>
+								</td>
+								<td>
+									<a href="#" class="sim__btn bttn">
+										RUN <img src="img/go.svg" alt="" class="svg">
+									</a>
+								</td>
+								<td>
+									<a href="#" class="market__plus">
+										+
+									</a>
+								</td>
+							</tr>
+							<tr class="profile__row d-flex">
+								<td>
+									ADT
+								</td>
+								<td>
+									<img src="img/sym.svg" alt="">
+								</td>
+								<td>
+									ADT Inc.
+								</td>
+								<td class="d-flex">
+									<img src="img/sym.png" alt=""> NYSE
+								</td>
+								<td>
+									<img src="img/pra1.svg" alt="">
+									$8.84 <span class="stock__red"> -0.19 (-2.10%)</span>
+								</td>
+								<td>
+									<a href="#" class="sim__btn bttn">
+										RUN <img src="img/go.svg" alt="" class="svg">
+									</a>
+								</td>
+								<td>
+									<a href="#" class="market__plus">
+										+
+									</a>
+								</td>
+							</tr>
+							<tr class="profile__row d-flex">
+								<td>
+									AMD
+								</td>
+								<td>
+									<img src="img/sym.svg" alt="">
+								</td>
+								<td>
+									Advanced...
+								</td>
+								<td class="d-flex">
+									<img src="img/nasdaq1.png" alt=""> NASDAQ
+								</td>
+								<td>
+									<img src="img/sym2.svg" alt="">
+									$10.03 <span class="stock__green"> +0.10 (1.01%)</span>
+								</td>
+								<td>
+									<a href="#" class="sim__btn bttn">
+										RUN <img src="img/go.svg" alt="" class="svg">
+									</a>
+								</td>
+								<td>
+									<a href="#" class="market__plus">
+										+
+									</a>
+								</td>
+							</tr>
+							<tr class="profile__row d-flex">
+								<td>
+									BABA
+								</td>
+								<td>
+									<img src="img/sym.svg" alt="">
+								</td>
+								<td>
+									Alibaba...
+								</td>
+								<td class="d-flex">
+									<img src="img/sym.png" alt=""> NYSE
+								</td>
+								<td>
+									<img src="img/sym2.svg" alt="">
+									$10.03 <span class="stock__green"> +0.10 (1.01%)</span>
+								</td>
+								<td>
+									<a href="#" class="sim__btn bttn">
+										RUN <img src="img/go.svg" alt="" class="svg">
+									</a>
+								</td>
+								<td>
+									<a href="#" class="market__plus">
+										+
+									</a>
+								</td>
+							</tr>
+							<tr class="profile__row d-flex">
+								<td>
+									GOOGL
+								</td>
+								<td>
+									<img src="img/sym.svg" alt="">
+								</td>
+								<td>
+									Alphabet...
+								</td>
+								<td class="d-flex">
+									<img src="img/nasdaq1.png" alt=""> NASDAQ
+								</td>
+								<td>
+									<img src="img/sym2.svg" alt="">
+									$10.03 <span class="stock__green"> +0.10 (1.01%)</span>
+								</td>
+								<td>
+									<a href="#" class="sim__btn bttn">
+										RUN <img src="img/go.svg" alt="" class="svg">
+									</a>
+								</td>
+								<td>
+									<a href="#" class="market__plus">
+										+
+									</a>
+								</td>
+							</tr>
+							<tr class="profile__row d-flex">
+								<td>
+									AYX
+								</td>
+								<td>
+									<img src="img/sym.svg" alt="">
+								</td>
+								<td>
+									Alteryx...
+								</td>
+								<td class="d-flex">
+									<img src="img/sym.png" alt=""> NYSE
+								</td>
+								<td>
+									<img src="img/sym2.svg" alt="">
+									$10.03 <span class="stock__green"> +0.10 (1.01%)</span>
+								</td>
+								<td>
+									<a href="#" class="sim__btn bttn">
+										RUN <img src="img/go.svg" alt="" class="svg">
+									</a>
+								</td>
+								<td>
+									<a href="#" class="market__plus">
+										+
+									</a>
+								</td>
+							</tr>
+							<tr class="profile__row d-flex">
+								<td>
+									AMZN
+								</td>
+								<td>
+									<img src="img/sym.svg" alt="">
+								</td>
+								<td>
+									Amazon.c...
+								</td>
+								<td class="d-flex">
+									<img src="img/nasdaq1.png" alt=""> NASDAQ
+								</td>
+								<td>
+									<img src="img/sym2.svg" alt="">
+									$10.03 <span class="stock__green"> +0.10 (1.01%)</span>
+								</td>
+								<td>
+									<a href="#" class="sim__btn bttn">
+										RUN <img src="img/go.svg" alt="" class="svg">
+									</a>
+								</td>
+								<td>
+									<a href="#" class="market__plus">
+										+
+									</a>
+								</td>
+							</tr>
+							<tr class="profile__row d-flex">
+								<td>
+									AXP
+								</td>
+								<td>
+									<img src="img/sym.svg" alt="">
+								</td>
+								<td>
+									American...
+								</td>
+								<td class="d-flex">
+									<img src="img/nasdaq1.png" alt=""> NASDAQ
+								</td>
+								<td>
+									<img src="img/pra1.svg" alt="">
+									$8.84 <span class="stock__red"> -0.19 (-2.10%)</span>
+								</td>
+								<td>
+									<a href="#" class="sim__btn bttn">
+										RUN <img src="img/go.svg" alt="" class="svg">
+									</a>
+								</td>
+								<td>
+									<a href="#" class="market__plus">
+										+
+									</a>
+								</td>
+							</tr>
+							<tr class="profile__row d-flex">
+								<td>
+									FB
+								</td>
+								<td>
+									<img src="img/sym.svg" alt="">
+								</td>
+								<td>
+									Facebook...
+								</td>
+								<td class="d-flex">
+									<img src="img/sym.png" alt=""> NYSE
+								</td>
+								<td>
+									<img src="img/sym2.svg" alt="">
+									$10.03 <span class="stock__green"> +0.10 (1.01%)</span>
+								</td>
+								<td>
+									<a href="#" class="sim__btn bttn">
+										RUN <img src="img/go.svg" alt="" class="svg">
+									</a>
+								</td>
+								<td>
+									<a href="#" class="market__plus">
+										+
+									</a>
+								</td>
+							</tr>
+							<tr class="profile__row d-flex">
+								<td>
+									ICE
+								</td>
+								<td>
+									<img src="img/sym.svg" alt="">
+								</td>
+								<td>
+									Intercon...
+								</td>
+								<td class="d-flex">
+									<img src="img/nasdaq1.png" alt=""> NASDAQ
+								</td>
+								<td>
+									<img src="img/sym2.svg" alt="">
+									$10.03 <span class="stock__green"> +0.10 (1.01%)</span>
+								</td>
+								<td>
+									<a href="#" class="sim__btn bttn">
+										RUN <img src="img/go.svg" alt="" class="svg">
+									</a>
+								</td>
+								<td>
+									<a href="#" class="market__plus">
+										+
+									</a>
+								</td>
+							</tr>
+							<tr class="profile__row d-flex">
+								<td>
+									MRVL
+								</td>
+								<td>
+									<img src="img/sym.svg" alt="">
+								</td>
+								<td>
+									Marvell...
+								</td>
+								<td class="d-flex">
+									<img src="img/sym.png" alt=""> NYSE
+								</td>
+								<td>
+									<img src="img/sym2.svg" alt="">
+									$10.03 <span class="stock__green"> +0.10 (1.01%)</span>
+								</td>
+								<td>
+									<a href="#" class="sim__btn bttn">
+										RUN <img src="img/go.svg" alt="" class="svg">
+									</a>
+								</td>
+								<td>
+									<a href="#" class="market__plus">
+										+
+									</a>
+								</td>
+							</tr>
+							<tr class="profile__row d-flex">
+								<td>
+									ABX.TO
+								</td>
+								<td>
+									<img src="img/sym.svg" alt="">
+								</td>
+								<td>
+									Barrick...
+								</td>
+								<td class="d-flex">
+									<img src="img/nasdaq1.png" alt=""> NASDAQ
+								</td>
+								<td>
+									<img src="img/sym2.svg" alt="">
+									$10.03 <span class="stock__green"> +0.10 (1.01%)</span>
+								</td>
+								<td>
+									<a href="#" class="sim__btn bttn">
+										RUN <img src="img/go.svg" alt="" class="svg">
+									</a>
 								</td>
 								<td>
 									<a href="#" class="market__plus">
@@ -743,82 +929,12 @@
 								</td>
 							</tr>
 						</table>
-						<div class="market__wrap">
-							<p class="market__name">
-								Today's weighted price change for the selected sector in this category:
-							</p>
-							<div class="market__line d-flex">
-								<img src="img/big-gra.svg" alt="" class="market__gra">
-								<div class="market__content">
-									<div class="market__sum d-flex">
-										<div class="market__item">
-											<p class="market__text">
-												<span class="green"> +0.33%</span> <img src="img/big-green.svg" alt="">
-											</p>
-											<p class="market__word">
-												stocks All
-											</p>
-										</div>
-										<div class="market__item">
-											<p class="market__text">
-												<span class="green">273(54.6%)</span> <img src="img/big-green.svg" alt="">
-											</p>
-											<p class="market__word">
-												stocks Up
-											</p>
-										</div>
-										<div class="market__item">
-											<p class="market__text">
-												<span class="red">273(54.6%)</span> <img src="img/big-red.svg" alt="">
-											</p>
-											<p class="market__word">
-												stocks Down
-											</p>
-										</div>
-									</div>
-									<ul class="market__list">
-										<li>
-											Technology +1.13%
-										</li>
-										<li>
-											Financial Services +0.35%
-										</li>
-										<li>
-											Communication Services +0.33%
-										</li>
-										<li>
-											Healthcare +0.31%
-										</li>
-										<li>
-											Industrials -0.01%
-										</li>
-										<li>
-											Consumer Cyclical -0.02%
-										</li>
-										<li>
-											Consumer Defensive -0.06%
-										</li>
-										<li>
-											Basic Materials -0.24%
-										</li>
-										<li>
-											Utilities -0.53%
-										</li>
-										<li>
-											Real Estate -0.79%
-										</li>
-										<li>
-											Energy -0.82%
-										</li>
-									</ul>
-								</div>
-							</div>
-						</div>
 					</div>
 				</div>
 			</div>
 		</section>
-		<footer class="footer footer2" id="footer">
+
+		<footer class="footer footer2 footer-dash" id="footer">
 			<div class="container">
 				<div class="footer__box d-flex">
 					<a href="index.html" class="footer__logo">

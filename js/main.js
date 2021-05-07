@@ -109,3 +109,8 @@ $('.market__el .market__plus').click(function (e) {
    $('#popup-add').arcticmodal({
    });
 });
+$('.profile__table_real .market__plus').click(function (e) {
+   e.preventDefault();
+   $('#popup-info').arcticmodal({
+   });
+});

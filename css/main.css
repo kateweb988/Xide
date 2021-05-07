@@ -3351,6 +3351,7 @@ ul#select2-sum6-results.select2-results__options {
   width: 17.798%;
   margin-bottom: 27px;
   padding: 19px 18px 11px;
+  transition: all 0.5s ease;
 }
 .market__title {
   font-weight: 500;
@@ -3444,6 +3445,312 @@ ul#select2-sum6-results.select2-results__options {
   color: #BCBCBC;
   border: 1px solid #BCBCBC;
 }
+.market__el:hover {
+  box-shadow: rgb(0 0 0 / 12%) 0px 4px 12px;
+}
+/* REAL */
+.update-real {
+  right: 193px;
+  top: 17px;
+}
+.real__strategy {
+  margin-top: -3px;
+}
+.real__flex {
+  justify-content: space-between;
+}
+.real__item {
+  font-size: 12px;
+  position: relative;
+}
+.real__item:after {
+  content: "";
+  display: block;
+  background: #E7E7E7;
+  position: absolute;
+  right: -14px;
+  top: 6px;
+  width: 1px;
+  height: 30px;
+}
+.real__text span {
+  font-weight: 600
+}
+.real__flex .real__item:last-child:after {
+  display: none;
+}
+.real__info p {
+  font-size: 16px;
+}
+.real__info {
+  margin-top: 36px;
+}
+.real__in, .real__out {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 12px;
+  color: #FFFFFF;
+  width: 50px;
+  height: 20px;
+  background: #BBBBBB;
+  border-radius: 10px;
+}
+ .real__out {
+  background: #BBBBBB;
+ }
+ .real__in {
+  background: #1FC7A2;
+ }
+ .market .port__info2 .profile__table_real .profile__row td:nth-child(1) {
+  width: 90px;
+  max-width: 90px;
+}
+.market .port__info2 .profile__table_real .profile__row td:nth-child(2) {
+  width: 105px;
+}
+.market .port__info2 .profile__table_real .profile__row td:nth-child(3) {
+  width: 193px;
+}
+.market .port__info2 .profile__table_real .profile__row td:nth-child(4) {
+  width: 171px;
+}
+.market .port__info2 .profile__table_real .profile__row td:nth-child(5) {
+  width: 252px;
+}
+.market .port__info2 .profile__table_real .profile__row td:nth-child(6) {
+  width: 97px;
+}
+.market .port__info2 .profile__table_real .profile__row td:nth-child(7) a {
+  margin: 0 auto;
+}
+.market .port__info2 .profile__table_real .profile__row td:nth-child(7) {
+  text-align: center;
+}
+.profile__table_real .market__plus {
+  width: 50px;
+  height: 20px;
+  margin: 0 auto;
+}
+.market .port__info2 .profile__table .profile__row td:nth-child(4) img {
+  margin-right: 12px;
+}
+.add {
+  padding: 46px 0 17px;
+  background: url(../img/sign5.svg) no-repeat center top / cover;
+}
+.add a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 79px;
+  height: 47px;
+  background: #1FC7A2;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 30px;
+  color: #FFFFFF;
+}
+.add a:hover {
+  background: transparent;
+  border: 1px solid #1FC7A2;
+  color: #1FC7A2;
+}
+.add .sign__box {
+  max-width: 1057px;
+}
+.add .sign__box p {
+  max-width: 100%;
+  font-weight: 600;
+}
+.sign__fig {
+  max-height: 121px;
+}
+.real {
+  padding: 56px 0 97px;
+}
+.real__items .market__plus {
+  margin: 0;
+}
+.real__inf {
+  margin-top: 15px;
+  justify-content: space-between;
+}
+.real__items .market__el {
+  height: auto;
+  padding: 19px 18px 19px;
+}
+#popup-info .popup-call__box {
+  width: 1120px;
+  height: auto;
+  margin-top: -280px;
+  margin-left: -560px;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 25px 30px 38px;
+}
+.info__top  {
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.info__left {
+  align-items: center;
+}
+.info__left .green {
+  font-weight: bold;
+  font-size: 18px;
+}
+.info__sum {
+  margin-left: 21px;
+}
+.info__sum .market__strategy {
+  margin: 0;
+}
+.info__sum .market__strategy .stock__green {
+  font-size: 12px;
+  font-weight: bold;
+}
+.info__sum .market__strategy img {
+  margin-right: 0;
+}
+.info__tabs {
+  width: 100%;
+  max-width: 606px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.info__tabs a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  padding: 0 12px;
+  height: 30px;
+  font-size: 12px;
+  border: 1px solid #EEEEFF;
+  box-sizing: border-box;
+  border-radius: 20px;
+  color: #414C69;
+}
+.info__tabs a.active, .info__tabs a:hover {
+  background: #AAAAAA;
+  color: #fff;
+}
+.info__run {
+  width: 119px;
+  height: 30px;
+  font-weight: bold;
+  font-size: 12px;
+}
+.info__right {
+  align-items: center;
+}
+.info__right .market__plus {
+  width: 50px;
+  height: 30px;
+  font-weight: bold;
+  font-size: 12px;
+  border-radius: 20px;
+  margin-left: 8px;
+}
+.info__bottom {
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.info__block{
+  width: 328px;
+  height: 237px;
+  border: 1px solid #EEEEFF;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 26px 23px 23px 29px;
+}
+.info__name {
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+.info__row {
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+.info__row p:nth-child(1) {
+  font-size: 12px;
+}
+.info__row p:nth-child(2) {
+  font-weight: 600;
+  font-size: 12px;
+}
+.update-sim {
+  right: 7px;
+  top: 18px;
+}
+.sim__flex2 {
+  justify-content: space-between;
+  width: 100%;
+  max-width: 748px;
+  margin: 0 auto;
+}
+.sim__flex2 a {
+  width: 48.5%;
+  height: 50px;
+  font-size: 12px;
+  font-weight: normal;
+}
+.sim__stocks {
+  border: 1px solid #EEEEFF;
+  box-sizing: border-box;
+  border-radius: 30px;
+  background: transparent;
+  color: #414C69;
+}
+.sim .market__links a {
+  height: 51px;
+  width: 51px;
+  flex: 1 0 auto;
+  max-width: 51px;
+  margin-left: 9px;
+}
+.sim .market__links {
+  width: auto;
+}
+.sim .stock__form input {
+  height: 51px;
+}
+.sim .stock__btn {
+  height: 35px;
+  top: 8px;
+}
+.sim .real__info {
+  margin-top: 22px;
+  margin-bottom: 30px;
+}
+.sim__btn {
+  font-size: 12px;
+  width: 68px;
+  height: 20px;
+  font-weight: 600;
+  border-radius: 10px;
+}
+.sim__btn svg {
+  margin: -2px -6px 0 6px;
+  transition: 0.5s ease;
+}
+.sim__btn:hover path {
+  fill: #4A7DC9;
+}
+.sim__btn path {
+  transition: 0.5s ease;
+}
+.sim .port__info2 .profile__table_real .profile__row td:nth-child(5) {
+  width: 218px;
+}
+.sim .port__info2 .profile__table_real .profile__row td:nth-child(6) {
+  width: 125px;
+}
 @media screen and (min-width: 1500px) and (max-width: 1920px) {
   .screen__fig2 {
     top: -112px;
@@ -3469,6 +3776,12 @@ ul#select2-sum6-results.select2-results__options {
   }
   .screen__fig1 {
     display: block;
+  }
+  .add .sign__fig {
+    display: block;
+  }
+  .footer-dash {
+    padding: 55px 15px 40px !important;
   }
 }
 /* END */
@@ -3788,13 +4101,46 @@ ul#select2-sum6-results.select2-results__options {
   .market__list li {
     margin-right: 0;
   }
-  .market__el {
+  .market__el, .real__items .market__el {
     padding: 19px 10px 11px;
     height: auto;
   }
   .market__strategy {
     font-size: 11px;
     margin: 14px 0 2px 0px;
+  }
+  .add {
+    background: url(../img/sign.svg) no-repeat center top / cover;
+    padding: 35px 0 17px;
+  }
+  .real__item:after {
+    right: -8px;
+  }
+  .footer-real {
+    padding: 44px 15px 40px;
+  }
+  .footer-dash {
+    padding: 44px 15px 40px;
+  }
+  #popup-info .popup-call__box {
+    width: 950px;
+    margin-top: -280px;
+    margin-left: -475px;
+    padding: 25px 15px 38px;
+  }
+  .info__graph img {
+    width: 100%;
+  }
+  .info__sum {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+  .info__left {
+    align-items: center;
+    flex-direction: column;
+  }
+  .info__block {
+    width: 32%;
   }
 }
 @media screen and (max-width: 991px) {
@@ -4156,6 +4502,46 @@ ul#select2-sum6-results.select2-results__options {
   .market__gra {
     width: 100%;
   }
+  .real__flex {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+  .real__item {
+    margin-right: 20px;
+    width: 17%;
+    margin-bottom: 10px;
+  }
+  .real__flex .real__item:nth-child(5):after {
+    display: none;
+  }
+  .real__info p {
+    max-width: 52%;
+  }
+  .add {
+    padding: 31px 0 32px;
+    text-align: center;
+  }
+  .add a {
+    margin-top: 20px;
+  }
+  .footer-real {
+    padding: 67px 15px 40px;
+  }
+  #popup-info .popup-call__box {
+    width: 720px;
+    margin-top: -306px;
+    margin-left: -360px;
+    padding: 25px 15px 38px;
+  }
+  .info__top {
+    flex-direction: column;
+  }
+  .info__tabs {
+    margin: 15px 0;
+  }
+  .info__block {
+    padding: 26px 15px 23px;
+  }
 }
 @media screen and (max-width: 767px) {
   .burgerr .set > a {
@@ -4407,6 +4793,62 @@ ul#select2-sum6-results.select2-results__options {
   }
   #popup-add .popup-call__box {
     padding: 43px 40px;
+  }
+  .update-real {
+    margin-left: -63px;
+  }
+  .real__item {
+    margin-right: 0px;
+    width: 33%;
+  }
+  .real__flex .real__item:nth-child(5):after {
+    display: block;
+  }
+  .real__flex .real__item:nth-child(3):after, .real__flex .real__item:nth-child(6):after {
+    display: none;
+  }
+  .real__item:after {
+    right: 29px;
+  }
+  #popup-info .popup-call__box {
+    width: 550px;
+    margin-left: -275px;
+  }
+  .info__tabs a {
+    margin: 6px;
+  }
+  .info__tabs {
+    justify-content: center;
+  }
+  .info__bottom {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .info__block {
+    width: 48%;
+    margin: 5px;
+  }
+  .sim__flex2 a {
+    font-size: 10px;
+    line-height: 15px;
+    text-align: center;
+    font-weight: normal;
+  }
+  .sim .market__block {
+    justify-content: flex-end;
+    margin-top: 0;
+  }
+  .sim .real__info {
+    margin-top: 22px;
+    margin-bottom: 16px;
+    flex-direction: initial;
+  }
+  .sim .market__block {
+    width: auto;
+  }
+  .sim .stock__btn {
+    width: 114px;
+    font-size: 11px;
   }
 }
 @media screen and (max-width: 575px) {
@@ -4915,6 +5357,9 @@ ul#select2-sum6-results.select2-results__options {
     padding: 0px 8px;
     top: -20px;
   }
+  .update-main {
+    min-width: 149px;
+  }
   .market {
     padding: 15px 0 81px;
   }
@@ -4983,6 +5428,86 @@ ul#select2-sum6-results.select2-results__options {
   }
   .popup__flex a {
     width: 48%;
+  }
+  .real__item {
+    width: 50%;
+  }
+  .real__flex .real__item:nth-child(even):after {
+    display: none;
+  }
+  .real__flex .real__item:nth-child(3):after {
+    display: block;
+  }
+  .real__item:after {
+    right: -2px;
+  }
+  .real__flex {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 290px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .update-real {
+    margin-left: -40px;
+    white-space: nowrap;
+    min-width: 81px;
+  }
+  .update {
+    white-space: nowrap;
+  }
+  .add {
+    padding: 38px 0 44px;
+  }
+  .footer-real {
+    padding-top: 61px;
+  }
+  #popup-info .popup-call__box {
+    width: 300px;
+    margin-left: -150px;
+  }
+  .info__tabs a {
+    margin: 0;
+    width: 48%;
+    margin-bottom: 10px;
+  }
+  .info__tabs {
+    justify-content: space-between;
+  }
+  .info__block {
+    width: 100%;
+    margin: 0 0 10px;
+  }
+  .sim__flex2 {
+    flex-direction: column;
+  }
+  .sim__flex2 a {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .sim .real__info {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .sim .stock__btn {
+    width: 100%;
+    font-size: 12px;
+    margin: 1px auto 34px;
+  }
+  .real__inf .sim__btn {
+    width: 53px;
+  }
+  .real__inf .sim__btn svg {
+    margin: -1px -4px 0 4px;
+  }
+  .market__btn img {
+    left: 0;
+    position: absolute;
+    top: 0;
+  }
+  .market__btn {
+    right: 14px;
+    top: 10px;
   }
 }
 @media screen and (min-width: 500px) and (max-width: 575px)  {

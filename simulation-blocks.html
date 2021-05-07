@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>XEM</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<!-- Favicon -->
+	<link rel="icon" href="img/shortcut.png" type="image/x-icon">
+	<link rel="shortcut icon" href="img/shortcut.png" type="image/x-icon">
+	<!-- OG -->
+	<meta property="og:title" content="XEM">
+	<meta property="og:description" content="XEM">
+	<meta property="og:type" content="website">
+	<meta property="og:image" content="img/shortcut.png">
+	<meta property="og:site_name" content="XEM">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="css/jquery.arcticmodal-0.3.css">
+	<link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+	<link rel="stylesheet" type="text/css" href="css/slick.css">
+	<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+	<div class="body-wrap">
+		<section class="top" id="top">
+			<div class="container">
+				<div class="top__box d-flex">
+					<div class="top__left d-flex">
+						<a href="index.html" class="top__logo">
+							<img src="img/logo.svg" alt="">
+						</a>
+						<ul class="d-flex menu__list">
+							<li class="active">
+								<a href="#">
+									Home
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Simulation
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Real Time
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Market Insight
+								</a>
+							</li>
+							<li class="nav__link">
+								<a href="#" class="sub-menu__link">
+									About
+								</a>
+								<ul class="sub-menu__list">
+									<li>
+										<a href="" class="sub-menu__link">About</a>
+									</li>
+									<li>
+										<a href="" class="sub-menu__link">About</a>
+									</li>
+									<li>
+										<a href="" class="sub-menu__link">About</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">
+									Contact
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="top__right d-flex">
+						<div class="top__info">
+							<!-- <select class="vodiapicker">
+								<option value="en" class="test">
+									US & Canada Markets</option>
+								<option value="ru">
+									Russia</option>
+							</select>
+							<div class="lang-select">
+								<button class="btn-select" value=""></button>
+								<div class="b">
+									<ul id="a"></ul>
+								</div>
+							</div> -->
+							<select class="js-example-basic-single news-select" id="sum1" name="period">
+								<option value="first">US & Canada Markets</option>
+								<option value="second" class="fr">Russia Markets</option>
+							</select>
+							<p>
+								est 05:09 am
+							</p>
+						</div>
+						<div class="top__wrap d-flex">
+							<select class="js-example-basic-single news-select" id="sum2" name="period">
+								<option value="first">Eng</option>
+								<option value="second" class="fr">Ru</option>
+							</select>
+							<a href="#" class="top__btn bttn">
+								LOG IN
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="menuu">
+			<a href="#" class="button "><span></span></a>
+		</div>
+		<div class="burgerr">
+			<div class="top__info d-flex">
+				<div>
+					<select class="js-example-basic-single news-select" id="sum11" name="period">
+						<option value="first">US & Canada Markets</option>
+						<option value="second" class="fr">Russia Markets</option>
+					</select>
+					<p>
+						est 05:09 am
+					</p>
+				</div>
+				<a href="#" class="top__btn bttn">
+					LOG IN
+				</a>
+			</div>
+			<ul>
+				<li class="active">
+					<a href="#">
+						Home
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						Simulation
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						Real Time
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						Market Insight
+					</a>
+				</li>
+				<li">
+					<div class="accordion-container">
+						<div class="set">
+							<a href="#">
+								About
+							</a>
+							<div class="content">
+								<ul>
+									<li>
+										<a href="">About</a>
+									</li>
+									<li>
+										<a href="">About</a>
+									</li>
+									<li>
+										<a href="">About</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					</li>
+					<li>
+						<a href="#">
+							Contact
+						</a>
+					</li>
+			</ul>
+		</div>
+		<header class="header header-legal" id="header">
+			<div class="container">
+				<div class="header__box d-flex">
+					<div class="header__content">
+						<h1 class="main">
+							Real Data Simulation
+						</h1>
+						<div class="update update-sim">
+							1-minute intraday historical real data
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<section class="port market sim" id="port">
+			<div class="container">
+				<div class="market__box">
+					<div class="sim__flex2 d-flex">
+						<a href="#" class="sim__stocks bttn">
+							Select a stock from My Stocks to perform simulations
+						</a>
+						<a href="#" class="sim__xem bttn">
+							Select a stock from samples powered by XEM model
+						</a>
+					</div>
+					<div class="market__info real__info d-flex">
+						<form action="" class="js-form stock__form d-flex" id="popupResult" method="post">
+							<input type="search" name="company" required="" placeholder="Search symbol or company name...
+							" class="form__field">
+							<button class="stock__btn bttn" data-submit>Add to my stock</button>
+						</form>
+						<div class="market__block d-flex">
+							<div class="market__links d-flex">
+								<a href="#">
+									<img src="img/m1.svg" alt="" class="svg">
+								</a>
+								<a href="#" class="active">
+									<img src="img/m2.svg" alt="" class="svg">
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="port__info port__info2 real__items">
+						<div class="market__blocks d-flex">
+							<div class="market__el">
+								<p class="market__title">
+									DELL <br> Dell Technologies Inc.
+								</p>
+								<img src="img/block.svg" alt="" class="market__gra">
+								<div class="market__strategy d-flex">
+									<img src="img/sym2.svg" alt="">
+									23.52 <span class="stock__green"> +1.56 (+5.53%)</span>
+								</div>
+								<div class="real__inf d-flex">
+									<a href="#" class="sim__btn bttn">
+										RUN <img src="img/go.svg" alt="" class="svg">
+									</a>
+									<a href="#" class="market__plus">
+										+
+									</a>
+								</div>
+							</div>
+							<div class="market__el">
+								<p class="market__title">
+									ATEN <br> A10 Networks Inc.
+								</p>
+								<img src="img/block2.svg" alt="" class="market__gra">
+								<div class="market__strategy d-flex">
+									<img src="img/pra1.svg" alt="">
+									244.52 <span class="stock__red"> -4.17 (-2.43%)</span>
+								</div>
+								<div class="real__inf d-flex">
+									<a href="#" class="sim__btn bttn">
+										RUN <img src="img/go.svg" alt="" class="svg">
+									</a>
+									<a href="#" class="market__plus">
+										+
+									</a>
+								</div>
+							</div>
+							<div class="market__el">
+								<p class="market__title">
+									DELL <br> Dell Technologies Inc.
+								</p>
+								<img src="img/block.svg" alt="" class="market__gra">
+								<div class="market__strategy d-flex">
+									<img src="img/sym2.svg" alt="">
+									23.52 <span class="stock__green"> +1.56 (+5.53%)</span>
+								</div>
+								<div class="real__inf d-flex">
+									<a href="#" class="sim__btn bttn">
+										RUN <img src="img/go.svg" alt="" class="svg">
+									</a>
+									<a href="#" class="market__plus">
+										+
+									</a>
+								</div>
+							</div>
+							<div class="market__el">
+								<p class="market__title">
+									DELL <br> Dell Technologies Inc.
+								</p>
+								<img src="img/block.svg" alt="" class="market__gra">
+								<div class="market__strategy d-flex">
+									<img src="img/sym2.svg" alt="">
+									23.52 <span class="stock__green"> +1.56 (+5.53%)</span>
+								</div>
+								<div class="real__inf d-flex">
+									<a href="#" class="sim__btn bttn">
+										RUN <img src="img/go.svg" alt="" class="svg">
+									</a>
+									<a href="#" class="market__plus">
+										+
+									</a>
+								</div>
+							</div>
+							<div class="market__el">
+								<p class="market__title">
+									DELL <br> Dell Technologies Inc.
+								</p>
+								<img src="img/block.svg" alt="" class="market__gra">
+								<div class="market__strategy d-flex">
+									<img src="img/sym2.svg" alt="">
+									23.52 <span class="stock__green"> +1.56 (+5.53%)</span>
+								</div>
+								<div class="real__inf d-flex">
+									<a href="#" class="sim__btn bttn">
+										RUN <img src="img/go.svg" alt="" class="svg">
+									</a>
+									<a href="#" class="market__plus">
+										+
+									</a>
+								</div>
+							</div>
+							<div class="market__el">
+								<p class="market__title">
+									DELL <br> Dell Technologies Inc.
+								</p>
+								<img src="img/block.svg" alt="" class="market__gra">
+								<div class="market__strategy d-flex">
+									<img src="img/sym2.svg" alt="">
+									23.52 <span class="stock__green"> +1.56 (+5.53%)</span>
+								</div>
+								<div class="real__inf d-flex">
+									<a href="#" class="sim__btn bttn">
+										RUN <img src="img/go.svg" alt="" class="svg">
+									</a>
+									<a href="#" class="market__plus">
+										+
+									</a>
+								</div>
+							</div>
+							<div class="market__el">
+								<p class="market__title">
+									ATEN <br> A10 Networks Inc.
+								</p>
+								<img src="img/block2.svg" alt="" class="market__gra">
+								<div class="market__strategy d-flex">
+									<img src="img/pra1.svg" alt="">
+									244.52 <span class="stock__red"> -4.17 (-2.43%)</span>
+								</div>
+								<div class="real__inf d-flex">
+									<a href="#" class="sim__btn bttn">
+										RUN <img src="img/go.svg" alt="" class="svg">
+									</a>
+									<a href="#" class="market__plus">
+										+
+									</a>
+								</div>
+							</div>
+							<div class="market__el">
+								<p class="market__title">
+									DELL <br> Dell Technologies Inc.
+								</p>
+								<img src="img/block.svg" alt="" class="market__gra">
+								<div class="market__strategy d-flex">
+									<img src="img/sym2.svg" alt="">
+									23.52 <span class="stock__green"> +1.56 (+5.53%)</span>
+								</div>
+								<div class="real__inf d-flex">
+									<a href="#" class="sim__btn bttn">
+										RUN <img src="img/go.svg" alt="" class="svg">
+									</a>
+									<a href="#" class="market__plus">
+										+
+									</a>
+								</div>
+							</div>
+							<div class="market__el">
+								<p class="market__title">
+									DELL <br> Dell Technologies Inc.
+								</p>
+								<img src="img/block.svg" alt="" class="market__gra">
+								<div class="market__strategy d-flex">
+									<img src="img/sym2.svg" alt="">
+									23.52 <span class="stock__green"> +1.56 (+5.53%)</span>
+								</div>
+								<div class="real__inf d-flex">
+									<a href="#" class="sim__btn bttn">
+										RUN <img src="img/go.svg" alt="" class="svg">
+									</a>
+									<a href="#" class="market__plus">
+										+
+									</a>
+								</div>
+							</div>
+							<div class="market__el">
+								<p class="market__title">
+									DELL <br> Dell Technologies Inc.
+								</p>
+								<img src="img/block.svg" alt="" class="market__gra">
+								<div class="market__strategy d-flex">
+									<img src="img/sym2.svg" alt="">
+									23.52 <span class="stock__green"> +1.56 (+5.53%)</span>
+								</div>
+								<div class="real__inf d-flex">
+									<a href="#" class="sim__btn bttn">
+										RUN <img src="img/go.svg" alt="" class="svg">
+									</a>
+									<a href="#" class="market__plus">
+										+
+									</a>
+								</div>
+							</div>
+							<div class="market__el">
+								<p class="market__title">
+									DELL <br> Dell Technologies Inc.
+								</p>
+								<img src="img/block.svg" alt="" class="market__gra">
+								<div class="market__strategy d-flex">
+									<img src="img/sym2.svg" alt="">
+									23.52 <span class="stock__green"> +1.56 (+5.53%)</span>
+								</div>
+								<div class="real__inf d-flex">
+									<a href="#" class="sim__btn bttn">
+										RUN <img src="img/go.svg" alt="" class="svg">
+									</a>
+									<a href="#" class="market__plus">
+										+
+									</a>
+								</div>
+							</div>
+							<div class="market__el">
+								<p class="market__title">
+									ATEN <br> A10 Networks Inc.
+								</p>
+								<img src="img/block2.svg" alt="" class="market__gra">
+								<div class="market__strategy d-flex">
+									<img src="img/pra1.svg" alt="">
+									244.52 <span class="stock__red"> -4.17 (-2.43%)</span>
+								</div>
+								<div class="real__inf d-flex">
+									<a href="#" class="sim__btn bttn">
+										RUN <img src="img/go.svg" alt="" class="svg">
+									</a>
+									<a href="#" class="market__plus">
+										+
+									</a>
+								</div>
+							</div>
+							<div class="market__el">
+								<p class="market__title">
+									DELL <br> Dell Technologies Inc.
+								</p>
+								<img src="img/block.svg" alt="" class="market__gra">
+								<div class="market__strategy d-flex">
+									<img src="img/sym2.svg" alt="">
+									23.52 <span class="stock__green"> +1.56 (+5.53%)</span>
+								</div>
+								<div class="real__inf d-flex">
+									<a href="#" class="sim__btn bttn">
+										RUN <img src="img/go.svg" alt="" class="svg">
+									</a>
+									<a href="#" class="market__plus">
+										+
+									</a>
+								</div>
+							</div>
+							<div class="market__el">
+								<p class="market__title">
+									DELL <br> Dell Technologies Inc.
+								</p>
+								<img src="img/block.svg" alt="" class="market__gra">
+								<div class="market__strategy d-flex">
+									<img src="img/sym2.svg" alt="">
+									23.52 <span class="stock__green"> +1.56 (+5.53%)</span>
+								</div>
+								<div class="real__inf d-flex">
+									<a href="#" class="sim__btn bttn">
+										RUN <img src="img/go.svg" alt="" class="svg">
+									</a>
+									<a href="#" class="market__plus">
+										+
+									</a>
+								</div>
+							</div>
+							<div class="market__el">
+								<p class="market__title">
+									DELL <br> Dell Technologies Inc.
+								</p>
+								<img src="img/block.svg" alt="" class="market__gra">
+								<div class="market__strategy d-flex">
+									<img src="img/sym2.svg" alt="">
+									23.52 <span class="stock__green"> +1.56 (+5.53%)</span>
+								</div>
+								<div class="real__inf d-flex">
+									<a href="#" class="sim__btn bttn">
+										RUN <img src="img/go.svg" alt="" class="svg">
+									</a>
+									<a href="#" class="market__plus">
+										+
+									</a>
+								</div>
+							</div>
+							<div class="market__el">
+								<p class="market__title">
+									DELL <br> Dell Technologies Inc.
+								</p>
+								<img src="img/block.svg" alt="" class="market__gra">
+								<div class="market__strategy d-flex">
+									<img src="img/sym2.svg" alt="">
+									23.52 <span class="stock__green"> +1.56 (+5.53%)</span>
+								</div>
+								<div class="real__inf d-flex">
+									<a href="#" class="sim__btn bttn">
+										RUN <img src="img/go.svg" alt="" class="svg">
+									</a>
+									<a href="#" class="market__plus">
+										+
+									</a>
+								</div>
+							</div>
+							<div class="market__el">
+								<p class="market__title">
+									ATEN <br> A10 Networks Inc.
+								</p>
+								<img src="img/block2.svg" alt="" class="market__gra">
+								<div class="market__strategy d-flex">
+									<img src="img/pra1.svg" alt="">
+									244.52 <span class="stock__red"> -4.17 (-2.43%)</span>
+								</div>
+								<div class="real__inf d-flex">
+									<a href="#" class="sim__btn bttn">
+										RUN <img src="img/go.svg" alt="" class="svg">
+									</a>
+									<a href="#" class="market__plus">
+										+
+									</a>
+								</div>
+							</div>
+							<div class="market__el">
+								<p class="market__title">
+									DELL <br> Dell Technologies Inc.
+								</p>
+								<img src="img/block.svg" alt="" class="market__gra">
+								<div class="market__strategy d-flex">
+									<img src="img/sym2.svg" alt="">
+									23.52 <span class="stock__green"> +1.56 (+5.53%)</span>
+								</div>
+								<div class="real__inf d-flex">
+									<a href="#" class="sim__btn bttn">
+										RUN <img src="img/go.svg" alt="" class="svg">
+									</a>
+									<a href="#" class="market__plus">
+										+
+									</a>
+								</div>
+							</div>
+							<div class="market__el">
+								<p class="market__title">
+									DELL <br> Dell Technologies Inc.
+								</p>
+								<img src="img/block.svg" alt="" class="market__gra">
+								<div class="market__strategy d-flex">
+									<img src="img/sym2.svg" alt="">
+									23.52 <span class="stock__green"> +1.56 (+5.53%)</span>
+								</div>
+								<div class="real__inf d-flex">
+									<a href="#" class="sim__btn bttn">
+										RUN <img src="img/go.svg" alt="" class="svg">
+									</a>
+									<a href="#" class="market__plus">
+										+
+									</a>
+								</div>
+							</div>
+							<div class="market__el">
+								<p class="market__title">
+									DELL <br> Dell Technologies Inc.
+								</p>
+								<img src="img/block.svg" alt="" class="market__gra">
+								<div class="market__strategy d-flex">
+									<img src="img/sym2.svg" alt="">
+									23.52 <span class="stock__green"> +1.56 (+5.53%)</span>
+								</div>
+								<div class="real__inf d-flex">
+									<a href="#" class="sim__btn bttn">
+										RUN <img src="img/go.svg" alt="" class="svg">
+									</a>
+									<a href="#" class="market__plus">
+										+
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer class="footer footer2 footer-dash" id="footer">
+			<div class="container">
+				<div class="footer__box d-flex">
+					<a href="index.html" class="footer__logo">
+						<img src="img/footer-logo.svg" alt="">
+					</a>
+					<div class="footer__lists d-flex">
+						<ul>
+							<li>
+								<a href="#">
+									Home
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Simulation
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Real Time
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Market Insight
+								</a>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<a href="#">
+									About company
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									About modeling
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Contact us
+								</a>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<a href="#">
+									Stock info
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									My portfolio
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Legal documents
+								</a>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<a href="#">
+									Sign up
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Sign in
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Profile
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer__info d-flex">
+						<a href="mailto:hello@xide.ca" class="footer__site">
+							Contact us hello@xide.ca
+						</a>
+						<a href="#" class="footer__tele">
+							<img src="img/f1.svg" alt="" class="svg">
+						</a>
+					</div>
+				</div>
+				<div class="footer__flex d-flex">
+					<p>
+						Xide &copy; 2020
+					</p>
+					<div class="footer__links d-flex">
+						<a href="#">
+							Terms of Services
+						</a>
+						<a href="#">
+							Privacy Policy
+						</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js?ver=5.1"></script>
+	<!-- Подключен файл-валидатор, для проверки формы на заполненность  -->
+	<!-- <script type="text/javascript"
+		src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.js"></script> -->
+	<!-- <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=7d8fc9fb-8540-4124-aaf0-efcfe8ad368e"
+		type="text/javascript"></script> -->
+	<script src="js/jquery.arcticmodal-0.3.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+		integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/main.js"></script>
+	<script>
+		$(document).ready(function () {
+			$('.js-example-basic-single').select2({
+				minimumResultsForSearch: -1
+			});
+		});
+	</script>
+</body>
+
+</html>
