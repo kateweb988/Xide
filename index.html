@@ -242,12 +242,36 @@
 						</div>
 					</div>
 					<div class="model__graph">
-						<img src="img/gr1.svg" alt="" class="model__pic">
+						<!-- <img src="img/gr1.svg" alt="" class="model__pic"> -->
 
 						<!-- ==================================== -->
-							<!-- <p class="m-table-chart">
-								<canvas data-chart="100 1400 400 90 86 1200 1000 1300 1850 1900" class="m-chart"></canvas>
-							</p> -->
+							<div class="m-big-chart">
+								<canvas class="m-bigchart"></canvas>
+								<script>
+									/* Данные для графиков */
+									var bigChartData = {
+										/* метки горизонтальной оси */
+										labels: ['2021.01.26', '2021.01.27', '2021.01.28', '2021.01.29', '2021.01.30', '2021.01.31', '2021.01.32'],
+										charts: [
+											{
+												id: 'agree1', 																/* По id графики переключаются с помощью checkbox */
+												color: '#1FC7A2', 														/* Цвет линии */
+												data: [90, 91, 93, 94, 95, 97, 100] 					/* Значения */
+											},
+											{
+												id: 'agree2',
+												color: '#F9E7A9',
+												data: [90, 92, 94, 95, 98, 101, 102]
+											},
+											{
+												id: 'agree3',
+												color: '#4A7DC9',
+												data: [89, 90, 91, 90, 92, 94, 95]
+											}
+										]
+									}
+								</script>
+							</div>
 						<!-- ==================================== -->
 
 						<div class="model__wrap">
@@ -295,29 +319,29 @@
 					</div>
 					<div class="model__flex d-flex">
 						<div class="d-flex z1 z">
-							<input type="checkbox" id="agree1" name="check" value="agree1" required="">
+							<input class="big-chart-ctrl big-chart-ctrl__elem" type="checkbox" id="agree1" name="check" value="agree1">
 							<label for="agree1">
 								<img src="img/green-line.svg" alt="">
 								<p>Model Success Rate (%) - 1 month;</p>
 							</label>
 						</div>
 						<div class="d-flex z2 z">
-							<input type="checkbox" id="agree2" name="check" value="agree2" required="">
+							<input class="big-chart-ctrl big-chart-ctrl__elem" type="checkbox" id="agree2" name="check" value="agree2">
 							<label for="agree2">
 								<img src="img/yellow-line.svg" alt="">
 								<p>Model Success Rate (%) - 2 months;</p>
 							</label>
 						</div>
 						<div class="d-flex z3 z">
-							<input type="checkbox" id="agree3" name="check" value="agree3" required="">
+							<input class="big-chart-ctrl big-chart-ctrl__elem" type="checkbox" id="agree3" name="check" value="agree3">
 							<label for="agree3">
 								<img src="img/blue-line.svg" alt="">
 								<p>Model Success Rate (%) - 3 months;</p>
 							</label>
 						</div>
 						<div class="d-flex z4 z">
-							<input type="checkbox" id="agree4" name="check" value="agree4" checked="" required="">
-							<label for="agree4">
+							<input class="big-chart-ctrl big-chart-ctrl__agreeall" type="checkbox" id="agreeall" name="check" value="agreeall" checked>
+							<label for="agreeall">
 								<p>All of them</p>
 							</label>
 						</div>
@@ -944,29 +968,65 @@
 		});
 	</script>
 
-
 	<script>
-		var ctx = $('.m-chart');
-		var charts = [];
-		ctx.each(function(i,el){
-			var chartData = $('.m-chart').eq(i).attr('data-chart').split(' ');
-			var chartColor = $('.m-chart').eq(i).css('color');
-			var labels = [];
-			var len = 0;
-			while (len < chartData.length) {
-				labels.push('');
-				len++;
+		var bigchartCtrl = $('.big-chart-ctrl'); 												/* Все чекбоксы */
+		var bigchartCtrlElem = $('.big-chart-ctrl__elem');							/* Чекбоксы отдельных графиков */
+		var bigchartCtrlAgreeall = $('.big-chart-ctrl__agreeall'); 			/* Чекбокс включающий все */
+		var bigchartCtx = $('.m-bigchart');															/* Блок граффиков */
+		var bigchart;
+		var bigchartData = [];
+		var bigchartDatasets = [];
+
+		mCartDataFilter();
+		mChart();
+
+		bigchartCtrlAgreeall.on('click', function(){ 										/* Клик по включающему все графики */
+			if(bigchartCtrlAgreeall.is(':checked')) {											/* Если включен */
+				bigchartCtrlElem.prop('checked', false); 										/* Отключаем остальные чекбоксы */
 			}
-			charts.push(new Chart(el, {
+		});
+
+		bigchartCtrlElem.on('click', function(){												/* Клик по отдельному чекбоксу */
+			bigchartCtrlAgreeall.prop('checked', false);									/* Отключаем чекбокс для всех */
+		});
+
+		bigchartCtrl.on('click', function(){ 														/* Клик по любому чекбоксу */
+			mCartDataFilter();
+			mChart();
+		});
+
+		function mCartDataFilter() {																		/* Фильтруем данные в зависимости от выбранного чекбокса */
+			if(!bigChartData && !bigchartCtx) { return; }
+
+			if(bigchartCtrlAgreeall.is(':checked')) {											/* Если включено показать все */
+				bigchartData = bigChartData.charts.slice();									/* Копируем все данные в новый массив */
+				return;
+			}
+
+			bigchartData = bigChartData.charts.filter(function(val){  		/* Иначе копируем те, которые выбраны */
+				return $('.big-chart-ctrl__elem#' + val.id).is(':checked');
+			});
+		}
+
+		function mChart() { 																						/* Отрисовка граффиков */
+			if(!bigChartData && !bigchartCtx) { return; }
+
+			bigchartDatasets = []; 																				/* Обнуляем массив для данных */
+
+			for(var i = 0; i < bigchartData.length; i++) { 								/* Наполняем масив данными на основе созданного массива в mCartDataFilter() */
+				bigchartDatasets.push({
+					data: bigchartData[i].data,
+					borderColor: bigchartData[i].color,
+					backgroundColor: 'rgba(255, 255, 255, 0)',
+					borderWidth: 3
+				})
+			}
+
+			bigchart = new Chart(bigchartCtx, { 													/* Создаем объект из библиотеки Chart.js */
 				type: 'line',
 				data: {
-					labels: labels,
-					datasets: [{
-							data: chartData,
-						borderColor: chartColor,
-						backgroundColor: 'rgba(255, 255, 255, 0)',
-							borderWidth: 1
-						}]
+					labels: bigChartData.labels,
+					datasets: bigchartDatasets
 				},
 				options: {
 					legend: { display: false },
@@ -976,14 +1036,10 @@
 						point: { radius: 0 },
 						line: { tension: 0.2 }
 					},
-					scales: {
-							yAxes: [{ display: false }],
-							xAxes: [{ display: false }]
-					},
 					responsive: true
 				}
-			}));
-		});
+			});
+		}
 	</script>
 
 </body>
