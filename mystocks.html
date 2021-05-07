@@ -593,7 +593,7 @@
 		var charts = [];
 		ctx.each(function(i,el){
 			var chartData = $('.m-chart').eq(i).attr('data-chart').split(' ');
-			var chartColor = $('.m-chart').eq(i).css('color');
+			var chartColor = '#F52E2E';
 			var labels = [];
 			var len = 0;
 			while (len < chartData.length) {
@@ -606,9 +606,10 @@
 					labels: labels,
 					datasets: [{
 							data: chartData,
-						borderColor: chartColor,
-						backgroundColor: 'rgba(255, 255, 255, 0)',
-							borderWidth: 1
+							borderColor: chartColor,
+							backgroundColor: 'rgba(245, 46, 46, 0.1)',
+							borderWidth: 2,
+							fill: true
 						}]
 				},
 				options: {
