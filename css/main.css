@@ -2007,7 +2007,7 @@ textarea:-moz-placeholder { /* Firefox 18- */
   width: 100%;
   margin-left: 0;
   height: auto;
-  padding-bottom: 8px;
+  padding-bottom: 0px;
 }
 /* .port .profile__table .profile__row td:nth-child(1) {
   width: 199px;
@@ -2363,6 +2363,7 @@ textarea {
 }
 .analytic {
   padding-bottom: 100px;
+  padding-top: 30px;
 }
 .analytic .set > a {
   background: url(../img/down.svg) no-repeat 97% 15px;
@@ -5386,6 +5387,7 @@ td a img {
   .company__next {
     width: 100%;
     padding: 31px 10px;
+    min-height: auto;
   }
   .company__right {
     width: 100%;
