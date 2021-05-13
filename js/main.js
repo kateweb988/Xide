@@ -91,6 +91,24 @@ $(document).ready(function () {
       return false
    });
 
+   $(".m-arrow").on("click", function (el) {
+      el.preventDefault();
+
+      if ($(this).hasClass('active')) {
+         $(this).removeClass("active");
+
+         $('[data-content=' + $(this).attr('data-content-open') + ']').slideUp(200);
+      }
+      else {
+         $(".m-arrow").removeClass("active");
+         $(this).addClass("active");
+         $('[data-content]').slideUp(200);
+
+         $('[data-content=' + $(this).attr('data-content-open') + ']').slideDown(200);
+      }
+      return false
+   });
+
 });
 $('.tel').on('input', function () {
    $(this).val($(this).val().replace(/[A-Za-zА-Яа-яЁё]/, ''))
