@@ -181,12 +181,12 @@
 							</div>
 						</div>
 					</div>
-					</li>
-					<li>
-						<a href="#">
-							Contact
-						</a>
-					</li>
+				</li>
+				<li>
+					<a href="#">
+						Contact
+					</a>
+				</li>
 			</ul>
 		</div>
 		<header class="header header-legal" id="header">
@@ -251,9 +251,8 @@
 							<td>
 								Amazon.com Inc
 							</td>
-							<td>
-								<img src="img/sym2.svg" alt="">
-								$10.03 <span class="stock__green"> +0.10 (1.01%)</span>
+							<td class="up">
+								$10.03 <span> +0.10 (1.01%)</span>
 							</td>
 							<td class="profile__operation d-flex">
 								<a href="#" class="profile__remove bttn">
@@ -325,9 +324,8 @@
 							<td>
 								Amazon.com Inc
 							</td>
-							<td>
-								<img src="img/sym2.svg" alt="">
-								$10.03 <span class="stock__green"> +0.10 (1.01%)</span>
+							<td class="up">
+								$10.03 <span> +0.10 (1.01%)</span>
 							</td>
 							<td class="profile__operation d-flex">
 								<a href="#" class="profile__remove bttn">
@@ -399,9 +397,8 @@
 							<td>
 								Amazon.com Inc
 							</td>
-							<td>
-								<img src="img/sym2.svg" alt="">
-								$10.03 <span class="stock__green"> +0.10 (1.01%)</span>
+							<td class="up">
+								$10.03 <span> +0.10 (1.01%)</span>
 							</td>
 							<td class="profile__operation d-flex">
 								<a href="#" class="profile__remove bttn">
@@ -591,7 +588,7 @@
 	<script>
 		var ctx = $('.m-chart');
 		var charts = [];
-		ctx.each(function(i,el){
+		ctx.each(function (i, el) {
 			var chartData = $('.m-chart').eq(i).attr('data-chart').split(' ');
 			var chartColor = '#F52E2E';
 			var labels = [];
@@ -605,24 +602,24 @@
 				data: {
 					labels: labels,
 					datasets: [{
-							data: chartData,
-							borderColor: chartColor,
-							backgroundColor: 'rgba(245, 46, 46, 0.1)',
-							borderWidth: 2,
-							fill: true
-						}]
+						data: chartData,
+						borderColor: chartColor,
+						backgroundColor: 'rgba(245, 46, 46, 0.1)',
+						borderWidth: 2,
+						fill: true
+					}]
 				},
 				options: {
 					legend: { display: false },
 					title: { display: false },
-					tooltips: { enabled : false },
+					tooltips: { enabled: false },
 					elements: {
 						point: { radius: 0 },
 						line: { tension: 0.2 }
 					},
 					scales: {
-							yAxes: [{ display: false }],
-							xAxes: [{ display: false }]
+						yAxes: [{ display: false }],
+						xAxes: [{ display: false }]
 					},
 					responsive: true
 				}
