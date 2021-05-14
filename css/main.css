@@ -2423,8 +2423,7 @@ textarea {
   border: 1px solid #EEEEFF;
   box-sizing: border-box;
   border-radius: 5px;
-  padding: 31px 50px 31px 31px;
-  min-width: 174px;
+  padding: 30px;
 }
 .company__block span {
   font-weight: normal;
@@ -3373,7 +3372,7 @@ ul#select2-sum6-results.select2-results__options {
   margin-top: 20px;
 }
 .market__el {
-  height: 227px;
+  height: auto;
   border: 1px solid #EEEEFF;
   box-sizing: border-box;
   border-radius: 5px;
@@ -3383,6 +3382,9 @@ ul#select2-sum6-results.select2-results__options {
   transition: all 0.5s ease;
   display: flex;
   flex-direction: column;
+}
+.market__gra {
+  margin-top: auto;
 }
 .market__title {
   font-weight: 500;
@@ -3612,7 +3614,6 @@ ul#select2-sum6-results.select2-results__options {
   margin: 0;
 }
 .real__inf {
-  margin-top: auto;
   justify-content: space-between;
 }
 .real__items .market__el {
@@ -3815,7 +3816,7 @@ td.up:before, td.normal:before, td.down:before {
   margin-top: 6px;
 }
 .market__strategy.normal:before {
-  margin-top: 4px;
+  margin-top: 3px;
 }
 .up:before {
   content: "";
@@ -3863,6 +3864,15 @@ td a img {
 .model .select2-container--default .select2-selection--single .select2-selection__rendered {
   width: 100% !important;
   max-width: 100% !important;
+}
+.favor .market__tabs a {
+  text-align: center;
+  width: auto;
+  padding: 2px 24px;
+  line-height: 17px;
+}
+.market__row span {
+  font-weight: bold;
 }
 @media screen and (min-width: 1500px) and (max-width: 1920px) {
   .screen__fig2 {
@@ -4254,6 +4264,12 @@ td a img {
   }
   .info__block {
     width: 32%;
+  }
+  .favor .market__tabs a {
+    padding: 2px 20px;
+  }
+  .favor .market__info p {
+    max-width: 60%;
   }
 }
 @media screen and (max-width: 991px) {
@@ -4969,6 +4985,13 @@ td a img {
   .sim .stock__btn {
     width: 114px;
     font-size: 11px;
+  }
+  .favor .market__tabs a {
+    padding: 5px 11px 3px;
+    font-size: 10px;
+  }
+  .favor .market__info p {
+    max-width: 100%;
   }
 }
 @media screen and (max-width: 575px) {
@@ -5701,6 +5724,17 @@ td a img {
     left: 0;
     bottom: 12px;
     padding-left: 10px;
+  }
+  .favor .market__tabs a {
+    padding: 5px 13px 3px;
+    font-size: 10px;
+    width: 48%;
+  }
+  .favor .market__row p:nth-child(1) {
+    margin-right: 10px;
+  }
+  .favor .market__row {
+    flex-wrap: wrap;
   }
 }
 @media screen and (min-width: 500px) and (max-width: 575px)  {
