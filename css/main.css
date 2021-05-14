@@ -1710,14 +1710,18 @@ textarea:-moz-placeholder { /* Firefox 18- */
 /* .profile__table .profile__row {
   padding: 7px 31px;
 } */
-.profile__table .profile__row:nth-child(1),
+.profile__table thead .profile__row:nth-child(1),
 .profile__table .profile__head {
   /* padding: 18px 31px; */
   background: #F2F5FA !important;
 }
-.profile__table .profile__row:nth-child(odd),
-.profile__stocks-row:nth-child(odd) {
+.profile__table .profile__row:nth-child(even),
+.profile__stocks-row:nth-child(even) {
   background: #F7F7F7;
+}
+.profile__table .profile__head td,
+.profile__table .profile__head th {
+  padding: 15px 5px;
 }
 
 /* .profile__table .profile__row td:nth-child(1) {
@@ -1937,6 +1941,10 @@ textarea:-moz-placeholder { /* Firefox 18- */
 }
 .m-arrow,
 .m-arrow.active {
+  padding-left: 0;
+  padding-right: 0;
+  width: 20px;
+  height: 20px;
   background-position: center center;
 }
 .port__wrap {
@@ -2049,7 +2057,7 @@ textarea:-moz-placeholder { /* Firefox 18- */
   padding: 14px 31px;
 } */
 .profile__operation a {
-  width: 50px;
+  width: 80px;
   height: 20px;
   border-radius: 10px;
   font-weight: 600;
@@ -2057,9 +2065,12 @@ textarea:-moz-placeholder { /* Firefox 18- */
   color: #FFFFFf;
 }
 .profile__operation {
-  width: 113px;
+  max-width: 175px;
   justify-content: space-between;
   align-items: center;
+}
+.profile__operation .profile__remove {
+  margin-right: 5px;
 }
 .profile__buy {
   background: #1FC7A2;
@@ -3852,7 +3863,7 @@ td.up:before, td.normal:before, td.down:before {
 }
 td a {
   color: #414C69;
-  display: flex;
+  display: inline-flex;
 }
 td a img {
   margin-left: 5px;
@@ -5460,7 +5471,7 @@ td a img {
   .company .model__info {
     width: 100%;
   }
-  .company .select2-container--default .select2-selection--single .select2-selection__rendered, .company .select2-container--default .select2-selection--single, .company .select2-container, 
+  .company .select2-container--default .select2-selection--single .select2-selection__rendered, .company .select2-container--default .select2-selection--single, .company .select2-container,
   ul#select2-sum59-results.select2-results__options {
     width: 100% !important;
   }
@@ -5691,7 +5702,7 @@ td a img {
     padding: 23px 29px 20px;
   }
   .model .select2-container--default .select2-selection--single, .model .select2-container {
-    width: 100% !important; 
+    width: 100% !important;
   }
   .model__com {
     width: 100%;
@@ -5768,13 +5779,12 @@ td a img {
 /* ===================== Charts =====================  */
 
 .m-table-chart {
-  padding-right: 10px;
+  padding-right: 0;
   display: inline-block;
   width: 75px;
   height: 30px;
   color: #F52E2E;
 }
-
 .m-big-chart {
   padding: 15px;
   width: 100%;
@@ -5783,18 +5793,76 @@ td a img {
 
 /* ===================== /charts =====================  */
 
+.no-wrap {
+  white-space: nowrap;
+}
+.max-width_150 {
+  display: inline-block;
+  max-width: 150px;
+}
+.mb-20 {
+  margin-bottom: 20px;
+}
 
 /* ===================== Adaptive tables =====================  */
+
+.profile__table_stocks td:first-child {
+  padding-left: 15px;
+}
+.exchange-logo {
+  margin-right: 5px;
+}
 .adaptive-table {
   width: 100%;
-  line-height: 1.2;
+  line-height: 1.3;
+  box-sizing: border-box;
 }
 .adaptive-table td {
-  padding: 5px;
-  /* width: auto !important; */
+  padding: 10px 5px;
 }
-.adaptive-table_one-type {
 
+@media (max-width: 1199px) {
+  .adaptive-table,
+  .adaptive-table .profile__operation a {
+    font-size: 11px;
+  }
+  .adaptive-table thead,
+  .profile__head {
+    display: none;
+  }
+  .adaptive-table,
+  .adaptive-table tbody {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 0 none;
+    overflow: hidden !important;
+  }
+  .adaptive-table tr {
+    margin: 5px;
+    width: 300px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #EEEEFF;
+    border-radius: 5px;
+  }
+  .adaptive-table td {
+    display: flex;
+    justify-content: center;
+  }
+  .adaptive-table td[data-label] {
+    justify-content: space-between;
+    text-align: right;
+  }
+  .adaptive-table td[data-label]:before {
+    content: attr(data-label);
+    display: block;
+    white-space: nowrap;
+    opacity: .7;
+    text-align-last: left;
+  }
 }
 
 /* ===================== /adaptive tables =====================  */
