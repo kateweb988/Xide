@@ -231,313 +231,180 @@
 					</div>
 				</div>
 				<div class="port__info">
-					<table class="profile__table">
-						<tr class="profile__row d-flex">
-							<td>
-								Portfolio Balance
-							</td>
-							<td>
-								Cash
-							</td>
-							<td>
-								Securites
-							</td>
-							<td>
-								Total
-							</td>
-							<td>
-								Total in CAD
-							</td>
-						</tr>
-						<tr class="profile__row d-flex">
-							<td>
-								US dollar
-							</td>
-							<td>
-								$70,117.89
-							</td>
-							<td>
-								$135,885.40USD
-							</td>
-							<td>
-								$206,003.29USD
-							</td>
-							<td>
-								$262,110.35CAD
-							</td>
-						</tr>
-						<tr class="profile__row d-flex">
-							<td>
-								Canadian dollar
-							</td>
-							<td>
-								$100,000.00
-							</td>
-							<td>
-								$0.00CAD
-							</td>
-							<td>
-								$100,000.00CAD
-							</td>
-							<td>
-								$100,000.00CAD
-							</td>
-						</tr>
-						<tr class="profile__row d-flex">
-							<td>
-								Total (1 USD=1.27236 CAD)
-							</td>
-							<td>
-								$189,215.20CAD
-							</td>
-							<td>
-								$172,895.15CAD
-							</td>
-							<td>
-
-							</td>
-							<td>
-								$362,110.35CAD
-							</td>
-						</tr>
+					<table class="profile__table adaptive-table">
+						<thead>
+							<tr class="profile__row">
+								<td>Portfolio Balance</td>
+								<td>Cash</td>
+								<td>Securites</td>
+								<td>Total</td>
+								<td>Total in CAD</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr class="profile__row">
+								<td data-label="Portfolio Balance">US dollar</td>
+								<td data-label="Cash">$70,117.89</td>
+								<td data-label="Securites">$135,885.40USD</td>
+								<td data-label="Total">$206,003.29USD</td>
+								<td data-label="Total in CAD">$262,110.35CAD</td>
+							</tr>
+							<tr class="profile__row">
+								<td data-label="Portfolio Balance">Canadian dollar</td>
+								<td data-label="Cash">$100,000.00</td>
+								<td data-label="Securites">$0.00CAD</td>
+								<td data-label="Total">$100,000.00CAD</td>
+								<td data-label="Total in CAD">$100,000.00CAD</td>
+							</tr>
+							<tr class="profile__row">
+								<td data-label="Portfolio Balance">Total (1 USD=1.27236 CAD)</td>
+								<td data-label="Cash">$189,215.20CAD</td>
+								<td data-label="Securites">$172,895.15CAD</td>
+								<td data-label="Total"> </td>
+								<td data-label="Total in CAD">$362,110.35CAD</td>
+							</tr>
+						</tbody>
 					</table>
 				</div>
+				<br>
 				<div class="port__info port__info2">
-					<table class="profile__table">
-						<tr class="profile__row d-flex">
-							<td>
-								Stock Symbol
-							</td>
-							<td>
-								Company name
-							</td>
-							<td>
-								Buy date/Time
-							</td>
-							<td>
-								Current price
-							</td>
-							<td>
-								Unrealized Gain/Loss
-							</td>
-							<td>
-								Hold day(s)
-							</td>
-						</tr>
-						<tr class="profile__row d-flex">
-							<td>
-								AAPL
-							</td>
-							<td>
-								Apple Inc.
-							</td>
-							<td>
-								2021-01-12 10:22
-							</td>
-							<td>
-								$134.54U
-							</td>
-							<td>
-								5,950.00U (4.6%)
-							</td>
-							<td>
-								31
-							</td>
-							<td class="profile__operation d-flex">
-								<a href="#" class="profile__buy bttn">
-									BUY
-								</a>
-								<a href="#" class="profile__sell bttn">
-									SELL
-								</a>
-							</td>
-							<td class="accordion-container">
-								<div class="set">
-									<a href="#">
 
-									</a>
-									<div class="content">
+					<table class="profile__table profile__table_stocks adaptive-table">
+						<thead>
+							<tr class="profile__head">
+								<td>Stock Symbol</td>
+								<td>Company name</td>
+								<td>Buy date/Time</td>
+								<td>Current price</td>
+								<td>Unrealized Gain/Loss</td>
+								<td colspan="3">Hold day(s)</td>
+							</tr>
+						</thead>
+						<tbody class="profile__stocks-row">
+							<tr>
+								<td>AAPL</td>
+								<td>Apple Inc.</td>
+								<td>2021-01-12 10:22</td>
+								<td>$134.54U</td>
+								<td>5,950.00U (4.6%)</td>
+								<td>31</td>
+								<td class="profile__operation d-flex">
+									<a href="#" class="profile__buy bttn">BUY</a>
+									<a href="#" class="profile__sell bttn">SELL</a>
+								</td>
+								<td>
+									<a href="#" data-content-open="content_1" class="m-arrow"></a>
+								</tr>
+							</tr>
+							<tr>
+								<td class="p-0" colspan="8">
+									<div data-content="content_1" class="content">
 										<div class="pro__flex d-flex">
 											<div class="pro__block">
-												<span>
-													Cost per share
-												</span>
-												<p>
-													$128.59U
-												</p>
+												<span>Cost per share</span>
+												<p>$128.59U</p>
 											</div>
 											<div class="pro__block">
-												<span>
-													Total cost
-												</span>
-												<p>
-													$128,590.00U
-												</p>
+												<span>Total cost</span>
+												<p>$128,590.00U</p>
 											</div>
 											<div class="pro__block">
-												<span>
-													Total value
-												</span>
-												<p>
-													$134,540.00U
-												</p>
+												<span>Total value</span>
+												<p>$134,540.00U</p>
 											</div>
 											<div class="pro__block">
-												<span>
-													Number shares
-												</span>
-												<p>
-													1000
-												</p>
+												<span>Number shares</span>
+												<p>1000</p>
 											</div>
 										</div>
 									</div>
-								</div>
-							</td>
-						</tr>
-						<tr class="profile__row d-flex">
-							<td>
-								AAPL
-							</td>
-							<td>
-								Apple Inc.
-							</td>
-							<td>
-								2021-01-12 10:22
-							</td>
-							<td>
-								$134.54U
-							</td>
-							<td>
-								5,950.00U (4.6%)
-							</td>
-							<td>
-								31
-							</td>
-							<td class="profile__operation d-flex">
-								<a href="#" class="profile__buy bttn">
-									BUY
-								</a>
-								<a href="#" class="profile__sell bttn">
-									SELL
-								</a>
-							</td>
-							<td class="accordion-container">
-								<div class="set">
-									<a href="#">
-
-									</a>
-									<div class="content">
+								</td>
+							</tr>
+						</tbody>
+						<tbody class="profile__stocks-row">
+							<tr>
+								<td>AAPL</td>
+								<td>Apple Inc.</td>
+								<td>2021-01-12 10:22</td>
+								<td>$134.54U</td>
+								<td>5,950.00U (4.6%)</td>
+								<td>31</td>
+								<td class="profile__operation d-flex">
+									<a href="#" class="profile__buy bttn">BUY</a>
+									<a href="#" class="profile__sell bttn">SELL</a>
+								</td>
+								<td>
+									<a href="#" data-content-open="content_2" class="m-arrow"></a>
+								</tr>
+							</tr>
+							<tr>
+								<td class="p-0" colspan="8">
+									<div data-content="content_2" class="content">
 										<div class="pro__flex d-flex">
 											<div class="pro__block">
-												<span>
-													Cost per share
-												</span>
-												<p>
-													$128.59U
-												</p>
+												<span>Cost per share</span>
+												<p>$128.59U</p>
 											</div>
 											<div class="pro__block">
-												<span>
-													Total cost
-												</span>
-												<p>
-													$128,590.00U
-												</p>
+												<span>Total cost</span>
+												<p>$128,590.00U</p>
 											</div>
 											<div class="pro__block">
-												<span>
-													Total value
-												</span>
-												<p>
-													$134,540.00U
-												</p>
+												<span>Total value</span>
+												<p>$134,540.00U</p>
 											</div>
 											<div class="pro__block">
-												<span>
-													Number shares
-												</span>
-												<p>
-													1000
-												</p>
+												<span>Number shares</span>
+												<p>1000</p>
 											</div>
 										</div>
 									</div>
-								</div>
-							</td>
-						</tr>
-						<tr class="profile__row d-flex">
-							<td>
-								AAPL
-							</td>
-							<td>
-								Apple Inc.
-							</td>
-							<td>
-								2021-01-12 10:22
-							</td>
-							<td>
-								$134.54U
-							</td>
-							<td>
-								5,950.00U (4.6%)
-							</td>
-							<td>
-								31
-							</td>
-							<td class="profile__operation d-flex">
-								<a href="#" class="profile__buy bttn">
-									BUY
-								</a>
-								<a href="#" class="profile__sell bttn">
-									SELL
-								</a>
-							</td>
-							<td class="accordion-container">
-								<div class="set">
-									<a href="#">
-
-									</a>
-									<div class="content">
+								</td>
+							</tr>
+						</tbody>
+						<tbody class="profile__stocks-row">
+							<tr>
+								<td>AAPL</td>
+								<td>Apple Inc.</td>
+								<td>2021-01-12 10:22</td>
+								<td>$134.54U</td>
+								<td>5,950.00U (4.6%)</td>
+								<td>31</td>
+								<td class="profile__operation d-flex">
+									<a href="#" class="profile__buy bttn">BUY</a>
+									<a href="#" class="profile__sell bttn">SELL</a>
+								</td>
+								<td>
+									<a href="#" data-content-open="content_3" class="m-arrow"></a>
+								</tr>
+							</tr>
+							<tr>
+								<td class="p-0" colspan="8">
+									<div data-content="content_3" class="content">
 										<div class="pro__flex d-flex">
 											<div class="pro__block">
-												<span>
-													Cost per share
-												</span>
-												<p>
-													$128.59U
-												</p>
+												<span>Cost per share</span>
+												<p>$128.59U</p>
 											</div>
 											<div class="pro__block">
-												<span>
-													Total cost
-												</span>
-												<p>
-													$128,590.00U
-												</p>
+												<span>Total cost</span>
+												<p>$128,590.00U</p>
 											</div>
 											<div class="pro__block">
-												<span>
-													Total value
-												</span>
-												<p>
-													$134,540.00U
-												</p>
+												<span>Total value</span>
+												<p>$134,540.00U</p>
 											</div>
 											<div class="pro__block">
-												<span>
-													Number shares
-												</span>
-												<p>
-													1000
-												</p>
+												<span>Number shares</span>
+												<p>1000</p>
 											</div>
 										</div>
 									</div>
-								</div>
-							</td>
-						</tr>
+								</td>
+							</tr>
+						</tbody>
 					</table>
+
 				</div>
 			</div>
 		</section>

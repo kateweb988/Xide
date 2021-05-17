@@ -202,22 +202,22 @@
 		</header>
 		<section class="port stock" id="port">
 			<div class="container">
-				<form action="" class="js-form stock__form d-flex" id="popupResult" method="post">
+				<form action="" class="js-form mb-20 stock__form d-flex" id="popupResult" method="post">
 					<input type="search" name="company" required="" placeholder="Search symbol or company name...
 					" class="form__field">
 					<button class="stock__btn bttn" data-submit>Add to my stock</button>
 				</form>
 				<div class="port__info port__info2">
 
-					<table class="profile__table profile__table_stocks adaptive-table adaptive-table_one-type">
+					<table class="profile__table profile__table_stocks adaptive-table">
 						<thead>
 							<tr class="profile__head">
-								<td><a href="#">Symbol <img src="img/val.svg" alt=""></a></td>
+								<td>Symbol</td>
 								<td>Chart</td>
-								<td><a href="#">Exchange <img src="img/val.svg" alt=""></a></td>
-								<td><a href="#">Sector <img src="img/val.svg" alt=""></a></td>
-								<td><a href="#">Company <img src="img/val.svg" alt=""></a></td>
-								<td><a href="#">Real-time price <img src="img/val.svg" alt=""></a></td>
+								<td>Exchange</td>
+								<td>Sector</td>
+								<td>Company </td>
+								<td>Real-time price</td>
 								<td colspan="2">Remove</td>
 							</tr>
 						</thead>
@@ -228,13 +228,15 @@
 									<div class="m-table-chart"><canvas data-chart="1800 400 400 1090 86 200 1000"
 											class="m-chart"></canvas></div>
 								</td>
-								<td data-label="Exchange">
-									<img src="img/sym.png" alt="">NASDAQ
+								<td class="no-wrap" data-label="Exchange">
+									<img class="exchange-logo" src="img/sym.png" alt="">NASDAQ
 								</td>
-								<td data-label="Sector">Consymer Cyclical lorem3</td>
-								<td data-label="Company">Amazon.com Inc</td>
+								<td data-label="Sector"><span class="max-width_150">Consymer Cyclical</span></td>
+								<td data-label="Company"><span class="max-width_150">Amazon.com Inc</span></td>
 								<td data-label="Real-time price" class="up">
-									$10.03 <span> +0.10 (1.01%)</span>
+									<div class="max-width_150">
+										$10.03 <span class="no-wrap"> +0.10 (1.01%)</span>
+									</div>
 								</td>
 								<td>
 									<div class="profile__operation d-flex">
@@ -279,13 +281,15 @@
 										<canvas data-chart="100 1400 1400 190 86 1200 100 200 400 1300" class="m-chart"></canvas>
 									</div>
 								</td>
-								<td data-label="Exchange" class="d-flex">
-									<img src="img/sym.png" alt="">NASDAQ
+								<td class="no-wrap" data-label="Exchange">
+									<img class="exchange-logo" src="img/sym.png" alt="">NASDAQ
 								</td>
-								<td data-label="Sector">Consymer Cyclical</td>
-								<td data-label="Company">Amazon.com Inc</td>
+								<td data-label="Sector"><span class="max-width_150">Consymer Cyclical</span></td>
+								<td data-label="Company"><span class="max-width_150">Amazon.com Inc</span></td>
 								<td data-label="Real-time price" class="down">
-									$10.03 <span> +0.10 (1.01%)</span>
+									<div class="max-width_150">
+										$10.03 <span class="no-wrap"> +0.10 (1.01%)</span>
+									</div>
 								</td>
 								<td>
 									<div class="profile__operation d-flex">
@@ -330,13 +334,15 @@
 										<canvas data-chart="100 1400 400 90 86 1200 1000 1300 1850 1900" class="m-chart"></canvas>
 									</div>
 								</td>
-								<td data-label="Exchange" class="d-flex">
-									<img src="img/sym.png" alt="">NASDAQ
+								<td class="no-wrap" data-label="Exchange">
+									<img class="exchange-logo" src="img/sym.png" alt="">NASDAQ
 								</td>
-								<td data-label="Sector">Consymer Cyclical</td>
-								<td data-label="Company">Amazon.com Inc</td>
+								<td data-label="Sector"><span class="max-width_150">Consymer Cyclical</span></td>
+								<td data-label="Company"><span class="max-width_150">Amazon.com Inc</span></td>
 								<td data-label="Real-time price" class="up">
-									$10.03 <span> +0.10 (1.01%)</span>
+									<div class="max-width_150">
+										$10.03 <span class="no-wrap"> +0.10 (1.01%)</span>
+									</div>
 								</td>
 								<td>
 									<div class="profile__operation d-flex">
@@ -381,13 +387,15 @@
 										<canvas data-chart="100 1400 400 90 86 1200 1000 1300 1850 1900" class="m-chart"></canvas>
 									</div>
 								</td>
-								<td data-label="Exchange" class="d-flex">
-									<img src="img/sym.png" alt="">NASDAQ
+								<td class="no-wrap" data-label="Exchange">
+									<img class="exchange-logo" src="img/sym.png" alt="">NASDAQ
 								</td>
-								<td data-label="Sector">Consymer Cyclical</td>
-								<td data-label="Company">Amazon.com Inc</td>
+								<td data-label="Sector"><span class="max-width_150">Consymer Cyclical</span></td>
+								<td data-label="Company"><span class="max-width_150">Amazon.com Inc</span></td>
 								<td data-label="Real-time price" class="normal">
-									$10.03 <span> +0.10 (1.01%)</span>
+									<div class="max-width_150">
+										$10.03 <span class="no-wrap"> +0.10 (1.01%)</span>
+									</div>
 								</td>
 								<td>
 									<div class="profile__operation d-flex">
@@ -432,14 +440,15 @@
 										<canvas data-chart="100 1400 400 90 86 1200 1000 1300 1850 1900" class="m-chart"></canvas>
 									</div>
 								</td>
-								<td data-label="Exchange" class="d-flex">
-									<img src="img/sym.png" alt="">NASDAQ
+								<td class="no-wrap" data-label="Exchange">
+									<img class="exchange-logo" src="img/sym.png" alt="">NASDAQ
 								</td>
-								<td data-label="Sector">Lorem ipsum dolor sit amet.</td>
-								<td data-label="Company">Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet
-									consectetur.</td>
+								<td data-label="Sector"><span class="max-width_150">Lorem ipsum dolor sit amet consectetur consectetur.</span></td>
+								<td data-label="Company"><span class="max-width_150">Lorem ipsum dolor sit consectetur amet consectetur.</span></td>
 								<td data-label="Real-time price" class="up">
-									$10 000 000.003 <span> +100.010 (10.001%)</span>
+									<div class="max-width_150">
+										$100.03 <span class="no-wrap"> +1.01 (1.01%)</span>
+									</div>
 								</td>
 								<td>
 									<div class="profile__operation d-flex">
@@ -484,13 +493,15 @@
 										<canvas data-chart="100 1400 400 90 86 1200 1000 1300 1850 1900" class="m-chart"></canvas>
 									</div>
 								</td>
-								<td data-label="Exchange" class="d-flex">
-									<img src="img/sym.png" alt="">NASDAQ
+								<td class="no-wrap" data-label="Exchange">
+									<img class="exchange-logo" src="img/sym.png" alt="">NASDAQ
 								</td>
-								<td data-label="Sector">Consymer Cyclical</td>
-								<td data-label="Company">Amazon.com Inc</td>
+								<td data-label="Sector"><span class="max-width_150">Consymer Cyclical</span></td>
+								<td data-label="Company"><span class="max-width_150">Amazon.com Inc</span></td>
 								<td data-label="Real-time price" class="up">
-									$10.03 <span> +0.10 (1.01%)</span>
+									<div class="max-width_150">
+										$1 000 000.03 <span class="no-wrap"> +100.10 (10.01%)</span>
+									</div>
 								</td>
 								<td>
 									<div class="profile__operation d-flex">
