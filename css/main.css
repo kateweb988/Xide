@@ -2883,6 +2883,7 @@ ul#select2-sum59-results.select2-results__options {
   justify-content: space-between;
   width: 100%;
   margin: 0 22px;
+  flex-wrap: wrap;
 }
 .sim__num p {
   font-size: 12px;
@@ -3874,6 +3875,249 @@ td a img {
 .market__row span {
   font-weight: bold;
 }
+.market__el .market__strategy {
+  align-items: center;
+  height: 36px;
+  margin: 5px 0 16px;
+}
+.analytic-sim .set a {
+  font-weight: bold;
+  font-size: 16px;
+}
+.info__company {
+  font-size: 9px;
+  color: #FFFFFF;
+  width: 50px;
+  height: 50px;
+  background: #4A7DC9;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sim-main__text {
+  font-size: 10px;
+  line-height: 140%;
+  color: #989898;
+}
+.sim-main__info {
+  font-size: 12px;
+  line-height: 140%;
+  color: #414C69;
+  margin-top: 3px;
+}
+.sim-main__flex {
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+  max-width: 722px;
+  margin-top: -8px;
+}
+.sim-main__block {
+  background: #FFFFFF;
+  border: 1px solid #EEEEFF;
+  box-sizing: border-box;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 1062px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 24px 24px 24px 32px;
+}
+.sim-main__block .info__top {
+  margin-bottom: 0;
+}
+.sim-main__block .info__right .market__plus {
+  margin-left: 0;
+}
+.analytic-sim {
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+.sim-main__box {
+  width: 100%;
+  max-width: 1062px;
+  margin: 0 auto;
+  width: 100%;
+  background: #F5F6F7;
+  border-radius: 5px;
+  padding: 16px 32px;
+  margin-top: 20px;
+}
+.sim-main__line {
+  justify-content: space-between;
+  align-items: center;
+}
+.sim-main__name {
+  font-weight: bold;
+  font-size: 16px;  
+}
+.sim-main__btn {
+  width: 120px;
+  height: 30px;
+  background: #FFFFFF;
+  border: 1px solid #EEEEFF;
+  border-radius: 20px;
+  font-size: 12px;
+  color: #414C69;
+  font-weight: normal;
+}
+.sim-main__btn:hover, .sim-main__btn.active {
+  background: #4A7DC9;
+  color: #fff;
+}
+.sim-main__min p {
+  font-size: 12px;
+  margin-top: 2px;
+}
+.sim-main__min {
+  align-items: center;
+}
+.sim-main__form input {
+  width: 168px;
+  height: 40px;
+  background: #FFFFFF;
+  border: 1px solid #EEEEFF;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding-left: 17px;
+  margin-left: 14px;
+  margin-right: 13px;
+}
+.sim-main__links {
+  justify-content: space-between;
+  align-items: center;
+  max-width: 510px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.sim-main__buy {
+  background: #DFFFF8;
+  align-items: center;
+  justify-content: space-between;
+  width: 136px;
+  height: 30px;
+  background: #DFFFF8;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: normal;
+  flex: 1 0 auto;
+  max-width: 136px;
+  padding: 0 14px 0 13px;
+}
+.sim-main__wrap path {
+  fill: #000000;
+}
+.sim-main__wrap .sim__num p:after {
+  background: url(../img/arright2.svg) no-repeat;
+}
+.sim-main__sold {
+  background: #FFE2E2;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: space-between;
+  width: 112px;
+  height: 30px;
+  font-size: 12px;
+  font-weight: normal;
+  flex: 1 0 auto;
+  max-width: 112px;
+  padding: 0 13px 0 20px;
+}
+.sim-main__el {
+  width: 482px;
+  background: #FFFFFF;
+  border-radius: 5px;
+  padding: 20px 30px 18px;
+  margin-bottom: 18px;
+  min-height: 138px;
+}
+.sim-main__el h3 {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+.sim-main__inf {
+  margin-bottom: 20px;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.sim-main__inf .sim__num p:after {
+  right: -3px;
+  top: 6px;
+}
+.sim-main__wrap {
+  margin-top: 23px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.sim-main__green {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 140%;
+  color: #1FC7A2;
+  min-width: 74px;
+  display: block;
+  margin-left: 13px;
+  margin-right: 7px;
+}
+.sim-main__sum {
+  font-size: 12px;
+}
+.sim-main__inf .sim__num {
+  max-width: 130px;
+}
+.sim-main__el_last {
+  width: 100%;
+}
+.sim-main__over {
+  font-weight: bold;
+  font-size: 18px;
+  margin-left: 43px;
+}
+.sim-main__side .sim-main__buy {
+  width: 168px;
+  max-width: 168px;
+}
+.sim-main__side {
+  width: 100%;
+  max-width: 720px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 33px;
+}
+.sim-main__side .sim-main__buy svg {
+  margin-left: 10px;
+}
+.sim-main__inf_red .sim-main__over {
+  color: #F52E2E;
+}
+.sim-main__inf_red .sim-main__buy {
+  background: #FFE2E2;
+}
+.sim-main__title {
+  font-size: 14px;
+}
+.sim-main__title span {
+  font-weight: bold;
+}
+.sim-main .details {
+  padding: 18px 0;
+}
+.model-sim {
+  padding: 49px 0 70px;
+}
+.model__com p {
+  font-size: 14px;
+  line-height: 160%;
+}
+.model-sim .model__com {
+  width: 622px;
+}
+.model-sim .z4 {
+  width: auto;
+}
 @media screen and (min-width: 1500px) and (max-width: 1920px) {
   .screen__fig2 {
     top: -112px;
@@ -4270,6 +4514,21 @@ td a img {
   }
   .favor .market__info p {
     max-width: 60%;
+  }
+  .sim-main__flex {
+    max-width: 657px;
+  }
+  .sim-main__line {
+    flex-direction: column;
+  }
+  .sim-main__links {
+    margin: 20px auto;
+  }
+  .sim-main__left, .sim-main__right {
+    width: 100%;
+  }
+  .sim-main__el {
+    margin: 0 auto 20px;
   }
 }
 @media screen and (max-width: 991px) {
@@ -4677,6 +4936,21 @@ td a img {
     right: 0;
     top: 5px;
   }
+  .sim-main__flex {
+    margin: 15px auto;
+  }
+  .model-sim .z4 {
+    width: 41%;
+  }
+  .model-sim .model__block {
+    flex-direction: column;
+  }
+  .model__com p {
+    margin-bottom: 15px;
+  }
+  .sim-main__el {
+    min-height: auto;
+  }
 }
 @media screen and (max-width: 767px) {
   .burgerr .set > a {
@@ -4992,6 +5266,55 @@ td a img {
   }
   .favor .market__info p {
     max-width: 100%;
+  }
+  .sim-main__item {
+    width: 20%;
+    text-align: center;
+    margin: 5px;
+  }
+  .sim-main__flex, .sim-main__links {
+    justify-content: center;
+  }
+  .sim-main__el {
+    width: 100%;
+    padding: 20px 20px 18px;
+    height: auto;
+    min-height: auto;
+  }
+  .sim-main__btn {
+    margin: 5px;
+    width: 47%;
+  }
+  .model-sim .model__com {
+    width: auto;
+  }
+  .model__com p br {
+    display: none;
+  }
+  .model-sim .z4 {
+    width: 100%;
+  }
+  .sim-main__buy {
+    width: 135px;
+    font-size: 11px;
+    max-width: 135px;
+    padding: 0 10px 0;
+  }
+  .sim-main__sold {
+    width: 100px;
+    font-size: 11px;
+    max-width: 92px;
+    padding: 0 13px 0;
+  }
+  .sim__num p {
+    font-size: 11px;
+  }
+  .sim-main__sum {
+    font-size: 11px;
+  }
+  .sim-main__side {
+    flex-direction: column;
+    align-items: center;
   }
 }
 @media screen and (max-width: 575px) {
@@ -5735,6 +6058,82 @@ td a img {
   }
   .favor .market__row {
     flex-wrap: wrap;
+  }
+  .sim-main__item {
+    width: 43%;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  .sim-main__flex {
+    justify-content: space-between;
+  }
+  .sim-main__btn {
+    margin: 0 0 10px;
+    width: 100%;
+  }
+  .sim-main__form input {
+    width: 116px;
+  }
+  .model-sim {
+    padding: 40px 0 75px;
+  }
+  .sim-main__box {
+    padding: 15px;
+  }
+  .sim-main__el {
+    position: relative;
+  }
+  .sim-main__inf .sim__num {
+    width: 100%;
+    max-width: 200px;
+    left: 50%;
+    margin-left: -100px;
+    top: 6px;
+  }
+  .sim-main__buy_size {
+    width: 48.5%;
+    max-width: 100%;
+    flex: initial;
+  }
+  .sim-main__inf {
+    justify-content: space-between;
+  }
+  .sim-main__green {
+    font-size: 11px;
+    min-width: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .sim-main__sum {
+    font-size: 11px;
+    width: 100%;
+    text-align: center;
+    margin-top: 5px;
+  }
+  .sim-main__el {
+    padding: 49px 20px 18px;
+  }
+  .sim-main__el h3 {
+    margin-bottom: 68px;
+  }
+  .sim-main__el_pad .sim__num {
+    top: 66px;
+  }
+  .sim-main__el_pad {
+    padding-top: 20px;
+  }
+  .sim-main__right .sim-main__el:last-child {
+    padding: 21px 20px 4px;
+  }
+  .sim-main__side .sim-main__inf {
+    justify-content: space-between;
+    width: 100%;
+  }
+  .sim-main__over {
+    margin-left: 0;
+  }
+  .sim-main__el_last {
+    padding-top: 20px;
   }
 }
 @media screen and (min-width: 500px) and (max-width: 575px)  {
