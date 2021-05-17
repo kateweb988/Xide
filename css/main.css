@@ -2984,13 +2984,13 @@ ul#select2-sum59-results.select2-results__options {
 }
 #details .profile__table .profile__row {
   padding: 14px 31px;
-}*/
+}
 #details .profile__table .profile__row:nth-child(1) td {
   font-size: 10px;
   line-height: 12px;
-  /* display: flex; */
+  display: flex;
 }
-/*#details .profile__table .profile__row:nth-child(1) td img {
+#details .profile__table .profile__row:nth-child(1) td img {
   margin-left: 5px;
 }
 #details .profile__table .profile__row td:nth-child(1) {
