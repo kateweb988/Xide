@@ -1,0 +1,1308 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>XEM</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<!-- Favicon -->
+	<link rel="icon" href="img/shortcut.png" type="image/x-icon">
+	<link rel="shortcut icon" href="img/shortcut.png" type="image/x-icon">
+	<!-- OG -->
+	<meta property="og:title" content="XEM">
+	<meta property="og:description" content="XEM">
+	<meta property="og:type" content="website">
+	<meta property="og:image" content="img/shortcut.png">
+	<meta property="og:site_name" content="XEM">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="css/jquery.arcticmodal-0.3.css">
+	<link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+	<link rel="stylesheet" type="text/css" href="css/slick.css">
+	<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+	<div class="body-wrap">
+		<section class="top" id="top">
+			<div class="container">
+				<div class="top__box d-flex">
+					<div class="top__left d-flex">
+						<a href="index.html" class="top__logo">
+							<img src="img/logo.svg" alt="">
+						</a>
+						<ul class="d-flex menu__list">
+							<li class="active">
+								<a href="#">
+									Home
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Simulation
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Real Time
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Market Insight
+								</a>
+							</li>
+							<li class="nav__link">
+								<a href="#" class="sub-menu__link">
+									About
+								</a>
+								<ul class="sub-menu__list">
+									<li>
+										<a href="" class="sub-menu__link">About</a>
+									</li>
+									<li>
+										<a href="" class="sub-menu__link">About</a>
+									</li>
+									<li>
+										<a href="" class="sub-menu__link">About</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">
+									Contact
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="top__right d-flex">
+						<div class="top__info">
+							<!-- <select class="vodiapicker">
+								<option value="en" class="test">
+									US & Canada Markets</option>
+								<option value="ru">
+									Russia</option>
+							</select>
+							<div class="lang-select">
+								<button class="btn-select" value=""></button>
+								<div class="b">
+									<ul id="a"></ul>
+								</div>
+							</div> -->
+							<select class="js-example-basic-single news-select" id="sum1" name="period">
+								<option value="first">US & Canada Markets</option>
+								<option value="second" class="fr">Russia Markets</option>
+							</select>
+							<p>
+								est 05:09 am
+							</p>
+						</div>
+						<div class="top__wrap d-flex">
+							<select class="js-example-basic-single news-select" id="sum2" name="period">
+								<option value="first">Eng</option>
+								<option value="second" class="fr">Ru</option>
+							</select>
+							<a href="#" class="top__btn bttn">
+								LOG IN
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="menuu">
+			<a href="#" class="button "><span></span></a>
+		</div>
+		<div class="burgerr">
+			<div class="top__info d-flex">
+				<div>
+					<select class="js-example-basic-single news-select" id="sum11" name="period">
+						<option value="first">US & Canada Markets</option>
+						<option value="second" class="fr">Russia Markets</option>
+					</select>
+					<p>
+						est 05:09 am
+					</p>
+				</div>
+				<a href="#" class="top__btn bttn">
+					LOG IN
+				</a>
+			</div>
+			<ul>
+				<li class="active">
+					<a href="#">
+						Home
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						Simulation
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						Real Time
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						Market Insight
+					</a>
+				</li>
+				<li>
+					<div class="accordion-container">
+						<div class="set">
+							<a href="#">
+								About
+							</a>
+							<div class="content">
+								<ul>
+									<li>
+										<a href="">About</a>
+									</li>
+									<li>
+										<a href="">About</a>
+									</li>
+									<li>
+										<a href="">About</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<a href="#">
+						Contact
+					</a>
+				</li>
+			</ul>
+		</div>
+		<header class="header header-legal" id="header">
+			<div class="container">
+				<div class="header__box d-flex">
+					<div class="header__content">
+						<h1 class="main">
+							Real Data Simulation
+						</h1>
+						<div class="update update-sim">
+							1-minute intraday historical real data
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<section class="analytic analytic-sim" id="analytic">
+			<div class="container">
+				<div class="port__info port__info2">
+					<div class="profile__table">
+						<div class="accordion-container">
+							<div class="set">
+								<a href="#">
+									GOOGL - Google Co.
+								</a>
+								<div class="content">
+									<div class="pro__flex d-flex">
+										<a href="#" class="pro__block">
+											<span>
+												AMZN
+											</span>
+											<p>
+												Amazon.com Inc.
+											</p>
+										</a>
+										<a href="#" class="pro__block">
+											<span>
+												ATEN
+											</span>
+											<p>
+												A10 Networks Inc.
+											</p>
+										</a>
+										<a href="#" class="pro__block">
+											<span>
+												DELL
+											</span>
+											<p>
+												Dell Technologies Inc.
+											</p>
+										</a>
+										<a href="#" class="pro__block">
+											<span>
+												INTC
+											</span>
+											<p>
+												Intel Corporation
+											</p>
+										</a>
+										<a href="#" class="pro__block">
+											<span>
+												BRK-B
+											</span>
+											<p>
+												Berkshire Hathaway Inc.
+											</p>
+										</a>
+										<a href="#" class="pro__block">
+											<span>
+												AMZN
+											</span>
+											<p>
+												Amazon.com Inc.
+											</p>
+										</a>
+										<a href="#" class="pro__block">
+											<span>
+												AMZN
+											</span>
+											<p>
+												Amazon.com Inc.
+											</p>
+										</a>
+										<a href="#" class="pro__block">
+											<span>
+												AMZN
+											</span>
+											<p>
+												Amazon.com Inc.
+											</p>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="sim-main" id="sim-main">
+			<div class="container">
+				<div class="sim-main__block">
+					<div class="info__top d-flex">
+						<div class="info__left d-flex">
+							<div class="info__company">
+								GOOGLE
+							</div>
+
+							<div class="info__sum">
+								<p class="green">
+									$3,390.36
+								</p>
+								<div class="market__strategy d-flex">
+									<img src="img/sym2.svg" alt="">
+									<span class="stock__green"> +1.56 (+5.53%)</span>
+								</div>
+							</div>
+						</div>
+						<div class="sim-main__flex d-flex">
+							<div class="sim-main__item">
+								<span class="sim-main__text">
+									Exchange
+								</span>
+								<p class="sim-main__info">
+									NASDAQ
+								</p>
+							</div>
+							<div class="sim-main__item">
+								<span class="sim-main__text">
+									Sector
+								</span>
+								<p class="sim-main__info">
+									Communication
+								</p>
+							</div>
+							<div class="sim-main__item">
+								<span class="sim-main__text">
+									Company
+								</span>
+								<p class="sim-main__info">
+									Alphabet Inc.
+								</p>
+							</div>
+							<div class="sim-main__item">
+								<span class="sim-main__text">
+									Mkt Cap.
+								</span>
+								<p class="sim-main__info">
+									$1,411.02B
+								</p>
+							</div>
+							<div class="sim-main__item">
+								<span class="sim-main__text">
+									P/E Ratio
+								</span>
+								<p class="sim-main__info">
+									35.64
+								</p>
+							</div>
+							<div class="sim-main__item">
+								<span class="sim-main__text">
+									Volatility
+								</span>
+								<p class="sim-main__info">
+									14.08
+								</p>
+							</div>
+							<div class="sim-main__item">
+								<span class="sim-main__text">
+									1 Mo. Target
+								</span>
+								<p class="sim-main__info">
+									$2,074.64
+								</p>
+							</div>
+						</div>
+						<div class="info__right d-flex">
+							<a href="#" class="market__plus">
+								+
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="sim-main__box">
+					<div class="sim-main__top">
+						<div class="sim-main__line d-flex">
+							<p class="sim-main__name">
+								Run XEM Model
+							</p>
+							<div class="sim-main__links d-flex">
+								<a href="#" class="sim-main__btn bttn">
+									2 weeks
+								</a>
+								<a href="#" class="bttn sim-main__btn">
+									1 month
+								</a>
+								<a href="#" class="bttn sim-main__btn">
+									2 months
+								</a>
+								<a href="#" class="bttn sim-main__btn active ">
+									3 months
+								</a>
+							</div>
+							<div class="sim-main__min d-flex">
+								<p>
+									Min. Req. Gain
+								</p>
+								<form action="" class="js-form sim-main__form" id="popupResult" method="post">
+									<input type="text" name="money" required="" placeholder="500$" class="form__field">
+								</form>
+								<a href="#" class="sim__pdf" target="blank">
+									<img src="img/pdf6.svg" alt="">
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="sim-main__wrap d-flex">
+						<div class="sim-main__left">
+							<div class="sim-main__el sim-main__el_pad">
+								<h3>
+									BUY
+								</h3>
+								<div class="sim-main__inf d-flex">
+									<div class="sim-main__buy sim-main__buy_size d-flex">
+										<p>
+											Times
+										</p>
+										<img src="img/arright.svg" alt="" class="svg">
+									</div>
+									<div class="sim__num d-flex">
+										<p>
+											708
+										</p>
+										<p>
+											100%
+										</p>
+										<p>
+											708
+										</p>
+									</div>
+									<div class="sim-main__sold sim-main__buy_size d-flex">
+										<img src="img/arright3.svg" alt="">
+										<p>
+											Sold
+										</p>
+									</div>
+								</div>
+								<div class="sim-main__inf d-flex">
+									<div class="sim-main__buy d-flex">
+										<p>
+											Average Cost
+										</p>
+										<img src="img/arright.svg" alt="" class="svg">
+									</div>
+									<span class="sim-main__green">
+										$49,59.29
+									</span>
+									<p class="sim-main__sum">
+										min $47,308.00 – max $50,418.00
+									</p>
+								</div>
+								<div class="sim-main__inf d-flex">
+									<div class="sim-main__buy d-flex">
+										<p>
+											Average Cost
+										</p>
+										<img src="img/arright.svg" alt="" class="svg">
+									</div>
+									<span class="sim-main__green">
+										$3,995.94
+									</span>
+									<p class="sim-main__sum">
+										min $3,132.45 – max $5,457.10
+									</p>
+								</div>
+							</div>
+							<div class="sim-main__el">
+								<div class="sim-main__inf d-flex">
+									<div class="sim-main__buy sim-main__buy_size d-flex">
+										<p>
+											Times
+										</p>
+										<img src="img/arright.svg" alt="" class="svg">
+									</div>
+									<div class="sim__num d-flex">
+										<p>
+											708
+										</p>
+										<p>
+											0%
+										</p>
+										<p>
+											0
+										</p>
+									</div>
+									<div class="sim-main__sold sim-main__buy_size d-flex">
+										<img src="img/arright3.svg" alt="">
+										<p>
+											Still Hold
+										</p>
+									</div>
+								</div>
+								<div class="sim-main__inf d-flex">
+									<div class="sim-main__buy d-flex">
+										<p>
+											Average Cost
+										</p>
+										<img src="img/arright.svg" alt="" class="svg">
+									</div>
+									<span class="sim-main__green">
+										$0
+									</span>
+									<p class="sim-main__sum">
+										min: $0 – max: $0
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="sim-main__right">
+							<div class="sim-main__el sim-main__el_pad">
+								<h3>
+									SELL
+								</h3>
+								<div class="sim-main__inf d-flex">
+									<div class="sim-main__buy sim-main__buy_size d-flex">
+										<p>
+											Times
+										</p>
+										<img src="img/arright.svg" alt="" class="svg">
+									</div>
+									<div class="sim__num d-flex">
+										<p>
+											708
+										</p>
+										<p>
+											100%
+										</p>
+										<p>
+											708
+										</p>
+									</div>
+									<div class="sim-main__sold sim-main__buy_size d-flex">
+										<img src="img/arright3.svg" alt="">
+										<p>
+											Sold
+										</p>
+									</div>
+								</div>
+								<div class="sim-main__inf d-flex">
+									<div class="sim-main__buy d-flex">
+										<p>
+											Aver. Hold Days
+										</p>
+										<img src="img/arright.svg" alt="" class="svg">
+									</div>
+									<span class="sim-main__green">
+										4.4 days
+									</span>
+									<p class="sim-main__sum">
+										min 1 – max 9
+									</p>
+								</div>
+								<div class="sim-main__inf d-flex">
+									<div class="sim-main__buy d-flex">
+										<p>
+											Aver. Hold Days
+										</p>
+										<img src="img/arright.svg" alt="" class="svg">
+									</div>
+									<span class="sim-main__green">
+										8.06%
+									</span>
+									<p class="sim-main__sum">
+										min 6.53% – max 11.21%
+									</p>
+								</div>
+							</div>
+							<div class="sim-main__el">
+								<div class="sim-main__inf d-flex">
+									<div class="sim-main__buy d-flex">
+										<p>
+											Aver. Hold Days
+										</p>
+										<img src="img/arright.svg" alt="" class="svg">
+									</div>
+									<span class="sim-main__green">
+										0 days
+									</span>
+									<p class="sim-main__sum">
+										min 0 – max 0
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="sim-main__el sim-main__el_last">
+							<p class="sim-main__title">
+								<span>Short-Term Return & Risk Assessment</span> (1: Very Low, 2: Low, 3: Moderate, 4: High, 5:
+								Very High)
+							</p>
+							<div class="sim-main__side d-flex">
+								<div class="sim-main__inf d-flex">
+									<div class="sim-main__buy d-flex">
+										<p>
+											Return Assessment
+										</p>
+										<img src="img/arright.svg" alt="" class="svg">
+									</div>
+									<p class="sim-main__over">
+										4
+									</p>
+								</div>
+								<div class="sim-main__inf d-flex sim-main__inf_red">
+									<div class="sim-main__buy d-flex">
+										<p>
+											Risk Assessment
+										</p>
+										<img src="img/arright.svg" alt="" class="svg">
+									</div>
+									<p class="sim-main__over">
+										2
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="details" id="details">
+							<table class="profile__table">
+								<tbody>
+									<tr class="profile__row d-flex">
+										<td>
+											<a href="#"> Date /time <img src="img/val.svg" alt=""></a>
+										</td>
+										<td>
+											<a href="#">Price <img src="img/val.svg" alt=""></a>
+										</td>
+										<td>
+											<a href="#">Action <img src="img/val.svg" alt=""></a>
+										</td>
+										<td>
+											<a href="#">Shares <img src="img/val.svg" alt=""></a>
+										</td>
+										<td>
+											<a href="#">Cost <img src="img/val.svg" alt=""></a>
+										</td>
+										<td>
+											<a href="#">Sold Date <br> /time <img src="img/val.svg" alt=""></a>
+										</td>
+										<td>
+											<a href="#">Sold $ <img src="img/val.svg" alt=""></a>
+										</td>
+										<td>
+											<a href="#">Status <img src="img/val.svg" alt=""></a>
+										</td>
+										<td>
+											<a href="#">Gain($) <img src="img/val.svg" alt=""></a>
+										</td>
+										<td>
+											<a href="#">Gain(%) <img src="img/val.svg" alt=""></a>
+										</td>
+										<td>
+											<a href="#">Hold (D) <img src="img/val.svg" alt=""></a>
+										</td>
+									</tr>
+									<tr class="profile__row d-flex">
+										<td>
+											2021-02-09 14:15:00
+										</td>
+										<td>
+											$10.75
+										</td>
+										<td class="details__buy">
+											BUY
+										</td>
+										<td>
+											4690
+										</td>
+										<td>
+											$50,347.10
+										</td>
+										<td>
+											2021-02-09 14:15:00
+										</td>
+										<td>
+											$10.75
+										</td>
+										<td class="details__sold">
+											SOLD
+										</td>
+										<td>
+											$3,738.40
+										</td>
+										<td>
+											7.43%
+										</td>
+										<td>
+											4
+										</td>
+									</tr>
+									<tr class="profile__row d-flex">
+										<td>
+											2021-02-09 14:15:00
+										</td>
+										<td>
+											$10.75
+										</td>
+										<td class="details__buy">
+											BUY
+										</td>
+										<td>
+											4690
+										</td>
+										<td>
+											$50,347.10
+										</td>
+										<td>
+											2021-02-09 14:15:00
+										</td>
+										<td>
+											$10.75
+										</td>
+										<td class="details__sold">
+											SOLD
+										</td>
+										<td>
+											$3,738.40
+										</td>
+										<td>
+											7.43%
+										</td>
+										<td>
+											4
+										</td>
+									</tr>
+									<tr class="profile__row d-flex">
+										<td>
+											2021-02-09 14:15:00
+										</td>
+										<td>
+											$10.75
+										</td>
+										<td class="details__buy">
+											BUY
+										</td>
+										<td>
+											4690
+										</td>
+										<td>
+											$50,347.10
+										</td>
+										<td>
+											2021-02-09 14:15:00
+										</td>
+										<td>
+											$10.75
+										</td>
+										<td class="details__sold">
+											SOLD
+										</td>
+										<td>
+											$3,738.40
+										</td>
+										<td>
+											7.43%
+										</td>
+										<td>
+											4
+										</td>
+									</tr>
+									<tr class="profile__row d-flex">
+										<td>
+											2021-02-09 14:15:00
+										</td>
+										<td>
+											$10.75
+										</td>
+										<td class="details__buy">
+											BUY
+										</td>
+										<td>
+											4690
+										</td>
+										<td>
+											$50,347.10
+										</td>
+										<td>
+											2021-02-09 14:15:00
+										</td>
+										<td>
+											$10.75
+										</td>
+										<td class="details__sold">
+											SOLD
+										</td>
+										<td>
+											$3,738.40
+										</td>
+										<td>
+											7.43%
+										</td>
+										<td>
+											4
+										</td>
+									</tr>
+									<tr class="profile__row d-flex">
+										<td>
+											2021-02-09 14:15:00
+										</td>
+										<td>
+											$10.75
+										</td>
+										<td class="details__buy">
+											BUY
+										</td>
+										<td>
+											4690
+										</td>
+										<td>
+											$50,347.10
+										</td>
+										<td>
+											2021-02-09 14:15:00
+										</td>
+										<td>
+											$10.75
+										</td>
+										<td class="details__sold">
+											SOLD
+										</td>
+										<td>
+											$3,738.40
+										</td>
+										<td>
+											7.43%
+										</td>
+										<td>
+											4
+										</td>
+									</tr>
+									<tr class="profile__row d-flex">
+										<td>
+											2021-02-09 14:15:00
+										</td>
+										<td>
+											$10.75
+										</td>
+										<td class="details__buy">
+											BUY
+										</td>
+										<td>
+											4690
+										</td>
+										<td>
+											$50,347.10
+										</td>
+										<td>
+											2021-02-09 14:15:00
+										</td>
+										<td>
+											$10.75
+										</td>
+										<td class="details__sold">
+											SOLD
+										</td>
+										<td>
+											$3,738.40
+										</td>
+										<td>
+											7.43%
+										</td>
+										<td>
+											4
+										</td>
+									</tr>
+									<tr class="profile__row d-flex">
+										<td>
+											2021-02-09 14:15:00
+										</td>
+										<td>
+											$10.75
+										</td>
+										<td class="details__buy">
+											BUY
+										</td>
+										<td>
+											4690
+										</td>
+										<td>
+											$50,347.10
+										</td>
+										<td>
+											2021-02-09 14:15:00
+										</td>
+										<td>
+											$10.75
+										</td>
+										<td class="details__sold">
+											SOLD
+										</td>
+										<td>
+											$3,738.40
+										</td>
+										<td>
+											7.43%
+										</td>
+										<td>
+											4
+										</td>
+									</tr>
+									<tr class="profile__row d-flex">
+										<td>
+											2021-02-09 14:15:00
+										</td>
+										<td>
+											$10.75
+										</td>
+										<td class="details__buy">
+											BUY
+										</td>
+										<td>
+											4690
+										</td>
+										<td>
+											$50,347.10
+										</td>
+										<td>
+											2021-02-09 14:15:00
+										</td>
+										<td>
+											$10.75
+										</td>
+										<td class="details__sold">
+											SOLD
+										</td>
+										<td>
+											$3,738.40
+										</td>
+										<td>
+											7.43%
+										</td>
+										<td>
+											4
+										</td>
+									</tr>
+									<tr class="profile__row d-flex">
+										<td>
+											2021-02-09 14:15:00
+										</td>
+										<td>
+											$10.75
+										</td>
+										<td class="details__buy">
+											BUY
+										</td>
+										<td>
+											4690
+										</td>
+										<td>
+											$50,347.10
+										</td>
+										<td>
+											2021-02-09 14:15:00
+										</td>
+										<td>
+											$10.75
+										</td>
+										<td class="details__sold">
+											SOLD
+										</td>
+										<td>
+											$3,738.40
+										</td>
+										<td>
+											7.43%
+										</td>
+										<td>
+											4
+										</td>
+									</tr>
+									<tr class="profile__row d-flex">
+										<td>
+											2021-02-09 14:15:00
+										</td>
+										<td>
+											$10.75
+										</td>
+										<td class="details__buy">
+											BUY
+										</td>
+										<td>
+											4690
+										</td>
+										<td>
+											$50,347.10
+										</td>
+										<td>
+											2021-02-09 14:15:00
+										</td>
+										<td>
+											$10.75
+										</td>
+										<td class="details__sold">
+											SOLD
+										</td>
+										<td>
+											$3,738.40
+										</td>
+										<td>
+											7.43%
+										</td>
+										<td>
+											4
+										</td>
+									</tr>
+									<tr class="profile__row d-flex">
+										<td>
+											2021-02-09 14:15:00
+										</td>
+										<td>
+											$10.75
+										</td>
+										<td class="details__buy">
+											BUY
+										</td>
+										<td>
+											4690
+										</td>
+										<td>
+											$50,347.10
+										</td>
+										<td>
+											2021-02-09 14:15:00
+										</td>
+										<td>
+											$10.75
+										</td>
+										<td class="details__sold">
+											SOLD
+										</td>
+										<td>
+											$3,738.40
+										</td>
+										<td>
+											7.43%
+										</td>
+										<td>
+											4
+										</td>
+									</tr>
+									<tr class="profile__row d-flex">
+										<td>
+											2021-02-09 14:15:00
+										</td>
+										<td>
+											$10.75
+										</td>
+										<td class="details__buy">
+											BUY
+										</td>
+										<td>
+											4690
+										</td>
+										<td>
+											$50,347.10
+										</td>
+										<td>
+											2021-02-09 14:15:00
+										</td>
+										<td>
+											$10.75
+										</td>
+										<td class="details__sold">
+											SOLD
+										</td>
+										<td>
+											$3,738.40
+										</td>
+										<td>
+											7.43%
+										</td>
+										<td>
+											4
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="model model3 model-sim" id="model">
+			<div class="container">
+				<div class="title">
+					<h2>
+						Model Performance
+					</h2>
+				</div>
+				<div class="model__box">
+					<div class="model__block d-flex">
+						<div class="model__com">
+							<p>
+								The model is proven very successful with its success rates at about 95% for all sectors. <br>
+								The success rates are continually being monitored and updated daily (business day) here.
+							</p>
+						</div>
+						<div class="model__info d-flex">
+							<p>
+								Success Rate:
+							</p>
+							<span>
+								95.56%
+							</span>
+						</div>
+					</div>
+					<div class="model__graph">
+						<img src="img/gr1.svg" alt="" class="model__pic">
+						<div class="model__wrap">
+							<div class="model__pad">
+								<div class="model__row d-flex">
+									<p>
+										Success:
+									</p>
+									<div class="model__load">
+										<div class="modal__color modal__color_1"></div>
+									</div>
+									<span>
+										95.56%
+									</span>
+								</div>
+								<div class="model__row d-flex">
+									<p>
+										Aver. Gain:
+									</p>
+									<div class="model__load">
+										<div class="modal__color modal__color_2"></div>
+									</div>
+									<span>
+										3.45%
+									</span>
+								</div>
+								<div class="model__row d-flex">
+									<p>
+										Aver. Hold:
+									</p>
+									<div class="model__grey">
+										5.5 days
+									</div>
+								</div>
+								<div class="model__row d-flex">
+									<p>
+										Total # of stocks:
+									</p>
+									<div class="model__grey">
+										5051
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="model__flex d-flex">
+						<div class="d-flex z1 z">
+							<input type="checkbox" id="agree101" name="check" value="agree101" required="">
+							<label for="agree101">
+								<img src="img/green-line.svg" alt="">
+								<p>Stock Name - Alibaba</p>
+							</label>
+						</div>
+						<div class="d-flex z2 z">
+							<input type="checkbox" id="agree22" name="check" value="agree22" required="">
+							<label for="agree22">
+								<img src="img/yellow-line.svg" alt="">
+								<p>Sector name - Consumer</p>
+							</label>
+						</div>
+						<div class="d-flex z3 z">
+							<input type="checkbox" id="agree303" name="check" value="agree303" required="">
+							<label for="agree303">
+								<img src="img/blue-line.svg" alt="">
+								<p>All Sectors</p>
+							</label>
+						</div>
+						<div class="d-flex z4 z">
+							<input type="checkbox" id="agree44" name="check" value="agree44" checked="" required="">
+							<label for="agree44">
+								<p>All of them</p>
+							</label>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer class="footer footer2 footer-dash" id="footer">
+			<div class="container">
+				<div class="footer__box d-flex">
+					<a href="index.html" class="footer__logo">
+						<img src="img/footer-logo.svg" alt="">
+					</a>
+					<div class="footer__lists d-flex">
+						<ul>
+							<li>
+								<a href="#">
+									Home
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Simulation
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Real Time
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Market Insight
+								</a>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<a href="#">
+									About company
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									About modeling
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Contact us
+								</a>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<a href="#">
+									Stock info
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									My portfolio
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Legal documents
+								</a>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<a href="#">
+									Sign up
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Sign in
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Profile
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer__info d-flex">
+						<a href="mailto:hello@xide.ca" class="footer__site">
+							Contact us hello@xide.ca
+						</a>
+						<a href="#" class="footer__tele">
+							<img src="img/f1.svg" alt="" class="svg">
+						</a>
+					</div>
+				</div>
+				<div class="footer__flex d-flex">
+					<p>
+						Xide &copy; 2020
+					</p>
+					<div class="footer__links d-flex">
+						<a href="#">
+							Terms of Services
+						</a>
+						<a href="#">
+							Privacy Policy
+						</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js?ver=5.1"></script>
+	<!-- Подключен файл-валидатор, для проверки формы на заполненность  -->
+	<!-- <script type="text/javascript"
+		src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.js"></script> -->
+	<!-- <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=7d8fc9fb-8540-4124-aaf0-efcfe8ad368e"
+		type="text/javascript"></script> -->
+	<script src="js/jquery.arcticmodal-0.3.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+		integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/main.js"></script>
+	<script>
+		$(document).ready(function () {
+			$('.js-example-basic-single').select2({
+				minimumResultsForSearch: -1
+			});
+		});
+	</script>
+</body>
+
+</html>
