@@ -4131,6 +4131,10 @@ td a img {
 .model-sim .z4 {
   width: auto;
 }
+.box-modal__close:hover {
+  transform: rotate(180deg);
+  top: -16px;
+}
 @media screen and (min-width: 1500px) and (max-width: 1920px) {
   .screen__fig2 {
     top: -112px;
@@ -4162,6 +4166,17 @@ td a img {
   }
   .footer-dash {
     padding: 55px 15px 40px !important;
+  }
+  .popup-call__box {
+    margin-top: -125px;
+  }
+  #popup-info .popup-call__box {
+    margin-top: -124px;
+  }
+  .arcticmodal-container {
+    overflow: scroll;
+    overflow-x: hidden;
+    padding-bottom: 28%;
   }
 }
 /* END */
@@ -6148,6 +6163,13 @@ td a img {
   .sim-main__el_last {
     padding-top: 20px;
   }
+  .arcticmodal-container {
+    overflow: scroll;
+    overflow-x: hidden;
+  }
+  #popup-info .popup-call__box {
+    margin-top: -190px;
+  }
 }
 @media screen and (min-width: 500px) and (max-width: 575px)  {
   .legal__item {
@@ -6160,7 +6182,7 @@ td a img {
     overflow-x: hidden;
   }
   #popup-info .popup-call__box {
-    margin-top: -190px;
+    margin-top: -152px;
   }
   .popup-call__box {
     margin-top: -144px;
