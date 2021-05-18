@@ -2678,7 +2678,8 @@ ul#select2-sum59-results.select2-results__options {
 .com__row {
   height: 50px;
   background: #F2F5FA;
-  padding-left: 33px;
+  padding-left: 31px;
+  padding-right: 51px;
   padding-top: 16px;
 }
 .com__row {
@@ -2700,9 +2701,9 @@ ul#select2-sum59-results.select2-results__options {
   width: 80px;
   margin-right: 73px;
 } */
-.com__row p:nth-child(2) {
+/* .com__row p:nth-child(2) {
   margin-right: 92px;
-}
+} */
 .company__left {
   justify-content: space-between;
   align-items: center;
@@ -2736,6 +2737,9 @@ ul#select2-sum59-results.select2-results__options {
 }
 .company .profile__table .profile__row:nth-child(odd) {
   background: #Ffff !important;
+  /* padding: 7px 31px; */
+}
+.company .profile__table .profile__row {
   padding: 7px 31px;
 }
 .company__released {
@@ -5826,6 +5830,12 @@ td a img {
   width: 100%;
   box-shadow: 0px 0px 20px rgb(0 0 0 / 10%);
 }
+@media (max-width: 1199px) {
+  .m-table-chart {
+    width: 100%;
+    height: 145px;
+  }
+}
 
 /* ===================== /charts =====================  */
 
@@ -5855,6 +5865,12 @@ td a img {
 }
 .adaptive-table td {
   padding: 10px 5px;
+}
+.forecast-table_td {
+  width: 37.5%;
+}
+.forecast-table_td:first-child {
+  width: 25%;
 }
 
 @media (max-width: 1199px) {
@@ -5893,6 +5909,98 @@ td a img {
     text-align: right;
   }
   .adaptive-table td[data-label]:before {
+    content: attr(data-label);
+    display: block;
+    white-space: nowrap;
+    opacity: .7;
+    text-align-last: left;
+  }
+  .profile__table_stocks td:first-child {
+    padding-left: 5px;
+  }
+  .profile__operation {
+    width: 100%;
+    max-width: 100%;
+  }
+  .profile__operation .bttn {
+    margin: 0 5px;
+  }
+  .adaptive-table_with-content .profile__operation {
+    justify-content: center;
+  }
+  .profile__table.adaptive-table_with-content .profile__row,
+  .adaptive-table_with-content .profile__stocks-row {
+    background: none;
+  }
+  .adaptive-table tr.adaptive-table__content {
+    width: 100%;
+    border: 0 none;
+  }
+  .port .adaptive-table__content .content {
+    padding: 0;
+  }
+  .adaptive-table__content .pro__block {
+    width: 215px;
+    height: 90px;
+  }
+}
+
+@media (max-width: 992px) {
+  .adaptive-table__content .pro__flex {
+    flex-wrap: wrap;
+  }
+  .adaptive-table__content .pro__block {
+    width: 48%;
+    width: calc(50% - 5px);
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .com__row {
+    padding-left: 10px;
+    padding-right: 30px;
+  }
+  .company .profile__table .profile__row {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .forecast-table_td {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 520px) {
+  .adaptive-table__content .pro__flex {
+    justify-content: center;
+  }
+  .adaptive-table__content .pro__block {
+    width: 300px;
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 425px) {
+  .forecast-table_thead {
+    display: none !important;
+  }
+  .forecast-table_tr {
+    flex-direction: column;
+  }
+  .forecast-table_td {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 12px;
+  }
+  .forecast-table_td:first-child {
+    width: 100%;
+  }
+  .forecast-table_td[data-label] {
+    justify-content: space-between;
+  }
+  .forecast-table_td[data-label]:before {
     content: attr(data-label);
     display: block;
     white-space: nowrap;
