@@ -3967,7 +3967,7 @@ td a img {
 }
 .sim-main__name {
   font-weight: bold;
-  font-size: 16px;  
+  font-size: 16px;
 }
 .sim-main__btn {
   width: 120px;
@@ -6247,6 +6247,9 @@ td a img {
 }
 .mb-20 {
   margin-bottom: 20px;
+}
+.details_w100 {
+  width: 100%;
 }
 
 /* ===================== Adaptive tables =====================  */
