@@ -2041,9 +2041,9 @@ textarea:-moz-placeholder { /* Firefox 18- */
 .port .profile__table .profile__row:last-child {
   padding: 23px 31px;
 }*/
-.port .profile__table .profile__row:last-child td {
+/* .port .profile__table .profile__row:last-child td {
   font-weight: bold;
-}
+} */
 /*.port__info2 .profile__table {
   margin-top: 30px;
 }
@@ -3842,7 +3842,7 @@ td.up:before, td.normal:before, td.down:before {
   background: url(../img/sym2.svg) no-repeat;
   width: 8px;
   height: 8px;
-  margin-right: 2px;
+  margin-right: 3px;
 }
 .normal:before {
   content: "";
@@ -3850,7 +3850,7 @@ td.up:before, td.normal:before, td.down:before {
   background: url(../img/normal.svg) no-repeat;
   width: 12px;
   height: 12px;
-  margin-right: 2px;
+  margin-right: 3px;
   margin-bottom: -2px;
 }
 .down:before {
@@ -3859,7 +3859,7 @@ td.up:before, td.normal:before, td.down:before {
   background: url(../img/pra1.svg) no-repeat;
   width: 8px;
   height: 8px;
-  margin-right: 2px;
+  margin-right: 3px;
 }
 .down, td.down span, .market__strategy.down span  {
   font-weight: bold;
@@ -4138,6 +4138,30 @@ td a img {
 .box-modal__close:hover {
   transform: rotate(180deg);
   top: -16px;
+}
+.details__box thead a {
+  font-size: 10px;
+}
+.details__box thead tr td:nth-child(5):after {
+  display: none !important;
+}
+.details__box thead tr td:nth-child(5) {
+  display: table-cell !important;
+}
+.details__box .profile__row td:nth-child(5):after {
+  content: "";
+  display: inline-block;
+  background: url(../img/ar-green.svg) no-repeat;
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+}
+.details__box .profile__row td:nth-child(5) {
+  display: flex;
+  align-items: center;
+} 
+.profile__row .active {
+  display: table-cell;
 }
 @media screen and (min-width: 1500px) and (max-width: 1920px) {
   .screen__fig2 {
@@ -4561,6 +4585,9 @@ td a img {
   }
   .sim-main__el {
     margin: 0 auto 20px;
+  }
+  .details__box .profile__row td:nth-child(5):after {
+    display: none;
   }
 }
 @media screen and (max-width: 991px) {
@@ -6324,7 +6351,7 @@ td a img {
     border: 1px solid #EEEEFF;
     border-radius: 5px;
   }
-  .adaptive-table td {
+  .adaptive-table td , .profile__row .active{
     display: flex;
     justify-content: center;
   }
