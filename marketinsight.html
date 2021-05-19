@@ -501,8 +501,30 @@
 							<p class="market__name">
 								Today's weighted price change for the selected sector in this category:
 							</p>
-							<div class="market__line d-flex">
-								<img src="img/big-gra.svg" alt="" class="market__gra">
+							<div class="market__line d-flex align__center">
+
+								<!-- <img src="img/big-gra.svg" alt="" class="market__gra"> -->
+
+								<div class="wghtd">
+									<div class="wghtd__line"></div>
+									<!--
+										# Показатели задаются в height по модулю (только положительные), а в filter: brightness() передавать значение по формуле: 200% - |значение|
+										# Это влияет на цвет столбца.
+										# Для отрицательных значений менять класс wghtd__positive на класс wghtd__negative
+									-->
+									<div class="wghtd__itm"><div class="wghtd__positive"><div class="wghtd__bar" style="height: 100%; filter: brightness(100%);"></div></div></div>
+									<div class="wghtd__itm"><div class="wghtd__positive"><div class="wghtd__bar" style="height: 80%; filter: brightness(120%);"></div></div></div>
+									<div class="wghtd__itm"><div class="wghtd__positive"><div class="wghtd__bar" style="height: 60%; filter: brightness(140%);"></div></div></div>
+									<div class="wghtd__itm"><div class="wghtd__positive"><div class="wghtd__bar" style="height: 40%; filter: brightness(160%);"></div></div></div>
+									<div class="wghtd__itm"><div class="wghtd__positive"><div class="wghtd__bar" style="height: 30%; filter: brightness(170%);"></div></div></div>
+									<div class="wghtd__itm"><div class="wghtd__positive"><div class="wghtd__bar" style="height: 20%; filter: brightness(180%);"></div></div></div>
+									<div class="wghtd__itm"><div class="wghtd__positive"><div class="wghtd__bar" style="height: 10%; filter: brightness(190%);"></div></div></div>
+									<div class="wghtd__itm"><div class="wghtd__negative"><div class="wghtd__bar" style="height: 5%; filter: brightness(195%);"></div></div></div>
+									<div class="wghtd__itm"><div class="wghtd__negative"><div class="wghtd__bar" style="height: 30%; filter: brightness(170%);"></div></div></div>
+									<div class="wghtd__itm"><div class="wghtd__negative"><div class="wghtd__bar" style="height: 40%; filter: brightness(160%);"></div></div></div>
+									<div class="wghtd__itm"><div class="wghtd__negative"><div class="wghtd__bar" style="height: 60%; filter: brightness(140%);"></div></div></div>
+								</div>
+
 								<div class="market__content">
 									<div class="market__sum d-flex">
 										<div class="market__item">
@@ -531,39 +553,21 @@
 										</div>
 									</div>
 									<ul class="market__list">
-										<li>
-											Technology +1.13%
-										</li>
-										<li>
-											Financial Services +0.35%
-										</li>
-										<li>
-											Communication Services +0.33%
-										</li>
-										<li>
-											Healthcare +0.31%
-										</li>
-										<li>
-											Industrials -0.01%
-										</li>
-										<li>
-											Consumer Cyclical -0.02%
-										</li>
-										<li>
-											Consumer Defensive -0.06%
-										</li>
-										<li>
-											Basic Materials -0.24%
-										</li>
-										<li>
-											Utilities -0.53%
-										</li>
-										<li>
-											Real Estate -0.79%
-										</li>
-										<li>
-											Energy -0.82%
-										</li>
+										<!--
+											# Для отрицательных значений в market__label добавить класс market__label_negative
+											# в filter: brightness() передавать значение по формуле: 200% - |значение|
+										-->
+										<li><div class="market__label" style="filter: brightness(100%);"></div> Technology +1.13%</li>
+										<li><div class="market__label" style="filter: brightness(120%);"></div> Financial Services +0.35%</li>
+										<li><div class="market__label" style="filter: brightness(140%);"></div> Communication Services +0.33%</li>
+										<li><div class="market__label" style="filter: brightness(160%);"></div> Healthcare +0.31%</li>
+										<li><div class="market__label" style="filter: brightness(170%);"></div> Industrials -0.01%</li>
+										<li><div class="market__label" style="filter: brightness(180%);"></div> Consumer Cyclical -0.02%</li>
+										<li><div class="market__label" style="filter: brightness(190%);"></div> Consumer Defensive -0.06%</li>
+										<li><div class="market__label market__label_negative" style="filter: brightness(195%);"></div> Basic Materials -0.24%</li>
+										<li><div class="market__label market__label_negative" style="filter: brightness(170%);"></div> Utilities -0.53%</li>
+										<li><div class="market__label market__label_negative" style="filter: brightness(160%);"></div> Real Estate -0.79%</li>
+										<li><div class="market__label market__label_negative" style="filter: brightness(140%);"></div> Energy -0.82%</li>
 									</ul>
 								</div>
 							</div>
