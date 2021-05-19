@@ -4113,16 +4113,16 @@ td a img {
   transform: rotate(180deg);
   top: -16px;
 }
-.details__box thead a {
+.details__box thead a, .details_w100 thead a {
   font-size: 10px;
 }
-.details__box thead tr td:nth-child(5):after {
+.details__box thead tr td:nth-child(5):after, .details_w100 thead tr td:nth-child(5):after {
   display: none !important;
 }
-.details__box thead tr td:nth-child(5) {
+.details__box thead tr td:nth-child(5), .details_w100 thead tr td:nth-child(5) {
   display: table-cell !important;
 }
-.details__box .profile__row td:nth-child(5):after {
+.details__box .profile__row td:nth-child(5):after, .details_w100 .profile__row td:nth-child(5):after {
   content: "";
   display: inline-block;
   background: url(../img/ar-green.svg) no-repeat;
@@ -4130,12 +4130,15 @@ td a img {
   height: 24px;
   margin-left: 10px;
 }
-.details__box .profile__row td:nth-child(5) {
+.details__box .profile__row td:nth-child(5), .details_w100 .profile__row td:nth-child(5) {
   display: flex;
   align-items: center;
 } 
 .profile__row .active {
   display: table-cell;
+}
+.details_w100 .profile__table .profile__row:nth-child(odd) {
+  background: #FFFFFF;
 }
 @media screen and (min-width: 1500px) and (max-width: 1920px) {
   .screen__fig2 {
@@ -4560,7 +4563,7 @@ td a img {
   .sim-main__el {
     margin: 0 auto 20px;
   }
-  .details__box .profile__row td:nth-child(5):after {
+  .details__box .profile__row td:nth-child(5):after, .details_w100 .profile__row td:nth-child(5):after {
     display: none;
   }
 }
