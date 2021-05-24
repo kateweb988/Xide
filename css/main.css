@@ -1921,7 +1921,8 @@ textarea:-moz-placeholder { /* Firefox 18- */
   margin: 0;
   padding: 0;
   border: none;
-  max-width: 100%;
+  max-width: 259px;
+  margin: 0 auto 0;
 }
 .port .set > a,
 .m-arrow {
@@ -1938,6 +1939,7 @@ textarea:-moz-placeholder { /* Firefox 18- */
 .port .set > a.active,
 .m-arrow.active {
   background: url(../img/up.svg) no-repeat 100% 0px;
+  margin-bottom: 30px;
 }
 .m-arrow,
 .m-arrow.active {
@@ -1954,7 +1956,7 @@ textarea:-moz-placeholder { /* Firefox 18- */
 }
 .port .content {
   background: transparent;
-  padding: 10px 20px;
+  padding: 10px 0px;
   margin: 10px auto 0;
   /* width: 259px; */
 }
