@@ -1,0 +1,1047 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>XEM</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<!-- Favicon -->
+	<link rel="icon" href="img/shortcut.png" type="image/x-icon">
+	<link rel="shortcut icon" href="img/shortcut.png" type="image/x-icon">
+	<!-- OG -->
+	<meta property="og:title" content="XEM">
+	<meta property="og:description" content="XEM">
+	<meta property="og:type" content="website">
+	<meta property="og:image" content="img/shortcut.png">
+	<meta property="og:site_name" content="XEM">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="css/jquery.arcticmodal-0.3.css">
+	<link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+	<link rel="stylesheet" type="text/css" href="css/slick.css">
+	<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+	<div class="body-wrap">
+		<section class="top" id="top">
+			<div class="container">
+				<div class="top__box d-flex">
+					<div class="top__left d-flex">
+						<a href="index.html" class="top__logo">
+							<img src="img/logo.svg" alt="">
+						</a>
+						<ul class="d-flex menu__list">
+							<li class="active">
+								<a href="#">
+									Home
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Simulation
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Real Time
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Market Insight
+								</a>
+							</li>
+							<li class="nav__link">
+								<a href="#" class="sub-menu__link">
+									About
+								</a>
+								<ul class="sub-menu__list">
+									<li>
+										<a href="" class="sub-menu__link">About</a>
+									</li>
+									<li>
+										<a href="" class="sub-menu__link">About</a>
+									</li>
+									<li>
+										<a href="" class="sub-menu__link">About</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">
+									Contact
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="top__right d-flex">
+						<div class="top__info">
+							<!-- <select class="vodiapicker">
+								<option value="en" class="test">
+									US & Canada Markets</option>
+								<option value="ru">
+									Russia</option>
+							</select>
+							<div class="lang-select">
+								<button class="btn-select" value=""></button>
+								<div class="b">
+									<ul id="a"></ul>
+								</div>
+							</div> -->
+							<select class="js-example-basic-single news-select" id="sum1" name="period">
+								<option value="first">US & Canada Markets</option>
+								<option value="second" class="fr">Russia Markets</option>
+							</select>
+							<p>
+								est 05:09 am
+							</p>
+						</div>
+						<div class="top__wrap d-flex">
+							<select class="js-example-basic-single news-select" id="sum2" name="period">
+								<option value="first">Eng</option>
+								<option value="second" class="fr">Ru</option>
+							</select>
+							<a href="#" class="top__btn bttn">
+								LOG IN
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="menuu">
+			<a href="#" class="button "><span></span></a>
+		</div>
+		<div class="burgerr">
+			<div class="top__info d-flex">
+				<div>
+					<select class="js-example-basic-single news-select" id="sum11" name="period">
+						<option value="first">US & Canada Markets</option>
+						<option value="second" class="fr">Russia Markets</option>
+					</select>
+					<p>
+						est 05:09 am
+					</p>
+				</div>
+				<a href="#" class="top__btn bttn">
+					LOG IN
+				</a>
+			</div>
+			<ul>
+				<li class="active">
+					<a href="#">
+						Home
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						Simulation
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						Real Time
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						Market Insight
+					</a>
+				</li>
+				<li>
+					<div class="accordion-container">
+						<div class="set">
+							<a href="#">
+								About
+							</a>
+							<div class="content">
+								<ul>
+									<li>
+										<a href="">About</a>
+									</li>
+									<li>
+										<a href="">About</a>
+									</li>
+									<li>
+										<a href="">About</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					</li>
+					<li>
+						<a href="#">
+							Contact
+						</a>
+					</li>
+			</ul>
+		</div>
+		<header class="header" id="header">
+			<div class="container">
+				<div class="header__box d-flex">
+					<div class="header__content">
+						<h1>
+							XIDE Empirical Model ("XEM") <span class="green"> for Your Succes</span>
+						</h1>
+						<p class="header__text">
+							We are pleased to present XEM, a proven successful model and excellent tool, for tactical trading
+							in stocks for stock market investors, traders, researchers, analysts, or anyone who is interested
+							in stock markets like you.
+						</p>
+						<p class="header__info">
+							Sing-up a FREE account now, and you can upgrade to a <span> premium account FREE for 1st three
+								months</span>
+						</p>
+						<a href="#" class="header__btn bttn">
+							SIGN UP FREE
+						</a>
+					</div>
+					<img src="img/header.svg" alt="" class="header__pic">
+				</div>
+			</div>
+		</header>
+		<section class="model" id="model">
+			<img src="img/a2.svg" alt="" class="model__fig">
+			<div class="container">
+				<div class="title">
+					<h2>
+						Model Performance
+					</h2>
+					<p>
+						The model is proven very successful with its success rates at about 95% for all sectors.
+						The success rates are continually being monitored and updated daily (business day) here.
+					</p>
+				</div>
+				<div class="model__box">
+					<div class="model__block d-flex">
+						<select class="js-example-basic-single news-select" id="sum5" name="period">
+							<option value="first">All Sectors</option>
+							<option value="second" class="fr">one</option>
+							<option value="third" class="fr">two</option>
+						</select>
+						<div class="model__info d-flex">
+							<p>
+								Success Rate:
+							</p>
+							<span>
+								95.56%
+							</span>
+						</div>
+					</div>
+					<div class="model__graph">
+						<!-- <img src="img/gr1.svg" alt="" class="model__pic"> -->
+
+						<!-- ==================================== -->
+							<div class="m-big-chart">
+								<canvas class="m-bigchart"></canvas>
+								<script>
+									/* Данные для графиков */
+									var bigChartData = {
+										/* метки горизонтальной оси */
+										labels: ['2021.01.26', '2021.01.27', '2021.01.28', '2021.01.29', '2021.01.30', '2021.01.31', '2021.01.32'],
+										charts: [
+											{
+												id: 'agree1', 																/* По id графики переключаются с помощью checkbox */
+												color: '#1FC7A2', 														/* Цвет линии */
+												data: [90, 91, 93, 94, 95, 97, 100] 					/* Значения */
+											},
+											{
+												id: 'agree2',
+												color: '#F9E7A9',
+												data: [90, 92, 94, 95, 98, 101, 102]
+											},
+											{
+												id: 'agree3',
+												color: '#4A7DC9',
+												data: [89, 90, 91, 90, 92, 94, 95]
+											}
+										]
+									}
+								</script>
+							</div>
+						<!-- ==================================== -->
+
+						<div class="model__wrap">
+							<div class="model__pad">
+								<div class="model__row d-flex">
+									<p>
+										Success:
+									</p>
+									<div class="model__load">
+										<div class="modal__color modal__color_1"></div>
+									</div>
+									<span>
+										95.56%
+									</span>
+								</div>
+								<div class="model__row d-flex">
+									<p>
+										Aver. Gain:
+									</p>
+									<div class="model__load">
+										<div class="modal__color modal__color_2"></div>
+									</div>
+									<span>
+										3.45%
+									</span>
+								</div>
+								<div class="model__row d-flex">
+									<p>
+										Aver. Hold:
+									</p>
+									<div class="model__grey">
+										5.5 days
+									</div>
+								</div>
+								<div class="model__row d-flex">
+									<p>
+										Total # of stocks:
+									</p>
+									<div class="model__grey">
+										5051
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="model__flex d-flex">
+						<div class="d-flex z1 z">
+							<input class="big-chart-ctrl big-chart-ctrl__elem" type="checkbox" id="agree1" name="check" value="agree1">
+							<label for="agree1">
+								<img src="img/green-line.svg" alt="">
+								<p>Model Success Rate (%) - 1 month;</p>
+							</label>
+						</div>
+						<div class="d-flex z2 z">
+							<input class="big-chart-ctrl big-chart-ctrl__elem" type="checkbox" id="agree2" name="check" value="agree2">
+							<label for="agree2">
+								<img src="img/yellow-line.svg" alt="">
+								<p>Model Success Rate (%) - 2 months;</p>
+							</label>
+						</div>
+						<div class="d-flex z3 z">
+							<input class="big-chart-ctrl big-chart-ctrl__elem" type="checkbox" id="agree3" name="check" value="agree3">
+							<label for="agree3">
+								<img src="img/blue-line.svg" alt="">
+								<p>Model Success Rate (%) - 3 months;</p>
+							</label>
+						</div>
+						<div class="d-flex z4 z">
+							<input class="big-chart-ctrl big-chart-ctrl__agreeall" type="checkbox" id="agreeall" name="check" value="agreeall" checked>
+							<label for="agreeall">
+								<p>All of them</p>
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="model__line d-flex">
+					<img src="img/a1.svg" alt="" class="model__img">
+					<div class="model__content">
+						<h2>
+							X-Empirical Modeling
+							(XEM)
+						</h2>
+						<p>
+							Aliquet vulputate non gravida lacus risus ut urna. Quam condimentum quam rhoncus consequat. Cursus
+							a pellentesque curabitur odio egestas fermentum. Quis sed ultricies ornare nunc. Pulvinar
+							facilisi neque, sem vitae felis, diam sit.
+						</p>
+						<a href="#" class="model__btn bttn">
+							SIGN UP FREE
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="van" id="van">
+			<div class="container">
+				<div class="van__box d-flex">
+					<div class="van__item">
+						<img src="img/van1.svg" alt="" class="van__pic">
+						<p class="van__name">
+							XEM model <br>
+							by simulation
+						</p>
+						<ul>
+							<li class="d-flex">
+								<img src="img/van.svg" alt="">
+								<p>
+									See what if you follow what our model tells when at what price to buy or sell
+								</p>
+							</li>
+							<li class="d-flex">
+								<img src="img/van.svg" alt="">
+								<p>
+									Make great potential for gains
+								</p>
+							</li>
+							<li class="d-flex">
+								<img src="img/van.svg" alt="">
+								<p>
+									Run your simulations for any stock you prefer
+								</p>
+							</li>
+							<li class="d-flex">
+								<img src="img/van.svg" alt="">
+								<p>
+									Return & risk assessments
+								</p>
+							</li>
+						</ul>
+						<a href="#" class="van__btn van__btn_1 bttn">
+							MORE
+						</a>
+					</div>
+					<div class="van__item">
+						<img src="img/van2.svg" alt="" class="van__pic">
+						<p class="van__name">
+							Real-time <br>
+							Watch
+						</p>
+						<ul>
+							<li class="d-flex">
+								<img src="img/van.svg" alt="">
+								<p>
+									Real-time to show timing for IN (Buy) or OUT (sell)
+								</p>
+							</li>
+							<li class="d-flex">
+								<img src="img/van.svg" alt="">
+								<p>
+									SIGN UP
+								</p>
+							</li>
+							<li class="d-flex">
+								<img src="img/van.svg" alt="">
+								<p>
+									All buy/sell times are ticketed in database for model demonstrating and result tracking
+								</p>
+							</li>
+							<li class="d-flex">
+								<img src="img/van.svg" alt="">
+								<p>
+									Real-time watch for any stocks you prefer during trading sessions
+								</p>
+							</li>
+						</ul>
+						<a href="#" class="van__btn van__btn_2 bttn">
+							MORE
+						</a>
+					</div>
+					<div class="van__item">
+						<img src="img/van3.svg" alt="" class="van__pic">
+						<p class="van__name">
+							Market <br>
+							Insight
+						</p>
+						<ul>
+							<li class="d-flex">
+								<img src="img/van.svg" alt="">
+								<p>
+									Real-time watch for stock and sector's performance
+								</p>
+							</li>
+							<li class="d-flex">
+								<img src="img/van.svg" alt="">
+								<p>
+									Real-time monitor top 500 mega stocks, top 500 most favorable P/Es, top 300 stocks - price
+									gain/loss top 300 most active stocks, Top 300 most volatile stocks, Top 500 price lowest
+									stocks
+								</p>
+							</li>
+							<li class="d-flex">
+								<img src="img/van.svg" alt="">
+								<p>
+									More investment opportunities for stock source
+								</p>
+							</li>
+						</ul>
+						<a href="#" class="van__btn van__btn_3 bttn">
+							MORE
+						</a>
+					</div>
+					<div class="van__item">
+						<img src="img/van4.svg" alt="" class="van__pic">
+						<p class="van__name">
+							Build hypothetical <br>
+							portfolio
+						</p>
+						<ul>
+							<li class="d-flex">
+								<img src="img/van.svg" alt="">
+								<p>
+									SManage your virtual cash & own portfolio
+								</p>
+							</li>
+							<li class="d-flex">
+								<img src="img/van.svg" alt="">
+								<p>
+									Gain real experiences
+								</p>
+							</li>
+							<li class="d-flex">
+								<img src="img/van.svg" alt="">
+								<p>
+									Real-time and real data
+								</p>
+							</li>
+						</ul>
+						<a href="#" class="van__btn van__btn_4 bttn">
+							MORE
+						</a>
+					</div>
+					<div class="van__item">
+						<img src="img/van5.svg" alt="" class="van__pic">
+						<p class="van__name">
+							Comprehensive <br>
+							Analytics
+						</p>
+						<ul>
+							<li class="d-flex">
+								<img src="img/van.svg" alt="">
+								<p>
+									Real-time charts
+								</p>
+							</li>
+							<li class="d-flex">
+								<img src="img/van.svg" alt="">
+								<p>
+									T+1d forecast close price and price range for the next trading day & T+30d forecast
+								</p>
+							</li>
+							<li class="d-flex">
+								<img src="img/van.svg" alt="">
+								<p>
+									Tracking forecast error and accuracy
+								</p>
+							</li>
+							<li class="d-flex">
+								<img src="img/van.svg" alt="">
+								<p>
+									ROI and risk assessments & momentum calibration
+								</p>
+							</li>
+						</ul>
+						<a href="#" class="van__btn van__btn_5 bttn">
+							MORE
+						</a>
+					</div>
+					<div class="van__item">
+						<img src="img/van6.svg" alt="" class="van__pic">
+						<p class="van__name">
+							Advantages <br>
+							of account
+						</p>
+						<ul>
+							<li class="d-flex">
+								<img src="img/van.svg" alt="">
+								<p>
+									Simply Sign-Up, just in seconds
+								</p>
+							</li>
+							<li class="d-flex">
+								<img src="img/van.svg" alt="">
+								<p>
+									Create a Free Account
+								</p>
+							</li>
+							<li class="d-flex">
+								<img src="img/van.svg" alt="">
+								<p>
+									Upgrade to a Premium Account
+								</p>
+							</li>
+						</ul>
+						<a href="#" class="van__btn van__btn_6 bttn">
+							MORE
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="screen" id="screen">
+			<img src="img/blue3.png" alt="" class="screen__fig2 screen__fig">
+			<img src="img/blue2.png" alt="" class="screen__fig1 screen__fig">
+			<div class="container">
+				<div class="screen__box d-flex">
+					<div class="screen__content">
+						<h2>
+							Screencast
+						</h2>
+						<p>
+							Working on our model is simple. We have recorded several videos on how to work in the personal
+							account of the investor site. Watch it and get started
+						</p>
+						<a href="#" class="screen__btn bttn">
+							WATCH <img src="img/play.svg" alt="" class="svg">
+						</a>
+					</div>
+					<img src="img/b.png" alt="" class="screen__pic">
+				</div>
+			</div>
+		</section>
+		<section class="recom" id="recom">
+			<div class="container">
+				<div class="title">
+					<h2>
+						Recomendations
+					</h2>
+					<p>
+						Fusce at dolor est non. Potenti tortor, turpis parturient cras congue. Eu, gravida enim semper augue
+						amet, sit pellentesque dictum. Et malesuada fermentum, fames id eu.
+					</p>
+				</div>
+				<div class="recom__box d-flex">
+					<div class="recom__item">
+						<div class="recom__ava d-flex">
+							<img src="img/c1.png" alt="">
+							<div class="recom__content">
+								<p>
+									Loise Lane
+								</p>
+								<span>
+									Investor
+								</span>
+							</div>
+						</div>
+						<div class="recom__text">
+							<p>
+								Urna ultrices nulla scelerisque faucibus a. Vitae amet proin pulvinar id nunc sed laoreet
+								gravida. Enim odio amet, tortor in semper viverra. Gravida velit senectus tempus ullamcorper
+								turpis. Arcu a est cursus in eget interdum.
+							</p>
+							<p>
+								Sit vitae consectetur sed quis in quam nulla porta. Faucibus mi nibh diam massa amet, blandit
+								odio. Ac nisi velit, facilisi netus scelerisque lacus velit euismod. Urna ultrices blandit
+								facilisis etiam sit mi ornare. Massa integer blandit feugiat us.
+							</p>
+						</div>
+					</div>
+					<div class="recom__item">
+						<div class="recom__ava d-flex">
+							<img src="img/c2.png" alt="">
+							<div class="recom__content">
+								<p>
+									Davis Harris
+								</p>
+								<span>
+									Investor
+								</span>
+							</div>
+						</div>
+						<div class="recom__text">
+							<p>
+								Urna ultrices nulla scelerisque faucibus a. Vitae amet proin pulvinar id nunc sed laoreet
+								gravida. Enim odio amet, tortor in semper viverra. Gravida velit senectus
+							</p>
+						</div>
+					</div>
+					<div class="recom__item">
+						<div class="recom__ava d-flex">
+							<img src="img/c3.png" alt="">
+							<div class="recom__content">
+								<p>
+									Alex Baker
+								</p>
+								<span>
+									Investor
+								</span>
+							</div>
+						</div>
+						<div class="recom__text">
+							<p>
+								Urna ultrices nulla scelerisque faucibus a. Vitae amet proin pulvinar id nunc sed laoreet
+								gravida. Enim odio amet, tortor in semper viverra. Gravida velit senectus tempus ullamcorper
+								turpis. Arcu a est cursus in eget interdum.Sit vitae consectetur sed quis in quam nulla porta.
+								Faucibus mi nibh diam massa amet, blandit odio. Ac nisi velit, facilisi netus scelerisque lacus
+								velit euismod.
+							</p>
+						</div>
+					</div>
+					<div class="recom__item">
+						<div class="recom__ava d-flex">
+							<img src="img/c4.png" alt="">
+							<div class="recom__content">
+								<p>
+									Amanda Swan
+								</p>
+								<span>
+									Trader
+								</span>
+							</div>
+						</div>
+						<div class="recom__text">
+							<p>
+								Ipsum lectus nascetur lobortis interdum velit arcu nulla. In eu aliquam dui vel libero. Quisque
+								amet odio duis lectus egestas arcu id et. Elit scelerisque facilisis quis elementum sagittis
+								convallis. Lectus elit consequat enim ultricies commodo. Enim dictum risus sagittis, in tempus,
+								aliquam felis pulvinar nullam. In tristique tincidunt adipiscing enim erat. Eu ut congue arcu
+								volutpat dignissim. Diam nunc, quisque eget metus vitae odio.
+							</p>
+							<p>
+								Ut mauris scelerisque mi gravida dictum nulla tortor odio elit. Semper commodo sed at at amet.
+								Ullamcorper in dui ante tellus sed. Sed lectus ac tellus quis sed ipsum donec odio orci. Amet
+								morbi in vitae dictum consequat, elit velit nullam gravida.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="we" id="we">
+			<img src="img/we2.svg" alt="" class="we__fig">
+			<div class="container">
+				<div class="we__box d-flex">
+					<div class="we__content">
+						<h2>
+							We are a technology
+							startup
+						</h2>
+						<p>
+							Xide Technology Inc. ("Xide") is a tech startup established by an entrepreneurial team, supported
+							by advisors who include experienced traders, practitioners and researchers in North American stock
+							markets.
+						</p>
+						<p>
+							One of Xide's major innovations and breakthroughs is its X-Empirical Modeling ("XEM"), developed by
+							Xide team. Xide has been testing the XEM model by using real historical data, virtually for all
+							stocks trading in the US and Canadian stock markets.
+						</p>
+					</div>
+					<img src="img/we.svg" alt="" class="we__img">
+				</div>
+			</div>
+		</section>
+		<section class="ask" id="ask">
+			<div class="container">
+				<div class="title">
+					<h2>
+						Frequently Asked Questions
+					</h2>
+					<p>
+						Fusce at dolor est non. Potenti tortor, turpis parturient cras congue. Eu, gravida enim semper augue
+						amet, sit pellentesque dictum. Et malesuada fermentum, fames id eu.
+					</p>
+				</div>
+				<div class="accordion-container">
+					<div class="set">
+						<a href="#">
+							What is the principle of your model?
+						</a>
+						<div class="content">
+							<p>
+								We are very thrilled that our XEM modeling is proven so successful, accurate and satisfactory as
+								demonstrated in historical real data simulations, real-time data demonstrations, return & risk
+								assessments, market momentum calibrations, and stock price forecasts including T+1 day and + 1
+								month. Particularly for T+1 day forecasts, Xide adopts an algorithm developed by a financial
+								engineer who holds a master's degree in financial engineering from New York University (NY,
+								USA), and is also a certified Financial Risk Manager ("FRM") by Global Association of Risk
+								Professionals ("GARP") in the USA. This financial engineer has also provided much valuable
+								research for the successful modelling of XEM.
+							</p>
+						</div>
+					</div>
+					<div class="set">
+						<a href="#">
+							How do I create an account?
+						</a>
+						<div class="content">
+							<p>
+								We are very thrilled that our XEM modeling is proven so successful, accurate and satisfactory as
+								demonstrated in historical real data simulations, real-time data demonstrations, return & risk
+								assessments, market momentum calibrations, and stock price forecasts including T+1 day and + 1
+								month. Particularly for T+1 day forecasts, Xide adopts an algorithm developed by a financial
+								engineer who holds a master's degree in financial engineering from New York University (NY,
+								USA), and is also a certified Financial Risk Manager ("FRM") by Global Association of Risk
+								Professionals ("GARP") in the USA. This financial engineer has also provided much valuable
+								research for the successful modelling of XEM.
+							</p>
+						</div>
+					</div>
+					<div class="set">
+						<a href="#">
+							What is the principle of your model?
+						</a>
+						<div class="content">
+							<p>
+								We are very thrilled that our XEM modeling is proven so successful, accurate and satisfactory as
+								demonstrated in historical real data simulations, real-time data demonstrations, return & risk
+								assessments, market momentum calibrations, and stock price forecasts including T+1 day and + 1
+								month. Particularly for T+1 day forecasts, Xide adopts an algorithm developed by a financial
+								engineer who holds a master's degree in financial engineering from New York University (NY,
+								USA), and is also a certified Financial Risk Manager ("FRM") by Global Association of Risk
+								Professionals ("GARP") in the USA. This financial engineer has also provided much valuable
+								research for the successful modelling of XEM.
+							</p>
+						</div>
+					</div>
+					<div class="set">
+						<a href="#">
+							How do I create an account?
+						</a>
+						<div class="content">
+							<p>
+								We are very thrilled that our XEM modeling is proven so successful, accurate and satisfactory as
+								demonstrated in historical real data simulations, real-time data demonstrations, return & risk
+								assessments, market momentum calibrations, and stock price forecasts including T+1 day and + 1
+								month. Particularly for T+1 day forecasts, Xide adopts an algorithm developed by a financial
+								engineer who holds a master's degree in financial engineering from New York University (NY,
+								USA), and is also a certified Financial Risk Manager ("FRM") by Global Association of Risk
+								Professionals ("GARP") in the USA. This financial engineer has also provided much valuable
+								research for the successful modelling of XEM.
+							</p>
+						</div>
+					</div>
+					<div class="set">
+						<a href="#">
+							What is the principle of your model?
+						</a>
+						<div class="content">
+							<p>
+								We are very thrilled that our XEM modeling is proven so successful, accurate and satisfactory as
+								demonstrated in historical real data simulations, real-time data demonstrations, return & risk
+								assessments, market momentum calibrations, and stock price forecasts including T+1 day and + 1
+								month. Particularly for T+1 day forecasts, Xide adopts an algorithm developed by a financial
+								engineer who holds a master's degree in financial engineering from New York University (NY,
+								USA), and is also a certified Financial Risk Manager ("FRM") by Global Association of Risk
+								Professionals ("GARP") in the USA. This financial engineer has also provided much valuable
+								research for the successful modelling of XEM.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="sign" id="sign">
+			<img src="img/blue.png" alt="" class="sign__fig">
+			<div class="container">
+				<div class="sign__box d-flex">
+					<p>
+						Sing-up a FREE account now, and you can <span class="green"> upgrade to a premium account FREE</span>
+						for unlimited-time use (this
+						offer only up to December 31, 2020)
+					</p>
+					<a href="#" class="sign__btn bttn">
+						SIGN UP FREE
+					</a>
+				</div>
+			</div>
+		</section>
+		<footer class="footer" id="footer">
+			<div class="container">
+				<div class="footer__box d-flex">
+					<a href="index.html" class="footer__logo">
+						<img src="img/footer-logo.svg" alt="">
+					</a>
+					<div class="footer__lists d-flex">
+						<ul>
+							<li>
+								<a href="#">
+									Home
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Simulation
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Real Time
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Market Insight
+								</a>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<a href="#">
+									About company
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									About modeling
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Contact us
+								</a>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<a href="#">
+									Stock info
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									My portfolio
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Legal documents
+								</a>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<a href="#">
+									Sign up
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Sign in
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Profile
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer__info d-flex">
+						<a href="mailto:hello@xide.ca" class="footer__site">
+							Contact us hello@xide.ca
+						</a>
+						<a href="#" class="footer__tele">
+							<img src="img/f1.svg" alt="" class="svg">
+						</a>
+					</div>
+				</div>
+				<div class="footer__flex d-flex">
+					<p>
+						Xide &copy; 2020
+					</p>
+					<div class="footer__links d-flex">
+						<a href="#">
+							Terms of Services
+						</a>
+						<a href="#">
+							Privacy Policy
+						</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js?ver=5.1"></script>
+	<!-- Подключен файл-валидатор, для проверки формы на заполненность  -->
+	<!-- <script type="text/javascript"
+		src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.js"></script> -->
+	<!-- <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=7d8fc9fb-8540-4124-aaf0-efcfe8ad368e"
+		type="text/javascript"></script> -->
+	<script src="js/jquery.arcticmodal-0.3.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+		integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/chart.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			$('.js-example-basic-single').select2({
+				minimumResultsForSearch: -1
+			});
+		});
+	</script>
+
+	<script>
+		var bigchartCtrl = $('.big-chart-ctrl'); 												/* Все чекбоксы */
+		var bigchartCtrlElem = $('.big-chart-ctrl__elem');							/* Чекбоксы отдельных графиков */
+		var bigchartCtrlAgreeall = $('.big-chart-ctrl__agreeall'); 			/* Чекбокс включающий все */
+		var bigchartCtx = $('.m-bigchart');															/* Блок граффиков */
+		var bigchart;
+		var bigchartData = [];
+		var bigchartDatasets = [];
+
+		mCartDataFilter();
+		mChart();
+
+		bigchartCtrlAgreeall.on('click', function(){ 										/* Клик по включающему все графики */
+			if(bigchartCtrlAgreeall.is(':checked')) {											/* Если включен */
+				bigchartCtrlElem.prop('checked', false); 										/* Отключаем остальные чекбоксы */
+			}
+		});
+
+		bigchartCtrlElem.on('click', function(){												/* Клик по отдельному чекбоксу */
+			bigchartCtrlAgreeall.prop('checked', false);									/* Отключаем чекбокс для всех */
+		});
+
+		bigchartCtrl.on('click', function(){ 														/* Клик по любому чекбоксу */
+			mCartDataFilter();
+			mChart();
+		});
+
+		function mCartDataFilter() {																		/* Фильтруем данные в зависимости от выбранного чекбокса */
+			if(!bigChartData && !bigchartCtx) { return; }
+
+			if(bigchartCtrlAgreeall.is(':checked')) {											/* Если включено показать все */
+				bigchartData = bigChartData.charts.slice();									/* Копируем все данные в новый массив */
+				return;
+			}
+
+			bigchartData = bigChartData.charts.filter(function(val){  		/* Иначе копируем те, которые выбраны */
+				return $('.big-chart-ctrl__elem#' + val.id).is(':checked');
+			});
+		}
+
+		function mChart() { 																						/* Отрисовка граффиков */
+			if(!bigChartData && !bigchartCtx) { return; }
+
+			bigchartDatasets = []; 																				/* Обнуляем массив для данных */
+
+			for(var i = 0; i < bigchartData.length; i++) { 								/* Наполняем масив данными на основе созданного массива в mCartDataFilter() */
+				bigchartDatasets.push({
+					data: bigchartData[i].data,
+					borderColor: bigchartData[i].color,
+					backgroundColor: 'rgba(255, 255, 255, 0)',
+					borderWidth: 3
+				})
+			}
+
+			bigchart = new Chart(bigchartCtx, { 													/* Создаем объект из библиотеки Chart.js */
+				type: 'line',
+				data: {
+					labels: bigChartData.labels,
+					datasets: bigchartDatasets
+				},
+				options: {
+					legend: { display: false },
+					title: { display: false },
+					tooltips: { enabled : false },
+					elements: {
+						point: { radius: 0 },
+						line: { tension: 0.2 }
+					},
+					responsive: true
+				}
+			});
+		}
+	</script>
+
+</body>
+
+</html>
