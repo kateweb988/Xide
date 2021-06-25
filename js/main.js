@@ -132,3 +132,32 @@ $('.profile__table_real .market__plus').click(function (e) {
    $('#popup-info').arcticmodal({
    });
 });
+$(window).on('load', function () {
+   $(".calc__btn_one").prop('disabled', !$("input[name='formK']:checked").length);
+   $("input[name='formK']").on('change', function () {
+      $(".calc__btn_one").prop('disabled', !$("input[name='formK']:checked").length);
+   });
+   $(".calc__btn_two").prop('disabled', !$("input[name='formT']:checked").length);
+   $("input[name='formT']").on('change', function () {
+      $(".calc__btn_two").prop('disabled', !$("input[name='formT']:checked").length);
+   });
+   $(".calc__btn_three").prop('disabled', !$("input[name='formA']:checked").length);
+   $("input[name='formA']").on('change', function () {
+      $(".calc__btn_three").prop('disabled', !$("input[name='formA']:checked").length);
+   });
+});
+$('.calc__btn_one').click(function (event) {
+   $('.calc__one').css('display', 'none');
+   $('.calc__two').fadeIn();
+   return false;
+});
+$('.calc__btn_two').click(function (event) {
+   $('.calc__two').css('display', 'none');
+   $('.calc__three').fadeIn();
+   return false;
+});
+$('.calc__btn_three').click(function (event) {
+   $('.calc__three').css('display', 'none');
+   $('.calc__four').fadeIn();
+   return false;
+});

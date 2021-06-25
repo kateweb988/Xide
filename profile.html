@@ -278,59 +278,122 @@
 					</div>
 					<div id="third-tab" class="tab-pane">
 						<div class="profile__content">
-							<div class="profile__upgrade d-flex">
-								<div class="profile__blue">
-									<p class="profile__now">
-										Upgrade now
-									</p>
-									<p class="profile__text">
-										It is a flat fee for a premium user at $1.00 per day (CAD $1.00 for Canadian users and USD
-										$1.00 for US users) on monthly basis, and at $300 annually. A premium user can add up to
-										50 stocks in my stock list and access more information we could offer.
-									</p>
-									<p class="profile__text">
-										All major credit cards or e-transfers are acceptable by proceeding 'Proceed to Pay" for
-										payment processing. Thank you!
-									</p>
-									<a href="#" class="profile__confirm bttn">
-										CONFIRM
-									</a>
+							<div class="test__wrap">
+								<div class="calc__box">
+									<form action="success.php" class="calc__form js-form" id="popupResult" method="post">
+										<div class="calc__elem calc__one">
+											<div class="profile__upgrade d-flex">
+												<div class="profile__blue">
+													<p class="profile__now">
+														Upgrade now
+													</p>
+													<p class="profile__text">
+														It is a flat fee for a premium user at $1.00 per day (CAD $1.00 for Canadian
+														users and USD
+														$1.00 for US users) on monthly basis, and at $300 annually. A premium user can
+														add up to
+														50 stocks in my stock list and access more information we could offer.
+													</p>
+													<p class="profile__text">
+														All major credit cards or e-transfers are acceptable by proceeding 'Proceed to
+														Pay" for
+														payment processing. Thank you!
+													</p>
+													<a href="#" class="profile__confirm calc__btn_one bttn">
+														CONFIRM
+													</a>
+												</div>
+												<table class="profile__table adaptive-table">
+													<thead>
+														<tr class="profile__row">
+															<td>#</td>
+															<td>Date</td>
+															<td>Description</td>
+															<td>Amount</td>
+														</tr>
+													</thead>
+													<tbody>
+														<tr class="profile__row">
+															<td>1</td>
+															<td data-label="Date">10-12-20</td>
+															<td data-label="Description">Refill with VISA</td>
+															<td data-label="Amount">$10</td>
+														</tr>
+														<tr class="profile__row">
+															<td>2</td>
+															<td data-label="Date">23-08-20</td>
+															<td data-label="Description">Paypal</td>
+															<td data-label="Amount">$10</td>
+														</tr>
+														<tr class="profile__row">
+															<td>3</td>
+															<td data-label="Date">08-07-20</td>
+															<td data-label="Description">Paypal</td>
+															<td data-label="Amount">$10</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+										<div class="calc__elem calc__two" style="display: none;">
+											<div class="profile__select">
+												<h3>
+													Select Subscription
+												</h3>
+												<div class="checkboxes-and-radios">
+													<div class="profile__item">
+														<div class="profile__one d-flex">
+															<input type="radio" name="radio-ca" id="radio-1b" value="1" checked>
+															<label for="radio-1b">
+																<p>
+																	Monthly
+																</p>
+																<span>
+																	$30
+																</span>
+															</label>
+															<input type="radio" name="radio-ca" id="radio-2b" value="2">
+															<label for="radio-2b">
+																<p>
+																	Annually
+																</p>
+																<span>
+																	$300
+																</span>
+															</label>
+														</div>
+													</div>
+													<a href="#" class="calc__btn_two bttn">
+														NEXT
+													</a>
+												</div>
+											</div>
+										</div>
+										<div class="calc__elem calc__three" style="display: none;">
+											<div class="checkboxes-and-radios">
+												<div class="profile__item">
+													<div class="profile__one d-flex">
+														<input type="radio" name="radio-ccc" id="radio-111" value="1" checked>
+														<label for="radio-111">
+															<p>
+																Credit card
+															</p>
+														</label>
+														<input type="radio" name="radio-ccc" id="radio-222" value="2">
+														<label for="radio-222">
+															<p>
+																E transfer
+															</p>
+														</label>
+													</div>
+												</div>
+												<a href="#" class="bttn">
+													NEXT
+												</a>
+											</div>
+										</div>
+									</form>
 								</div>
-								<table class="profile__table adaptive-table">
-									<thead>
-										<tr class="profile__row">
-											<td>#</td>
-											<td>Date</td>
-											<td>Description</td>
-											<td>Amount</td>
-										</tr>
-									</thead>
-									<tbody>
-										<tr class="profile__row">
-											<td>1</td>
-											<td data-label="Date">10-12-20</td>
-											<td data-label="Description">Refill with VISA</td>
-											<td data-label="Amount">$10</td>
-										</tr>
-										<tr class="profile__row">
-											<td>2</td>
-											<td data-label="Date">23-08-20</td>
-											<td data-label="Description">Paypal</td>
-											<td data-label="Amount">$10</td>
-										</tr>
-										<tr class="profile__row">
-											<td>3</td>
-											<td data-label="Date">08-07-20</td>
-											<td data-label="Description">Paypal</td>
-											<td data-label="Amount">$10</td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-							<div class="profiile__select">
-								<h3>
-									Select Subscription
-								</h3>
 							</div>
 						</div>
 					</div>
