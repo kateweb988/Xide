@@ -89,6 +89,14 @@ header {
   min-height: 100vh;
 }
 
+thead tr td:last-child {
+  text-align: center !important;
+}
+
+thead tr td:last-child img {
+  margin-left: 0 !important;
+}
+
 h1 {
   font-weight: 500;
   font-size: 40px;
