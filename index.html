@@ -38,9 +38,9 @@
 		<section class="top" id="top">
 			<div class="container">
 
-				<h1>XIDE Project MENU</h1>
+				<h1 class="test__title">XIDE Project MENU</h1>
 
-				<ul>
+				<ul class="listt">
 					<li><a href="50active.html" target="_blank">50active.html</a></li>
 					<li><a href="50active(blocks).html" target="_blank">50active(blocks).html</a></li>
 					<li><a href="50down.html" target="_blank">50down.html</a></li>
@@ -76,10 +76,46 @@
 					<li><a href="simulation.html" target="_blank">simulation.html</a></li>
 					<li><a href="simulation-blocks.html" target="_blank">simulation-blocks.html</a></li>
 					<li><a href="simulation-main.html" target="_blank">simulation-main.html</a></li>
+					<li><a href="forgotPass.html" target="_blank">forgot pass</a></li>
+					<li><a href="forgotPass-success.html" target="_blank">forgot pass - success</a></li>
+					<li><a href="setPass.html" target="_blank">set pass</a></li>
 				</ul>
 
 			</div>
 		</section>
+		<style>
+			.listt li a {
+				display: block;
+				margin: 20px;
+				text-align: center;
+				font-weight: 500;
+				font-size: 21px;
+				text-align: center;
+				color: #414C69;
 
+			}
+
+			.listt li {
+				width: 24%;
+			}
+
+			.listt {
+				display: flex;
+				justify-content: center;
+				flex-wrap: wrap;
+				margin-top: 40px;
+			}
+
+			.test__title {
+				text-align: center;
+			}
+
+			@media screen and (max-width: 575px) {
+				.listt {
+					flex-direction: column;
+				}
+			}
+		</style>
 </body>
+
 </html>

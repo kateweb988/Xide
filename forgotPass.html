@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>XEM</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<!-- Favicon -->
+	<link rel="icon" href="img/shortcut.png" type="image/x-icon">
+	<link rel="shortcut icon" href="img/shortcut.png" type="image/x-icon">
+	<!-- OG -->
+	<meta property="og:title" content="XEM">
+	<meta property="og:description" content="XEM">
+	<meta property="og:type" content="website">
+	<meta property="og:image" content="img/shortcut.png">
+	<meta property="og:site_name" content="XEM">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="css/jquery.arcticmodal-0.3.css">
+	<link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+	<link rel="stylesheet" type="text/css" href="css/slick.css">
+	<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+	<div class="body-wrap">
+		<section class="top top-sign" id="top">
+			<div class="container">
+				<div class="top__box d-flex">
+					<div class="top__left d-flex">
+						<a href="index.html" class="top__logo">
+							<img src="img/logo.svg" alt="">
+						</a>
+						<!-- <ul class="d-flex menu__list">
+							<li class="active">
+								<a href="#">
+									Home
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Simulation
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Real Time
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Market Insight
+								</a>
+							</li>
+							<li class="nav__link">
+								<a href="#" class="sub-menu__link">
+									About
+								</a>
+								<ul class="sub-menu__list">
+									<li>
+										<a href="" class="sub-menu__link">About</a>
+									</li>
+									<li>
+										<a href="" class="sub-menu__link">About</a>
+									</li>
+									<li>
+										<a href="" class="sub-menu__link">About</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">
+									Contact
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="top__right d-flex">
+						<div class="top__info">
+							<select class="js-example-basic-single news-select" id="sum1" name="period">
+								<option value="first">US & Canada Markets</option>
+								<option value="second" class="fr">Russia Markets</option>
+							</select>
+							<p>
+								est 05:09 am
+							</p>
+						</div> -->
+						<div class="top__wrap d-flex">
+							<select class="js-example-basic-single news-select" id="sum2" name="period">
+								<option value="first">Eng</option>
+								<option value="second" class="fr">Ru</option>
+							</select>
+							<!-- <a href="#" class="top__btn bttn">
+								LOG IN
+							</a> -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="signup" id="signin">
+			<div class="container">
+				<div class="signup__box d-flex">
+					<div class="signup__left">
+						<img src="img/sign1.svg" alt="">
+					</div>
+					<div class="signup__right">
+						<div class="signup__block">
+							<div class="signup__links d-flex">
+								<a href="signin.html" class="active">
+									Sign in
+								</a>
+								<a href="signup.html">
+									Sign up
+								</a>
+							</div>
+							<p class="forgot__name">
+								Send password reset e-mail
+							</p>
+							<form action="" class="js-form signup__form d-flex" id="popupResult" method="post">
+								<input type="text" name="email" required="" placeholder="E-mail" class="form__field">
+
+								<button class="signup__btn bttn" data-submit>SEND</button>
+							</form>
+							<div class="signup__info">
+								<p>By clicking the button above, you agree to our <a href="#" target="blank"> terms use</a> and
+									<a href="#" target="blank">privacy polices</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer class="footer footer-white" id="footer">
+			<div class="container">
+				<div class="footer__flex d-flex">
+					<p>
+						Xide &copy; 2020
+					</p>
+					<div class="footer__links d-flex">
+						<a href="#">
+							Terms of Services
+						</a>
+						<a href="#">
+							Privacy Policy
+						</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js?ver=5.1"></script>
+	<!-- Подключен файл-валидатор, для проверки формы на заполненность  -->
+	<!-- <script type="text/javascript"
+		src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.js"></script> -->
+	<!-- <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=7d8fc9fb-8540-4124-aaf0-efcfe8ad368e"
+		type="text/javascript"></script> -->
+	<script src="js/jquery.arcticmodal-0.3.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+		integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/main.js"></script>
+	<script>
+		$(document).ready(function () {
+			$('.js-example-basic-single').select2({
+				minimumResultsForSearch: -1
+			});
+		});
+	</script>
+</body>
+
+</html>

@@ -122,6 +122,16 @@ $('.top__btn').click(function (e) {
    $('#popup-sign').arcticmodal({
    });
 });
+$('.top__success').click(function (e) {
+   e.preventDefault();
+   $('#popup-success').arcticmodal({
+   });
+});
+$('.profile__save').click(function (e) {
+   e.preventDefault();
+   $('#popup-save').arcticmodal({
+   });
+});
 $('.market__el .market__plus').click(function (e) {
    e.preventDefault();
    $('#popup-add').arcticmodal({

@@ -1470,6 +1470,15 @@ textarea:-moz-placeholder {
   background: #4A7DC9;
   width: 100%;
   padding: 71px 81px 71px 90px;
+
+}
+
+#sign-success .signup__right {
+  padding-top: 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .signup__form {
@@ -1535,6 +1544,13 @@ textarea:-moz-placeholder {
   height: 50px;
   font-size: 14px;
   margin-top: 8px;
+  max-width: 328px;
+  margin: 8px auto 0;
+}
+
+#sign-success .signup__block {
+  height: auto;
+  padding-bottom: 40px;
 }
 
 .signup__info {
@@ -4169,6 +4185,42 @@ ul#select2-sum6-results.select2-results__options {
   font-weight: bold;
   font-size: 24px;
   margin-bottom: 26px;
+  line-height: 120%;
+}
+
+.succ {
+  margin: 0 auto 17px;
+  display: block;
+}
+
+.succ2 {
+  text-align: center;
+  display: block;
+  margin: 30px auto -10px;
+}
+
+#popup-success .popup-call__name,
+#popup-save .popup-call__name {
+  font-weight: 600;
+  font-size: 26px;
+}
+
+#popup-success .box-modal__close,
+#popup-save .box-modal__close {
+  right: 20px;
+  top: 20px;
+}
+
+.forgot__name {
+  font-weight: 500;
+  font-size: 18px;
+  margin: 40px auto 14px;
+  display: block;
+  text-align: center;
+}
+
+.succ__btn {
+  margin: 0 auto;
 }
 
 .popup-call__text {
