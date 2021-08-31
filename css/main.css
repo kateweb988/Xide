@@ -1963,7 +1963,7 @@ textarea:-moz-placeholder {
 }
 
 .profile .ser__tab {
-  max-width: 835px;
+  max-width: 992px;
   margin: 0;
 }
 
@@ -2742,7 +2742,7 @@ textarea:-moz-placeholder {
 }
 
 .ser__tab li {
-  width: 17.5%;
+  width: 16.5%;
   margin-bottom: 25px;
 }
 
@@ -5067,6 +5067,34 @@ td a img {
 
 .details_w100 .profile__table .profile__row:nth-child(odd) {
   background: #FFFFFF;
+}
+
+#sixth-tab .profile__table {
+  margin-left: 0;
+}
+
+#sixth-tab .profile__table a {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 140%;
+  text-decoration-line: underline;
+  color: #414C69;
+}
+
+#sixth-tab .pay-now a {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 140%;
+  color: #1FC7A2;
+  text-decoration: none;
+}
+
+#sixth-tab .profile__table thead tr td:last-child {
+  text-align: left !important;
+}
+
+#sixth-tab .profile__table {
+  margin-top: 15px;
 }
 
 @media screen and (min-width: 1500px) and (max-width: 1920px) {
